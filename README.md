@@ -2,4 +2,4 @@
 
 HAUSMAN Pierre-Alexandre
 HOEDENAEKEN Nicolas
-AY Edward
+GAY Edward
