@@ -21,7 +21,7 @@ class Colony:
 
 class Ant:
     """
-    a class for representing a Ant
+    a class for representing an Ant
     """
     def __init__(self, role):
         self.position = [0, 0]
