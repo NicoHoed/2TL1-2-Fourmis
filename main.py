@@ -1,11 +1,11 @@
 from random import randint
 from time import sleep
 
-COST_OF_ANT = 0.5
 QUANTITY_FOOD_FOR_LAYING_EGG = 50
 QUANTITY_ANT_FOR_LAYING_SOLDIER = 50
 NEST_EXPANSION_RATE = 20
-NEST_START_FOOD_STOCK = 20
+NEST_START_FOOD_STOCK = 50
+NEST_START_CAPACITY = 15
 
 
 
@@ -14,7 +14,7 @@ class Colony:
     """
     a class for representing a Colony
     """
-    def __init__(self, ct_ant = 1, food_stock = 20, nest_capacity = 100):
+    def __init__(self, ct_ant = 1, food_stock = NEST_START_FOOD_STOCK, nest_capacity = NEST_START_CAPACITY):
         self.__ctAnt = ct_ant
         self.__ant = []
         self.__nest = Nest(nest_capacity, food_stock)
@@ -28,13 +28,13 @@ class Colony:
 
     def manage_ressources(self):
         for ant in self.__ant:
-            self.__nest.food_stock -= 1 if ant.role == 'Worker' else 3
-        self.__nest.food_stock -= 5
+            self.__nest.food_stock -= 1 if ant.role == 'worker' else 3 # for worker or soldier
+        self.__nest.food_stock -= 5 #for queen
         if self.__nest.food_stock < 0:
             self.destruct_nest()
 
     def manage_expansion_nest(self):
-        if self.__ctAnt == self.__nest.ant_capacity and randint(0, 100) > 10:
+        if self.__ctAnt > self.__nest.ant_capacity - 10 and randint(0, 100) <= 10:
             self.__nest.upgrade()
 
     def react_to_menace(self):
@@ -77,20 +77,38 @@ class Colony:
     def __iter__(self):
         return iter(self.ant)
 
+    def __str__(self):
+        return f'nb ant: {self.ctAnt}, food: {self.nest.food_stock}, nest level: {self.nest.level}'
+
 
 class Ant:
     """
     a class for representing an Ant
     """
+    life_by_role = {'worker': 250, 'soldier': 500, 'queen': 10000}
     def __init__(self, role):
         self.position = [0, 0]
         self.role = role
+        self.life = 0
+        self.life_span = self.life_by_role[role]
+
 
     def do(self):
-        pass
+        self.die()
 
     def detect_pheromone(self):
         pass
+
+
+    def die(self):
+        self.life += 1
+        #print(self.life, self.life_span)
+        if self.life == self.life_span:
+            print('die')
+            return True
+        if self.life_span/2 < self.life == randint(0, self.life_span):
+            print('die')
+            return True
 
     @property
     def x(self):
@@ -135,18 +153,22 @@ class Worker(Ant):
     def __init__(self, colony):
         super().__init__('worker')
         self.colony = colony
+        self.have_food = False
 
     def find_food(self):
-        pass
+        find_food = randint(0, 100) > 10
+        self.have_food = find_food
+        print('worker find food')
+        return find_food
 
     def drop_food(self):
-        pass
+        self.have_food = False
 
 
 class Soldier(Ant):
     """
-        class for representing an ant of type soldier
-        """
+    class for representing an ant of type soldier
+    """
     def __init__(self, colony):
         super().__init__('soldier')
         self.colony = colony
@@ -179,7 +201,10 @@ class Nest:
 
     def stock_food(self):
         if self.food_capacity > self.food_stock:
-            self.food_stock += 1
+            print('store food')
+            self.food_stock += 2
+        else:
+            print('not enough place to store food')
 
     def upgrade(self):
         self.ant_capacity += NEST_EXPANSION_RATE
@@ -190,13 +215,18 @@ class Nest:
 def run():
     colony = Colony()
     while colony.live:
-
-        #colony.manage_ressources()
-        #colony.manage_expansion_nest()
         colony.queen.lay_eggs()
-        print(len(colony.ant))
+        for ant in colony:
+            if ant.role == 'worker':
+                if ant.find_food():
+                    colony.nest.stock_food()
+                    ant.drop_food()
+            colony.ant.remove(ant) if ant.die() else None
+        colony.manage_ressources()
+        colony.manage_expansion_nest()
+        print(colony)
 
-        sleep(0.1)
+        #sleep(0.1)
 
 
 if __name__ == '__main__':
