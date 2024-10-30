@@ -8,6 +8,8 @@ class Monster:
                 data = dict(load(file))
                 self.life = data['life']
                 self.name = data['name']
+                self.min_nest_level = data['min_nest_level']
+                self.spawn_prob = data['spawn_prob']
             except:
                 print('error')
 
