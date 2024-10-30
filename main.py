@@ -1,5 +1,8 @@
+import os
 from random import randint
 from time import sleep
+
+from lib.monster import Monster
 
 QUANTITY_FOOD_FOR_LAYING_EGG = 50
 QUANTITY_ANT_FOR_LAYING_SOLDIER = 50
@@ -213,6 +216,11 @@ class Nest:
 
 
 def run():
+    monstre = []
+    for x in os.listdir('monster'):
+        monstre.append(Monster(x))
+
+    [print(x) for x in monstre]
     colony = Colony()
     while colony.live:
         colony.queen.lay_eggs()
@@ -226,7 +234,7 @@ def run():
         colony.manage_expansion_nest()
         print(colony)
 
-        #sleep(0.1)
+        sleep(1)
 
 
 if __name__ == '__main__':
