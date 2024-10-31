@@ -1,7 +1,7 @@
 from json import dump, load
 from os import path
 
-keys = ['name', 'life', 'min_nest_level', 'spawn_prob']
+keys = ['name', 'life', 'min_nest_level', 'spawn_prob', 'test']
 
 
 def create_monster(directory: str, param: list):
@@ -19,7 +19,8 @@ def create_monster(directory: str, param: list):
     print(monster)
 
 
-def update_monster_json(directory: str, monster_name: str, default_values: dict):
+def update_monster_json(directory: str, monster_name: str):
+    global keys
     file_path = path.join(directory, f"{monster_name}.json")
 
     if not path.exists(file_path):
@@ -33,7 +34,19 @@ def update_monster_json(directory: str, monster_name: str, default_values: dict)
     # Adding the missing fields with the default values
     for key in keys:
         if key not in monster_data:
-            monster_data[key] = default_values.get(key, None)
+            new_value = input(f'the "{key}" fields is empty, new value: ')
+            try:
+                new_value = int(new_value)
+
+            except:
+                pass
+            if not isinstance(new_value, int):
+                try:
+                    new_value = float(new_value)
+                except:
+                    pass
+            print(type(new_value))
+            monster_data[key] = new_value
 
     # Saving the updated file
     with open(file_path, "w", encoding='utf-8') as file:
@@ -45,15 +58,9 @@ def update_monster_json(directory: str, monster_name: str, default_values: dict)
 
 if __name__ == '__main__':
     # Creation of a new monster
-    create_monster('../monster', ['test', 10, 2, 30])
+    #create_monster('../monster', ['test', 10, 2, 30])
 
-    # Default values for the required fields
-    default_values = {
-        "name": "unknown",
-        "life": 100,
-        "min_nest_level": 1,
-        "spawn_prob": 10
-    }
 
     # Json update with the missing fields
-    update_monster_json('../monster', 'test', default_values)
+    #update_monster_json('../monster', 'test')
+    pass
