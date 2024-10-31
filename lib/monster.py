@@ -1,5 +1,6 @@
 from json import load
 from os import path
+import json
 
 class Monster:
     def __init__(self, file: str):
@@ -19,3 +20,4 @@ class Monster:
 
 if __name__ == '__main__':
     spider = Monster('spider.json')
+
