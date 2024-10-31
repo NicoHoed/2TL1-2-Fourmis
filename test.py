@@ -1,95 +1,253 @@
-import pygame
-import tkinter as tk
-from tkinter import Canvas
-from PIL import Image, ImageTk
-import numpy as np
-import math
+import os
+from random import randint
+from time import sleep
 
-# Initialize Pygame
-pygame.init()
+from lib.monster import Monster
 
-# Create Tkinter window
-root = tk.Tk()
-root.title("Pygame in Tkinter")
+from lib.gui import AntSimulationApp
 
-# Create Canvas in Tkinter
-canvas = Canvas(root, width=500, height=400)
-canvas.pack()
-
-# Create a Pygame surface
-pygame_surface = pygame.Surface((500, 400))
-
-# Load the ant image
-ant_image = pygame.image.load('ant.png')  # Replace with the correct path to your image
-ant_image = pygame.transform.scale(ant_image, (60, 60))  # Resize if needed
-
-# Ball (ant) properties
-ball_x = 250  # Initial X position
-ball_y = 200  # Initial Y position
-ball_dx = 5  # Speed in X direction
-ball_dy = 3  # Speed in Y direction
-ant_width, ant_height = ant_image.get_size()  # Get the dimensions of the image
+QUANTITY_FOOD_FOR_LAYING_EGG = 50
+QUANTITY_ANT_FOR_LAYING_SOLDIER = 50
+NEST_EXPANSION_RATE = 20
+NEST_START_FOOD_STOCK = 50
+NEST_START_CAPACITY = 15
 
 
-# Function to convert Pygame surface to a format Tkinter can display
-def pygame_to_tk_image(surface):
-    # Convert Pygame surface to a string of pixels
-    image_data = pygame.surfarray.array3d(surface)
-    # Convert the data to an Image using PIL
-    image = Image.fromarray(np.transpose(image_data, (1, 0, 2)))
-    # Convert the image to a format that Tkinter can use
-    return ImageTk.PhotoImage(image)
 
 
-# Update function to redraw Pygame surface in Tkinter
-def update_canvas():
-    global ball_x, ball_y, ball_dx, ball_dy
+class Colony:
+    """
+    a class for representing a Colony
+    """
+    def __init__(self, ct_ant = 1, food_stock = NEST_START_FOOD_STOCK, nest_capacity = NEST_START_CAPACITY):
+        self.__ctAnt = ct_ant
+        self.__ant = []
+        self.__nest = Nest(nest_capacity, food_stock)
+        self.__queen = Queen(self)
 
-    # Fill Pygame surface with a background color
-    pygame_surface.fill((0, 128, 255))
-
-    # Move the ball (ant)
-    ball_x += ball_dx
-    ball_y += ball_dy
-
-    # Bounce off the edges (left, right)
-    if ball_x - ant_width // 2 <= 0 or ball_x + ant_width // 2 >= pygame_surface.get_width():
-        ball_dx = -ball_dx  # Reverse direction
-
-    # Bounce off the edges (top, bottom)
-    if ball_y - ant_height // 2 <= 0 or ball_y + ant_height // 2 >= pygame_surface.get_height():
-        ball_dy = -ball_dy  # Reverse direction
-
-    # Calculate the angle of movement
-    angle = math.degrees(math.atan2(-ball_dy, ball_dx))  # Inverse Y-axis for Pygame
-
-    # Rotate the ant image based on the angle
-    rotated_ant = pygame.transform.rotate(ant_image, angle)
-
-    # Get the new dimensions of the rotated image
-    rotated_width, rotated_height = rotated_ant.get_size()
-
-    # Draw the rotated ant image, centered at (ball_x, ball_y)
-    pygame_surface.blit(rotated_ant, (ball_x - rotated_width // 2, ball_y - rotated_height // 2))
-
-    # Convert Pygame surface to Tkinter-compatible image
-    img = pygame_to_tk_image(pygame_surface)
-
-    # Add image to the canvas
-    canvas.create_image(0, 0, anchor=tk.NW, image=img)
-
-    # Keep a reference to avoid garbage collection
-    canvas.image = img
-
-    # Call this function again after 30ms
-    root.after(30, update_canvas)
+        self.__live = True
 
 
-# Start the update loop
-update_canvas()
+        for x in range(self.__ctAnt - 1):
+            self.ant.append(Worker(self))
 
-# Run Tkinter event loop
-root.mainloop()
+    def manage_ressources(self):
+        for ant in self.__ant:
+            self.__nest.food_stock -= 1 if ant.role == 'worker' else 3 # for worker or soldier
+        self.__nest.food_stock -= 5 #for queen
+        if self.__nest.food_stock < 0:
+            self.destruct_nest()
 
-# Quit Pygame when done
-pygame.quit()
+    def manage_expansion_nest(self):
+        if self.__ctAnt > self.__nest.ant_capacity - 10 and randint(0, 100) <= 10:
+            self.__nest.upgrade()
+
+    def react_to_menace(self):
+        pass
+
+    def destruct_nest(self):
+        print('YOU LOSE')
+        self.__live = False
+
+
+    @property
+    def live(self):
+        return self.__live
+
+
+    @property
+    def ant(self):
+        return self.__ant
+
+    @ant.setter
+    def ant(self, new_ant):
+        if self.__nest.ant_capacity > self.__ctAnt:
+            self.__ant.append(new_ant)
+            self.__ctAnt = len(self.__ant)
+        else:
+            print('no place for the new ant')
+
+    @property
+    def ctAnt(self):
+        return self.__ctAnt
+
+    @property
+    def queen(self):
+        return self.__queen
+
+    @property
+    def nest(self):
+        return self.__nest
+
+    def __iter__(self):
+        return iter(self.ant)
+
+    def __str__(self):
+        return f'nb ant: {self.ctAnt}, food: {self.nest.food_stock}, nest level: {self.nest.level}'
+
+
+class Ant:
+    """
+    a class for representing an Ant
+    """
+    life_by_role = {'worker': 250, 'soldier': 500, 'queen': 10000}
+    def __init__(self, role):
+        self.position = [0, 0]
+        self.role = role
+        self.life = 0
+        self.life_span = self.life_by_role[role]
+
+
+    def do(self):
+        self.die()
+
+    def detect_pheromone(self):
+        pass
+
+
+    def die(self):
+        self.life += 1
+        #print(self.life, self.life_span)
+        if self.life == self.life_span:
+            print('die')
+            return True
+        if self.life_span/2 < self.life == randint(0, self.life_span):
+            print('die')
+            return True
+
+    @property
+    def x(self):
+        return self.position[0]
+
+    @x.setter
+    def x(self, x_pos):
+        self.position[0] = x_pos
+
+    @property
+    def y(self):
+        return self.position[1]
+
+    @y.setter
+    def y(self, y_pos):
+        self.position[1] = y_pos
+
+    def __str__(self):
+        return self.role
+
+
+class Queen(Ant):
+    """
+    a class for representing the unique queen
+    """
+    def __init__(self, colony):
+        super().__init__('queen')
+        self.colony = colony
+
+    def lay_eggs(self):
+        if randint(0, 100) > 50:
+            if self.colony.nest.food_stock > QUANTITY_FOOD_FOR_LAYING_EGG and self.colony.ctAnt > QUANTITY_ANT_FOR_LAYING_SOLDIER:
+                self.colony.ant = Worker(self.colony) if randint(0, 100) > 50 else Soldier(self.colony)
+            else:
+                self.colony.ant = Worker(self.colony)
+
+
+class Worker(Ant):
+    """
+    class for representing an ant of type worker
+    """
+    def __init__(self, colony):
+        super().__init__('worker')
+        self.colony = colony
+        self.have_food = False
+
+    def find_food(self):
+        find_food = randint(0, 100) > 10
+        self.have_food = find_food
+        print('worker find food')
+        return find_food
+
+    def drop_food(self):
+        self.have_food = False
+
+
+class Soldier(Ant):
+    """
+    class for representing an ant of type soldier
+    """
+    def __init__(self, colony):
+        super().__init__('soldier')
+        self.colony = colony
+
+    def defend_nest(self):
+        pass
+
+
+class Pheromone:
+    """
+    a class for representing a pheromone
+    """
+    def __init__(self, p_type, intensity):
+        self.p_type = p_type
+        self.intensity = intensity
+
+    def dispel(self):
+        self.intensity =- 1
+
+
+class Nest:
+    """
+    a class for representing a __nest
+    """
+    def __init__(self, ant_capacity, food_stock):
+        self.ant_capacity = ant_capacity
+        self.food_capacity = NEST_START_FOOD_STOCK
+        self.food_stock = food_stock
+        self.level = 1
+
+    def stock_food(self):
+        if self.food_capacity > self.food_stock:
+            print('store food')
+            self.food_stock += 2
+        else:
+            print('not enough place to store food')
+
+    def upgrade(self):
+        self.ant_capacity += NEST_EXPANSION_RATE
+        self.food_capacity += NEST_EXPANSION_RATE
+        self.level += 1
+
+
+def run():
+    monstre = []
+    for x in os.listdir('monster'):
+        monstre.append(Monster(x))
+
+    [print(x) for x in monstre]
+    colony = Colony()
+    # Initialize the GUI application with the colony
+    app = AntSimulationApp(colony)
+
+    # Run the simulation in the GUI context
+    app.run_simulation()
+
+    # Start the GUI main loop
+    app.start()
+
+    while colony.live:
+        colony.queen.lay_eggs()
+        for ant in colony:
+            if ant.role == 'worker':
+                if ant.find_food():
+                    colony.nest.stock_food()
+                    ant.drop_food()
+            colony.ant.remove(ant) if ant.die() else None
+        colony.manage_ressources()
+        colony.manage_expansion_nest()
+        print(colony)
+
+        sleep(1)
+
+
+if __name__ == '__main__':
+    run()
+
