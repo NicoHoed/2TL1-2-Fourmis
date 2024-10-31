@@ -9,7 +9,7 @@ from lib import monster, gui
 
 QUANTITY_FOOD_FOR_LAYING_EGG = 50
 QUANTITY_ANT_FOR_LAYING_SOLDIER = 50
-NEST_EXPANSION_RATE = 20
+NEST_EXPANSION_RATE = 100
 NEST_START_FOOD_STOCK = 50
 NEST_START_CAPACITY = 15
 
@@ -80,7 +80,12 @@ class Colony:
         return iter(self.ant)
 
     def __str__(self):
-        return f'nb ant: {self.ctAnt}, food: {self.nest.food_stock}, nest level: {self.nest.level}'
+        nb_worker = 0
+        nb_soldier = 0
+        for ant in self.ant:
+            if ant.role == 'worker': nb_worker += 1
+            elif ant.role == 'soldier': nb_soldier += 1
+        return f'nb ant: {self.ctAnt}, food: {self.nest.food_stock}, nest level: {self.nest.level}, nb worker: {nb_worker}, nb soldier: {nb_soldier}'
 
 
 class Ant:
@@ -141,9 +146,9 @@ class Queen(Ant):
         self.colony = colony
 
     def lay_eggs(self):
-        if randint(0, 100) > 50:
+        if randint(0, 100) > 25:
             if self.colony.nest.food_stock > QUANTITY_FOOD_FOR_LAYING_EGG and self.colony.ctAnt > QUANTITY_ANT_FOR_LAYING_SOLDIER:
-                self.colony.ant = Worker(self.colony) if randint(0, 100) > 50 else Soldier(self.colony)
+                self.colony.ant = Worker(self.colony) if randint(0, 100) > 35 else Soldier(self.colony)
             else:
                 self.colony.ant = Worker(self.colony)
 
@@ -208,13 +213,13 @@ class Nest:
     def stock_food(self):
         if self.food_capacity > self.food_stock:
             print('store food')
-            self.food_stock += 2
+            self.food_stock += 4
         else:
             print('not enough place to store food')
 
     def upgrade(self):
         self.ant_capacity += NEST_EXPANSION_RATE
-        self.food_capacity += NEST_EXPANSION_RATE
+        self.food_capacity += NEST_EXPANSION_RATE*2
         self.level += 1
 
 
