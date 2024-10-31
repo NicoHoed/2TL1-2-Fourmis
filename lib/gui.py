@@ -1,3 +1,4 @@
+import os
 import tkinter as tk
 from tkinter import PhotoImage
 
@@ -10,11 +11,13 @@ class AntSimulationApp:
         self.root.title("Ant Simulation")
 
         # Load images for different colony levels
+        # Adjust the path to be relative from the current script location
+        base_path = os.path.dirname(__file__)  # Get the directory of the current file
         self.images = {
-            1: PhotoImage(file='../img/nestLVL1.png'),
-            2: PhotoImage(file='../img/nestLVL2.png'),
-            3: PhotoImage(file='../img/nestLVL3.png'),
-            4: PhotoImage(file='../img/nestLVL4.png'),
+            1: PhotoImage(file=os.path.join(base_path, '../img/nestLVL1.png')),
+            2: PhotoImage(file=os.path.join(base_path, '../img/nestLVL2.png')),
+            3: PhotoImage(file=os.path.join(base_path, '../img/nestLVL3.png')),
+            4: PhotoImage(file=os.path.join(base_path, '../img/nestLVL4.png')),
         }
 
         # Label to display the current colony image
@@ -23,6 +26,7 @@ class AntSimulationApp:
 
         # Start the simulation
         self.update_display()
+        self.run_simulation()  # Start the simulation immediately
 
     def update_display(self):
         """ Update the displayed image based on the colony level. """
@@ -34,7 +38,7 @@ class AntSimulationApp:
 
     def run_simulation(self):
         """ Run the simulation loop. """
-        while self.colony.live:
+        if self.colony.live:
             self.colony.queen.lay_eggs()
             for ant in self.colony:
                 if ant.role == 'worker':
@@ -48,10 +52,12 @@ class AntSimulationApp:
 
             # Update the display after each simulation step
             self.update_display()
-            self.root.update()  # Update the Tkinter window
 
-        # Close the window when the simulation ends
-        self.root.quit()
+            # Schedule the next simulation step
+            self.root.after(1000, self.run_simulation)  # Update every 1000 ms (1 second)
+        else:
+            print("Simulation ended.")
+            self.root.quit()
 
     def start(self):
         """ Start the GUI main loop. """
