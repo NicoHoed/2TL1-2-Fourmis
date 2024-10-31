@@ -11,7 +11,7 @@ def create_monster(name, life, min_nest_level, spawn_prob):
     }
 
     # Convert the dictionary in JSON
-    monster_json = json.dumps(monster, ident=4)
+    monster_json = json.dumps(monster, indent=4)
 
     # Save the monster in a JSON file
     with open(f"{name}.json", "w") as file:
@@ -20,3 +20,5 @@ def create_monster(name, life, min_nest_level, spawn_prob):
     print(f"The monster {name} was created successfully !")
     print(monster_json)
 
+
+create_monster("popu", 30, 2, 33)
