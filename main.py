@@ -231,6 +231,7 @@ def start(colony, root, app):
         colony.manage_expansion_nest()
         print(colony)
 
+
         app.update_display()
 
         root.after(100, lambda a=colony, b=root, c=app: start(a, b, c))
