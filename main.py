@@ -1,10 +1,11 @@
 import os
 from random import randint
 from time import sleep
+import tkinter as tk
 
-from lib.monster import Monster
 
-from lib.gui import AntSimulationApp
+from lib import monster, gui
+
 
 QUANTITY_FOOD_FOR_LAYING_EGG = 50
 QUANTITY_ANT_FOR_LAYING_SOLDIER = 50
@@ -217,19 +218,8 @@ class Nest:
         self.level += 1
 
 
-def run():
-    monstre = []
-    for x in os.listdir('monster'):
-        monstre.append(Monster(x))
-
-    [print(x) for x in monstre]
-    colony = Colony()
-
-    app = AntSimulationApp(colony)  # Initialize the GUI application with the colony
-    app.run_simulation()  # Run the simulation in the GUI context
-    app.start()  # Start the GUI main loop
-
-    while colony.live:
+def start(colony, root, app):
+    if colony.live:
         colony.queen.lay_eggs()
         for ant in colony:
             if ant.role == 'worker':
@@ -241,7 +231,27 @@ def run():
         colony.manage_expansion_nest()
         print(colony)
 
-        sleep(1)
+        app.update_display()
+
+        root.after(100, lambda a=colony, b=root, c=app: start(a, b, c))
+
+def run():
+    monstre = []
+    for x in os.listdir('monster'):
+        monstre.append(monster.Monster(x))
+
+    [print(x) for x in monstre]
+    colony = Colony()
+
+    root = tk.Tk()
+    root.geometry('1196x562')
+    app = gui.AntSimulationApp(colony, root, 'img/resized')  # Initialize the GUI application with the colony
+
+    start(colony, root, app)
+
+    root.mainloop()
+
+
 
 
 if __name__ == '__main__':
