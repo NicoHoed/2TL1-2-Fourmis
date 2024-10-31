@@ -3,7 +3,7 @@ from os import path
 
 keys = ['name', 'life', 'min_nest_level', 'spawn_prob']
 
-def create_monster(directory: str, *param: list):
+def create_monster(directory: str, param: list):
     global keys
     # Creation of the monster dictionary
     monster = {}
@@ -23,5 +23,5 @@ def create_monster(directory: str, *param: list):
 
 
 if __name__ == '__main__':
-    create_monster('../monster', 'test', 10, 2, 30)
+    create_monster('../monster', ['test', 10, 2, 30])
 
