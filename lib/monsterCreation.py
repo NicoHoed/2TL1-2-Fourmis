@@ -11,19 +11,19 @@ keys = ['name', 'life', 'min_nest_level', 'spawn_prob', 'power']
 """
 
 
-def create_monster(directory: str, param: list) -> None:
+def create_monster(directory: str) -> None:
     global keys
     # Creation of the monster dictionary
     monster = {}
     for key in range(len(keys)):
-        monster[keys[key]] = param[key]
+        monster[keys[key]] = input(f"{keys[key]} :")
 
     # Save the monster in a JSON file
     with open(path.join(directory, f"{monster['name']}.json"), "w", encoding='utf-8') as file:
         dump(monster, file, indent=4)
 
     print(f"The monster {monster['name']} was created successfully !")
-    print(monster)
+    #print(monster)
 
 
 def update_monster_json(directory: str, file: str) -> None:
@@ -39,6 +39,7 @@ def update_monster_json(directory: str, file: str) -> None:
         monster_data = load(file)
 
     # Adding the missing fields with the default values
+    needRewrite = False
     for key in keys:
         if key not in monster_data:
             new_value = input(f'the "{key}" fields is empty, new value: ')
@@ -53,18 +54,22 @@ def update_monster_json(directory: str, file: str) -> None:
                 except:
                     pass
             monster_data[key] = new_value
+            needRewrite = True
 
     # Saving the updated file
-    with open(file_path, "w", encoding='utf-8') as file:
-        dump(monster_data, file, indent=4)
+    if needRewrite:
+        with open(file_path, "w", encoding='utf-8') as file:
+            dump(monster_data, file, indent=4)
 
-    print(f"The monster JSON at {file_path} was updated successfully!")
-    #print(monster_data)
+        print(f"The monster JSON at {file_path} was updated successfully!")
+        #print(monster_data)
+    else:
+        print(f"The monster JSON at {file_path} is already good")
 
 
 if __name__ == '__main__':
 
-    create_monster('../monster', ['snail', 50, 4, 25, 50])
+    create_monster('../monster')
 
     for predator in listdir('../monster'):
         print('working on', predator)
