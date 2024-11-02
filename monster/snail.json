@@ -1,0 +1,7 @@
+{
+    "name": "snail",
+    "life": 50,
+    "min_nest_level": 4,
+    "spawn_prob": 25,
+    "power": 50
+}

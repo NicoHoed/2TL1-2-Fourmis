@@ -1,10 +1,17 @@
 from json import dump, load
-from os import path
+from os import path, listdir
 
-keys = ['name', 'life', 'min_nest_level', 'spawn_prob', 'test']
+keys = ['name', 'life', 'min_nest_level', 'spawn_prob', 'power']
+"""
+    name: name of the monster
+    life: number of life point -> soldier deal 3 damage, worker deal 1
+    min_nest_level: minimum level of the nest for the menace appear
+    spaw_prob: 0...100 probability of the menace to spawn, max 1 all 10 cycle
+    power: 0...100 probability to kill an ant when fight probability are divided by 3 when fight soldier
+"""
 
 
-def create_monster(directory: str, param: list):
+def create_monster(directory: str, param: list) -> None:
     global keys
     # Creation of the monster dictionary
     monster = {}
@@ -19,9 +26,9 @@ def create_monster(directory: str, param: list):
     print(monster)
 
 
-def update_monster_json(directory: str, monster_name: str):
+def update_monster_json(directory: str, file: str) -> None:
     global keys
-    file_path = path.join(directory, f"{monster_name}.json")
+    file_path = path.join(directory, file)
 
     if not path.exists(file_path):
         print(f"The File {file_path} does not exist.")
@@ -45,7 +52,6 @@ def update_monster_json(directory: str, monster_name: str):
                     new_value = float(new_value)
                 except:
                     pass
-            print(type(new_value))
             monster_data[key] = new_value
 
     # Saving the updated file
@@ -53,14 +59,13 @@ def update_monster_json(directory: str, monster_name: str):
         dump(monster_data, file, indent=4)
 
     print(f"The monster JSON at {file_path} was updated successfully!")
-    print(monster_data)
+    #print(monster_data)
 
 
 if __name__ == '__main__':
-    # Creation of a new monster
-    #create_monster('../monster', ['test', 10, 2, 30])
 
+    create_monster('../monster', ['snail', 50, 4, 25, 50])
 
-    # Json update with the missing fields
-    #update_monster_json('../monster', 'test')
-    pass
+    for predator in listdir('../monster'):
+        print('working on', predator)
+        update_monster_json(path.join('..', 'monster'), predator)

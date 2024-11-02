@@ -11,10 +11,11 @@ class Monster:
                 self.name = data['name']
                 self.min_nest_level = data['min_nest_level']
                 self.spawn_prob = data['spawn_prob']
+                self.power = data['power']
             except:
                 print('error')
 
-    def __str__(self):
+    def __str__(self) -> str:
         return self.name
 
 
