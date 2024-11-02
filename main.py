@@ -257,9 +257,12 @@ class Nest:
         self.food_capacity += NEST_EXPANSION_RATE*2
         self.level += 1
 
+counter = 0
 
 def start(colony, root, app, predators):
+    global counter
     if colony.live:
+        counter += 1
         colony.queen.lay_eggs()
         for ant in colony:
             if ant.role == 'worker':
@@ -270,12 +273,13 @@ def start(colony, root, app, predators):
         colony.manage_ressources()
         colony.manage_expansion_nest()
 
-        for predator in predators:
-            if colony.nest.level >= predator.min_nest_level and randint(0, 100) > predator.spawn_prob:
-                colony.react_to_menace(predator)
-                break
+        if counter % 10 == 1:
+            for predator in predators:
+                if colony.nest.level >= predator.min_nest_level and randint(0, 100) > predator.spawn_prob:
+                    colony.react_to_menace(predator)
+                    break
 
-        print(colony)
+        print(counter, colony)
 
 
         app.update_display()
