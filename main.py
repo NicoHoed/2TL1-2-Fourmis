@@ -110,6 +110,16 @@ class Colony:
     def nest(self):
         return self.__nest
 
+    def info(self):
+        nb_worker = 0
+        nb_soldier = 0
+        for ant in self.ant:
+            if ant.role == 'worker':
+                nb_worker += 1
+            elif ant.role == 'soldier':
+                nb_soldier += 1
+        return len(self.__ant), self.nest.food_stock, self.nest.food_capacity, self.nest.level, nb_worker, nb_soldier
+
     def __iter__(self):
         return iter(self.ant)
 
@@ -144,10 +154,10 @@ class Ant:
         self.life += 1
         # print(self.life, self.life_span)
         if self.life == self.life_span:
-            print('die')
+            #print('die')
             return True
         if self.life_span / 2 < self.life == randint(0, self.life_span):
-            print('die')
+            #print('die')
             return True
 
     @property
@@ -181,7 +191,7 @@ class Queen(Ant):
 
     def lay_eggs(self):
         if randint(0, 100) > 25 and self.colony.nest.food_stock > QUANTITY_FOOD_FOR_LAYING_EGG:
-            print('lay egg', len([ant for ant in self.colony.ant if ant.role == 'soldier']) < len([ant for ant in self.colony.ant if ant.role == 'worker']) * MAX_SOLDIER_FOR_WORKER / 100)
+            #print('lay egg', len([ant for ant in self.colony.ant if ant.role == 'soldier']) < len([ant for ant in self.colony.ant if ant.role == 'worker']) * MAX_SOLDIER_FOR_WORKER / 100)
             if len(self.colony.ant) > QUANTITY_ANT_FOR_LAYING_SOLDIER and len([ant for ant in self.colony.ant if ant.role == 'soldier']) < len([ant for ant in self.colony.ant if ant.role == 'worker']) * MAX_SOLDIER_FOR_WORKER / 100:
                 self.colony.ant = Worker(self.colony) if randint(0, 100) > 35 else Soldier(self.colony)
             else:
@@ -250,7 +260,8 @@ class Nest:
             #print('store food')
             self.food_stock += 4
         else:
-            print('food stock full')
+            #print('food stock full')
+            pass
 
     def upgrade(self):
         self.ant_capacity += NEST_EXPANSION_RATE
@@ -275,14 +286,14 @@ def start(colony, root, app, predators):
 
         if counter % 10 == 1:
             for predator in predators:
-                if colony.nest.level >= predator.min_nest_level and randint(0, 100) > predator.spawn_prob:
+                if colony.nest.level >= int(predator.min_nest_level) and randint(0, 100) > predator.spawn_prob:
                     colony.react_to_menace(predator)
                     break
 
-        print(counter, colony)
 
 
         app.update_display()
+        app.update_value(colony.info())
 
         root.after(100, lambda a=colony, b=root, c=app, d=predators: start(a, b, c, d))
 
@@ -297,6 +308,7 @@ def run():
     root = tk.Tk()
     root.geometry('1196x562')
     app = gui.AntSimulationApp(colony, root, 'img/resized')  # Initialize the GUI application with the colony
+
 
     start(colony, root, app, predators)
 

@@ -1,7 +1,9 @@
 import os
 import tkinter as tk
-from tkinter import PhotoImage, scrolledText
+from tkinter import PhotoImage, scrolledtext, Frame, Label
 import sys
+
+
 
 class AntSimulationApp:
     def __init__(self, colony, root, img_nest):
@@ -24,9 +26,72 @@ class AntSimulationApp:
         self.image_label = tk.Label(self.root)
         self.image_label.pack(side='right')
 
+        self.left_frame = Frame(root, width=40)
+        self.left_frame.pack(side='left', fill='both', expand=True)
+
+
+        self.info_box = Frame(self.left_frame, width=40, height=100)
+        self.info_box.pack()
+
+
+        self.nb_ant_var = tk.StringVar()
+        self.nb_ant_frame = Frame(self.info_box)
+        self.nb_ant_frame.pack()
+
+        self.nb_ant_text = Label(self.nb_ant_frame, text='Nombre de fourmi :')
+        self.nb_ant_text.pack(side='left')
+
+        self.nb_ant_label = Label(self.nb_ant_frame, textvariable=self.nb_ant_var)
+        self.nb_ant_label.pack(side='left')
+
+
+        self.nb_ant_worker_var = tk.StringVar()
+        self.nb_ant_worker_frame = Frame(self.info_box)
+        self.nb_ant_worker_frame.pack()
+
+        self.nb_ant_worker_text = Label(self.nb_ant_worker_frame, text="Nombre d'ouvrière:")
+        self.nb_ant_worker_text.pack(side='left')
+
+        self.nb_ant_worker_label = Label(self.nb_ant_worker_frame, textvariable=self.nb_ant_worker_var)
+        self.nb_ant_worker_label.pack(side='left')
+
+
+        self.nb_ant_soldier_var = tk.StringVar()
+        self.nb_ant_soldier_frame = Frame(self.info_box)
+        self.nb_ant_soldier_frame.pack()
+
+        self.nb_ant_soldier_text = Label(self.nb_ant_soldier_frame, text="Nombre de soldats:")
+        self.nb_ant_soldier_text.pack(side='left')
+
+        self.nb_ant_soldier_label = Label(self.nb_ant_soldier_frame, textvariable=self.nb_ant_soldier_var)
+        self.nb_ant_soldier_label.pack(side='left')
+
+
+        self.nest_food_stock_var = tk.StringVar()
+        self.nest_food_stock_frame = Frame(self.info_box)
+        self.nest_food_stock_frame.pack()
+
+        self.nest_food_stock_text = Label(self.nest_food_stock_frame, text='Quantité de nourriture :')
+        self.nest_food_stock_text.pack(side='left')
+
+        self.nest_food_stock_label = Label(self.nest_food_stock_frame, textvariable=self.nest_food_stock_var)
+        self.nest_food_stock_label.pack(side='left')
+
+
+        self.nest_level_var = tk.StringVar()
+        self.nest_level_frame = Frame(self.info_box)
+        self.nest_level_frame.pack()
+
+        self.nest_level_text = Label(self.nest_level_frame, text='Niveau du nid :')
+        self.nest_level_text.pack(side='left')
+
+        self.nest_level_label = Label(self.nest_level_frame, textvariable=self.nest_level_var)
+        self.nest_level_label.pack(side='left')
+
+
         # ScrolledText widget to display the simulation log
-        self.log_display = scrolledtext.ScrolledText(self.root, width=40, height=20)
-        self.log_display.pack(side='left', fill='both', expand=True)
+        self.log_display = scrolledtext.ScrolledText(self.left_frame, width=40, height=20)
+        self.log_display.pack(fill='both', expand=True)
 
         # Redirect standard output to the ScrolledText widget
         sys.stdout = TextRedirector(self.log_display)
@@ -42,6 +107,15 @@ class AntSimulationApp:
             self.image_label.config(image=self.images[current_level])
         elif current_level > len(self.images):
             pass
+
+
+    def update_value(self, info: tuple):
+        len_ant, nest_food_stock, nest_food_capacity, nest_level, nb_worker, nb_soldier = info
+        self.nb_ant_var.set(len_ant)
+        self.nest_food_stock_var.set(f'{nest_food_stock}/{nest_food_capacity}')
+        self.nest_level_var.set(nest_level)
+        self.nb_ant_worker_var.set(nb_worker)
+        self.nb_ant_soldier_var.set(nb_soldier)
 
 
 class TextRedirector:
