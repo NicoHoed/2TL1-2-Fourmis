@@ -1,6 +1,7 @@
 import os
 import tkinter as tk
-from tkinter import PhotoImage
+from tkinter import PhotoImage, scrolledText
+import sys
 
 class AntSimulationApp:
     def __init__(self, colony, root, img_nest):
@@ -23,6 +24,13 @@ class AntSimulationApp:
         self.image_label = tk.Label(self.root)
         self.image_label.pack(side='right')
 
+        # ScrolledText widget to display the simulation log
+        self.log_display = scrolledtext.ScrolledText(self.root, width=40, height=20)
+        self.log_display.pack(side='left', fill='both', expand=True)
+
+        # Redirect standard output to the ScrolledText widget
+        sys.stdout = TextRedirector(self.log_display)
+        
         # Start the simulation
         self.update_display()
         #self.run_simulation()  # Start the simulation immediately
@@ -35,6 +43,17 @@ class AntSimulationApp:
         elif current_level > len(self.images):
             pass
 
+
+class TextRedirector:
+    def __init__(self, widget):
+        self.widget = widget
+
+    def write(self, string):
+        self.widget.insert(tk.END, string)
+        self.widget.see(tk.END)
+
+    def flush(self):
+        pass
     #def run_simulation(self):
     #    """ Run the simulation loop. """
     #    if self.colony.live:
