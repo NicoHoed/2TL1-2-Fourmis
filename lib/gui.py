@@ -110,8 +110,8 @@ class AntSimulationApp:
 
 
     def update_value(self, info: tuple):
-        len_ant, nest_food_stock, nest_food_capacity, nest_level, nb_worker, nb_soldier = info
-        self.nb_ant_var.set(len_ant)
+        len_ant, ant_capacity, nest_food_stock, nest_food_capacity, nest_level, nb_worker, nb_soldier = info
+        self.nb_ant_var.set(f'{len_ant}/{ant_capacity}')
         self.nest_food_stock_var.set(f'{nest_food_stock}/{nest_food_capacity}')
         self.nest_level_var.set(nest_level)
         self.nb_ant_worker_var.set(nb_worker)

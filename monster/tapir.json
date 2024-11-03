@@ -1,0 +1,7 @@
+{
+    "name": "tapir",
+    "life": "200",
+    "min_nest_level": "4",
+    "spawn_prob": "40",
+    "power": "50"
+}

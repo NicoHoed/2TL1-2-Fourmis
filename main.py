@@ -4,7 +4,7 @@ from time import sleep
 import tkinter as tk
 
 
-from lib import monster, gui
+from lib import monster, gui, logger
 
 
 QUANTITY_FOOD_FOR_LAYING_EGG = 10
@@ -41,8 +41,10 @@ class Colony:
         if len(self.__ant) > self.__nest.ant_capacity - 10 and randint(0, 100) <= 10:
             self.__nest.upgrade()
 
-    def react_to_menace(self, menace) -> None:
-        print(f'a {menace.name} attack the colony')
+    def react_to_menace(self, menace) -> str:
+        text = f'a {menace.name} attack the colony\n'
+
+        #print(f'a {menace.name} attack the colony')
         isAlive = True
         menace_life = menace.life
         menace_power = menace.power
@@ -60,7 +62,8 @@ class Colony:
 
         self.__ant = [ant for ant in self.__ant if ant not in ants_to_remove]
 
-        print('the menace kill ', len(ants_to_remove), 'soldier')
+        #print('the menace kill ', len(ants_to_remove), 'soldier')
+        text += f'the menace kill {len(ants_to_remove)} soldier\n'
         ants_to_remove = []
 
         if isAlive:
@@ -75,10 +78,14 @@ class Colony:
 
         self.__ant = [ant for ant in self.__ant if ant not in ants_to_remove]
 
-        print('the menace kill ', len(ants_to_remove), 'worker')
+        #print('the menace kill ', len(ants_to_remove), 'worker')
+        text += f'the menace kill {len(ants_to_remove)} worker'
 
         if isAlive or len(self.__ant) == 0:
             self.destruct_nest()
+
+        print(text)
+        return text
 
 
 
@@ -99,7 +106,8 @@ class Colony:
         if self.__nest.ant_capacity > len(self.ant):
             self.__ant.append(new_ant)
         else:
-            print('no place for the new ant')
+            #print('no place for the new ant')
+            pass
 
 
     @property
@@ -118,7 +126,7 @@ class Colony:
                 nb_worker += 1
             elif ant.role == 'soldier':
                 nb_soldier += 1
-        return len(self.__ant), self.nest.food_stock, self.nest.food_capacity, self.nest.level, nb_worker, nb_soldier
+        return len(self.__ant), self.nest.ant_capacity, self.nest.food_stock, self.nest.food_capacity, self.nest.level, nb_worker, nb_soldier
 
     def __iter__(self):
         return iter(self.ant)
@@ -130,6 +138,16 @@ class Colony:
             if ant.role == 'worker': nb_worker += 1
             elif ant.role == 'soldier': nb_soldier += 1
         return f'nb ant: {len(self.__ant)}, food: {self.nest.food_stock}, nest level: {self.nest.level}, nb worker: {nb_worker}, nb soldier: {nb_soldier}'
+
+    def __repr__(self):
+        nb_worker = 0
+        nb_soldier = 0
+        for ant in self.ant:
+            if ant.role == 'worker':
+                nb_worker += 1
+            elif ant.role == 'soldier':
+                nb_soldier += 1
+        return f'nb ant: {len(self.__ant)}, food: {self.nest.food_stock}/{self.nest.food_capacity}, nest level: {self.nest.level}, nb worker: {nb_worker}, nb soldier: {nb_soldier}'
 
 
 class Ant:
@@ -193,9 +211,13 @@ class Queen(Ant):
         if randint(0, 100) > 25 and self.colony.nest.food_stock > QUANTITY_FOOD_FOR_LAYING_EGG:
             #print('lay egg', len([ant for ant in self.colony.ant if ant.role == 'soldier']) < len([ant for ant in self.colony.ant if ant.role == 'worker']) * MAX_SOLDIER_FOR_WORKER / 100)
             if len(self.colony.ant) > QUANTITY_ANT_FOR_LAYING_SOLDIER and len([ant for ant in self.colony.ant if ant.role == 'soldier']) < len([ant for ant in self.colony.ant if ant.role == 'worker']) * MAX_SOLDIER_FOR_WORKER / 100:
-                self.colony.ant = Worker(self.colony) if randint(0, 100) > 35 else Soldier(self.colony)
+                for x in range(int(self.colony.nest.level/2 if self.colony.nest.level > 1 else 1)):
+                    #print('lay egg')
+                    self.colony.ant = Worker(self.colony) if randint(0, 100) > 35 else Soldier(self.colony)
             else:
-                self.colony.ant = Worker(self.colony)
+                for x in range(int(self.colony.nest.level/2  if self.colony.nest.level > 1 else 1)):
+                    #print('lay egg')
+                    self.colony.ant = Worker(self.colony)
 
 
 class Worker(Ant):
@@ -270,7 +292,7 @@ class Nest:
 
 counter = 0
 
-def start(colony, root, app, predators):
+def start(colony, root, app, predators, logging):
     global counter
     if colony.live:
         counter += 1
@@ -286,16 +308,17 @@ def start(colony, root, app, predators):
 
         if counter % 10 == 1:
             for predator in predators:
-                if colony.nest.level >= int(predator.min_nest_level) and randint(0, 100) > predator.spawn_prob:
-                    colony.react_to_menace(predator)
+                if colony.nest.level >= predator.min_nest_level and randint(0, 100) > predator.spawn_prob:
+                    logging.log(f'#{counter} - {colony.react_to_menace(predator)}')
                     break
 
 
 
         app.update_display()
         app.update_value(colony.info())
+        logging.log(repr(colony))
 
-        root.after(100, lambda a=colony, b=root, c=app, d=predators: start(a, b, c, d))
+        root.after(100, lambda a=colony, b=root, c=app, d=predators, e=logging: start(a, b, c, d, e))
 
 def run():
     predators = []
@@ -305,14 +328,17 @@ def run():
     [print(x) for x in predators]
     colony = Colony()
 
-    root = tk.Tk()
-    root.geometry('1196x562')
-    app = gui.AntSimulationApp(colony, root, 'img/resized')  # Initialize the GUI application with the colony
+    logging = logger.Logger('log')
+    if logging.ready:
+
+        root = tk.Tk()
+        root.geometry('1196x562')
+        app = gui.AntSimulationApp(colony, root, 'img/resized')  # Initialize the GUI application with the colony
 
 
-    start(colony, root, app, predators)
+        start(colony, root, app, predators, logging)
 
-    root.mainloop()
+        root.mainloop()
 
 
 

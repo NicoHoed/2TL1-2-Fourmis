@@ -1,3 +1,3 @@
-from . import monster, gui
+from . import monster, gui, logger
 
-__all__ = ['monster', 'gui']
+__all__ = ['monster', 'gui', 'logger']

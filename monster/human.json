@@ -1,0 +1,7 @@
+{
+    "name": "human",
+    "life": "500",
+    "min_nest_level": "6",
+    "spawn_prob": "15",
+    "power": "100"
+}
