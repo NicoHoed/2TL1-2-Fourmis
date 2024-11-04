@@ -9,143 +9,6 @@ from config import *
 
 
 
-
-
-class Colony:
-    """
-    a class for representing a Colony
-    """
-
-    def __init__(self, ct_ant=1, food_stock=NEST_START_FOOD_STOCK, nest_capacity=NEST_START_CAPACITY):
-        self.__ant = []
-        self.__nest = Nest(nest_capacity, food_stock)
-        self.__queen = Queen(self)
-
-        self.__live = True
-
-        for x in range(ct_ant - 1):
-            self.ant.append(Worker(self))
-
-    def manage_ressources(self):
-        for ant in self.__ant:
-            self.__nest.food_stock -= 1 if ant.role == 'worker' else 3  # for worker or soldier
-        self.__nest.food_stock -= 5  # for queen
-        if self.__nest.food_stock < 0:
-            self.destruct_nest()
-
-    def manage_expansion_nest(self):
-        if len(self.__ant) > self.__nest.ant_capacity - 10 and randint(0, 100) <= 10:
-            self.__nest.upgrade()
-
-    def react_to_menace(self, menace) -> str:
-        text = f'a {menace.name} attack the colony\n'
-
-        #print(f'a {menace.name} attack the colony')
-        isAlive = True
-        menace_life = menace.life
-        menace_power = menace.power
-
-        ants_to_remove = []
-
-        for ant in self.__ant:
-            if ant.role == 'soldier':
-                menace_life -= SOLDIER_DAMAGE
-                if randint(0, 100) < menace_power / 3:
-                    ants_to_remove.append(ant)
-                if menace_life <= 0:
-                    isAlive = False
-                    break
-
-        self.__ant = [ant for ant in self.__ant if ant not in ants_to_remove]
-
-        #print('the menace kill ', len(ants_to_remove), 'soldier')
-        text += f'the menace kill {len(ants_to_remove)} soldier\n'
-        ants_to_remove = []
-
-        if isAlive:
-            for ant in self.__ant:
-                if ant.role == 'worker':
-                    menace_life -= WORKER_DAMAGE
-                    if randint(0, 100) < menace_power:
-                        ants_to_remove.append(ant)
-                    if menace_life <= 0:
-                        isAlive = False
-                        break
-
-        self.__ant = [ant for ant in self.__ant if ant not in ants_to_remove]
-
-        #print('the menace kill ', len(ants_to_remove), 'worker')
-        text += f'the menace kill {len(ants_to_remove)} worker'
-
-        if isAlive or len(self.__ant) == 0:
-            self.destruct_nest()
-
-        print(text)
-        return text
-
-
-
-    def destruct_nest(self):
-        print('YOU LOSE')
-        self.__live = False
-
-    @property
-    def live(self):
-        return self.__live
-
-    @property
-    def ant(self):
-        return self.__ant
-
-    @ant.setter
-    def ant(self, new_ant):
-        if self.__nest.ant_capacity > len(self.ant):
-            self.__ant.append(new_ant)
-        else:
-            #print('no place for the new ant')
-            pass
-
-
-    @property
-    def queen(self):
-        return self.__queen
-
-    @property
-    def nest(self):
-        return self.__nest
-
-    def info(self):
-        nb_worker = 0
-        nb_soldier = 0
-        for ant in self.ant:
-            if ant.role == 'worker':
-                nb_worker += 1
-            elif ant.role == 'soldier':
-                nb_soldier += 1
-        return len(self.__ant), self.nest.ant_capacity, self.nest.food_stock, self.nest.food_capacity, self.nest.level, nb_worker, nb_soldier
-
-    def __iter__(self):
-        return iter(self.ant)
-
-    def __str__(self):
-        nb_worker = 0
-        nb_soldier = 0
-        for ant in self.ant:
-            if ant.role == 'worker': nb_worker += 1
-            elif ant.role == 'soldier': nb_soldier += 1
-        return f'nb ant: {len(self.__ant)}, food: {self.nest.food_stock}, nest level: {self.nest.level}, nb worker: {nb_worker}, nb soldier: {nb_soldier}'
-
-    def __repr__(self):
-        nb_worker = 0
-        nb_soldier = 0
-        for ant in self.ant:
-            if ant.role == 'worker':
-                nb_worker += 1
-            elif ant.role == 'soldier':
-                nb_soldier += 1
-        return f'nb ant: {len(self.__ant)}, food: {self.nest.food_stock}/{self.nest.food_capacity}, nest level: {self.nest.level}, nb worker: {nb_worker}, nb soldier: {nb_soldier}'
-
-
 class Ant:
     """
     a class for representing an Ant
@@ -192,6 +55,7 @@ class Ant:
 
     def __str__(self):
         return self.role
+
 
 
 class Queen(Ant):
@@ -286,9 +150,147 @@ class Nest:
         self.food_capacity += NEST_EXPANSION_RATE*2
         self.level += 1
 
+
+
+class Colony:
+    """
+    a class for representing a Colony
+    """
+
+    def __init__(self, ct_ant=1, food_stock=NEST_START_FOOD_STOCK, nest_capacity=NEST_START_CAPACITY):
+        self.__ant = []
+        self.__nest = Nest(nest_capacity, food_stock)
+        self.__queen = Queen(self)
+
+        self.__live = True
+
+        for x in range(ct_ant - 1):
+            self.ant.append(Worker(self))
+
+    def manage_ressources(self) -> None:
+        for ant in self.__ant:
+            self.__nest.food_stock -= 1 if ant.role == 'worker' else 3  # for worker or soldier
+        self.__nest.food_stock -= 5  # for queen
+        if self.__nest.food_stock < 0:
+            self.destruct_nest()
+
+    def manage_expansion_nest(self) -> None:
+        if len(self.__ant) > self.__nest.ant_capacity - 10 and randint(0, 100) <= 10:
+            self.__nest.upgrade()
+
+    def react_to_menace(self, menace: monster.Monster) -> str:
+        text = f'a {menace.name} attack the colony\n'
+
+        #print(f'a {menace.name} attack the colony')
+        isAlive = True
+        menace_life = menace.life
+        menace_power = menace.power
+
+        ants_to_remove = []
+
+        for ant in self.__ant:
+            if ant.role == 'soldier':
+                menace_life -= SOLDIER_DAMAGE
+                if randint(0, 100) < menace_power / 3:
+                    ants_to_remove.append(ant)
+                if menace_life <= 0:
+                    isAlive = False
+                    break
+
+        self.__ant = [ant for ant in self.__ant if ant not in ants_to_remove]
+
+        #print('the menace kill ', len(ants_to_remove), 'soldier')
+        text += f'the menace kill {len(ants_to_remove)} soldier\n'
+        ants_to_remove = []
+
+        if isAlive:
+            for ant in self.__ant:
+                if ant.role == 'worker':
+                    menace_life -= WORKER_DAMAGE
+                    if randint(0, 100) < menace_power:
+                        ants_to_remove.append(ant)
+                    if menace_life <= 0:
+                        isAlive = False
+                        break
+
+        self.__ant = [ant for ant in self.__ant if ant not in ants_to_remove]
+
+        #print('the menace kill ', len(ants_to_remove), 'worker')
+        text += f'the menace kill {len(ants_to_remove)} worker'
+
+        if isAlive or len(self.__ant) == 0:
+            self.destruct_nest()
+
+        print(text)
+        return text
+
+
+
+    def destruct_nest(self) -> None:
+        print('YOU LOSE')
+        self.__live = False
+
+    @property
+    def live(self) -> int:
+        return self.__live
+
+    @property
+    def ant(self) -> list:
+        return self.__ant
+
+    @ant.setter
+    def ant(self, new_ant: Ant) -> None:
+        if self.__nest.ant_capacity > len(self.ant):
+            self.__ant.append(new_ant)
+        else:
+            #print('no place for the new ant')
+            pass
+
+
+    @property
+    def queen(self) -> Queen:
+        return self.__queen
+
+    @property
+    def nest(self) -> Nest:
+        return self.__nest
+
+    def info(self) -> tuple:
+        nb_worker = 0
+        nb_soldier = 0
+        for ant in self.ant:
+            if ant.role == 'worker':
+                nb_worker += 1
+            elif ant.role == 'soldier':
+                nb_soldier += 1
+        return len(self.__ant), self.nest.ant_capacity, self.nest.food_stock, self.nest.food_capacity, self.nest.level, nb_worker, nb_soldier
+
+    def __iter__(self) -> iter:
+        return iter(self.ant)
+
+    def __str__(self) -> str:
+        nb_worker = 0
+        nb_soldier = 0
+        for ant in self.ant:
+            if ant.role == 'worker': nb_worker += 1
+            elif ant.role == 'soldier': nb_soldier += 1
+        return f'nb ant: {len(self.__ant)}, food: {self.nest.food_stock}, nest level: {self.nest.level}, nb worker: {nb_worker}, nb soldier: {nb_soldier}'
+
+    def __repr__(self) -> str:
+        nb_worker = 0
+        nb_soldier = 0
+        for ant in self.ant:
+            if ant.role == 'worker':
+                nb_worker += 1
+            elif ant.role == 'soldier':
+                nb_soldier += 1
+        return f'nb ant: {len(self.__ant)}, food: {self.nest.food_stock}/{self.nest.food_capacity}, nest level: {self.nest.level}, nb worker: {nb_worker}, nb soldier: {nb_soldier}'
+
+
+
 counter = 0
 
-def start(colony, root, app, predators, logging):
+def start(colony: Colony, root: tk.Tk, app: gui.AntSimulationApp, predators: list[monster.Monster], logging: logger.Logger) -> None:
     global counter
     if colony.live:
         counter += 1
@@ -314,9 +316,10 @@ def start(colony, root, app, predators, logging):
         app.update_value(colony.info())
         logging.log(repr(colony))
 
-        root.after(100, lambda a=colony, b=root, c=app, d=predators, e=logging: start(a, b, c, d, e))
+        #root.after(100, lambda a=colony, b=root, c=app, d=predators, e=logging: start(a, b, c, d, e))
+        root.after(100, start, colony, root, app, predators, logging)
 
-def run():
+def run() -> None:
     predators = []
     for x in os.listdir('monster'):
         predators.append(monster.Monster(x))

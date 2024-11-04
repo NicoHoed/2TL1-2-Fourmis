@@ -24,7 +24,7 @@ class AntSimulationApp:
         self.images = {}
         image = os.listdir(img_nest)
         for x in range(len(image)):
-            self.images[x+1] = PhotoImage(file=os.path.join(img_nest, image[x]))
+            self.images[x+1] = PhotoImage(file=os.path.join(img_nest, f'{x + 1}.png'))
             #print(os.path.join(img_nest, image[x]))
 
 
