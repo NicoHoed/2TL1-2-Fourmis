@@ -322,7 +322,7 @@ def start(colony: Colony, root: tk.Tk, app: gui.AntSimulationApp, predators: lis
 def run() -> None:
     predators = []
     for x in os.listdir('monster'):
-        predators.append(monster.Monster(x))
+        predators.append(monster.Monster(x)) if x.endswith('.json') else None
 
     [print(x) for x in predators]
     colony = Colony()

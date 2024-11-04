@@ -42,7 +42,7 @@ def update_monster_json(directory: str, file: str) -> None:
     needRewrite = False
     for key in keys:
         if key not in monster_data:
-            new_value = input(f'the "{key}" fields is empty, new value: ')
+            new_value = input(f'the monster {monster_data['name']} as the "{key}" fields is empty, new value: ')
             try:
                 new_value = int(new_value)
 
@@ -69,7 +69,7 @@ def update_monster_json(directory: str, file: str) -> None:
 
 if __name__ == '__main__':
 
-    create_monster('../monster')
+    #create_monster('../monster')
 
     for predator in listdir('../monster'):
         print('working on', predator)

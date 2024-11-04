@@ -1,0 +1,7 @@
+{
+    "name": "colony",
+    "life": 250,
+    "min_nest_level": 3,
+    "spawn_prob": 10,
+    "power": 80
+}
