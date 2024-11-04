@@ -16,10 +16,10 @@ class AntSimulationApp:
         # Load images for different colony levels
         # Adjust the path to be relative from the current script location
         #self.images = {
-        #    1: PhotoImage(file=os.path.join(img_nest, 'nestLVL1.png')),
-        #    2: PhotoImage(file=os.path.join(img_nest, 'nestLVL2.png')),
-        #    3: PhotoImage(file=os.path.join(img_nest, 'nestLVL3.png')),
-        #    4: PhotoImage(file=os.path.join(img_nest, 'nestLVL4.png')),
+        #    1: PhotoImage(file=os.path.join(img_nest, '1.png')),
+        #    2: PhotoImage(file=os.path.join(img_nest, '2.png')),
+        #    3: PhotoImage(file=os.path.join(img_nest, '3.png')),
+        #    4: PhotoImage(file=os.path.join(img_nest, '4.png')),
         #}
         self.images = {}
         image = os.listdir(img_nest)
