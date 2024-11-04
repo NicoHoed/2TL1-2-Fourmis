@@ -15,12 +15,18 @@ class AntSimulationApp:
 
         # Load images for different colony levels
         # Adjust the path to be relative from the current script location
-        self.images = {
-            1: PhotoImage(file=os.path.join(img_nest, 'nestLVL1.png')),
-            2: PhotoImage(file=os.path.join(img_nest, 'nestLVL2.png')),
-            3: PhotoImage(file=os.path.join(img_nest, 'nestLVL3.png')),
-            4: PhotoImage(file=os.path.join(img_nest, 'nestLVL4.png')),
-        }
+        #self.images = {
+        #    1: PhotoImage(file=os.path.join(img_nest, 'nestLVL1.png')),
+        #    2: PhotoImage(file=os.path.join(img_nest, 'nestLVL2.png')),
+        #    3: PhotoImage(file=os.path.join(img_nest, 'nestLVL3.png')),
+        #    4: PhotoImage(file=os.path.join(img_nest, 'nestLVL4.png')),
+        #}
+        self.images = {}
+        image = os.listdir(img_nest)
+        for x in range(len(image)):
+            self.images[x+1] = PhotoImage(file=os.path.join(img_nest, image[x]))
+            #print(os.path.join(img_nest, image[x]))
+
 
         # Label to display the current colony image
         self.image_label = tk.Label(self.root)
@@ -121,13 +127,26 @@ class AntSimulationApp:
 class TextRedirector:
     def __init__(self, widget):
         self.widget = widget
+        self.line_counter = 0  # Track the current line number
+
+        # Define tags with alternating background colors
+        self.widget.tag_configure("white_bg", background="white")
+        self.widget.tag_configure("gray_bg", background="lightgray")
 
     def write(self, string):
-        self.widget.insert(tk.END, string)
+
+        tag = "white_bg" if self.line_counter % 2 == 0 else "gray_bg"
+
+        self.widget.insert(tk.END, string, tag)
+
+        if string.endswith('\n'):
+            self.line_counter += 1
+
         self.widget.see(tk.END)
 
     def flush(self):
         pass
+
     #def run_simulation(self):
     #    """ Run the simulation loop. """
     #    if self.colony.live:

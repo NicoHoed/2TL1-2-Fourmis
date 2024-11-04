@@ -5,14 +5,10 @@ import tkinter as tk
 
 
 from lib import monster, gui, logger
+from config import *
 
 
-QUANTITY_FOOD_FOR_LAYING_EGG = 10
-QUANTITY_ANT_FOR_LAYING_SOLDIER = 50
-NEST_EXPANSION_RATE = 100
-NEST_START_FOOD_STOCK = 50
-NEST_START_CAPACITY = 15
-MAX_SOLDIER_FOR_WORKER = 50 # 0...100 the max soldier per worker in %
+
 
 
 class Colony:
@@ -333,7 +329,7 @@ def run():
 
         root = tk.Tk()
         root.geometry('1196x562')
-        app = gui.AntSimulationApp(colony, root, 'img/resized')  # Initialize the GUI application with the colony
+        app = gui.AntSimulationApp(colony, root, os.path.join('img', "resized"))  # Initialize the GUI application with the colony
 
 
         start(colony, root, app, predators, logging)
