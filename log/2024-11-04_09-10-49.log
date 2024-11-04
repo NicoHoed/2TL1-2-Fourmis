@@ -1,0 +1,2702 @@
+nb ant: 1, food: 44/50, nest level: 1, nb worker: 1, nb soldier: 0
+nb ant: 2, food: 45/50, nest level: 1, nb worker: 2, nb soldier: 0
+nb ant: 2, food: 46/50, nest level: 1, nb worker: 2, nb soldier: 0
+nb ant: 2, food: 43/50, nest level: 1, nb worker: 2, nb soldier: 0
+nb ant: 3, food: 43/50, nest level: 1, nb worker: 3, nb soldier: 0
+nb ant: 4, food: 42/50, nest level: 1, nb worker: 4, nb soldier: 0
+nb ant: 5, food: 40/50, nest level: 1, nb worker: 5, nb soldier: 0
+nb ant: 5, food: 42/50, nest level: 1, nb worker: 5, nb soldier: 0
+nb ant: 6, food: 39/50, nest level: 1, nb worker: 6, nb soldier: 0
+nb ant: 7, food: 39/50, nest level: 1, nb worker: 7, nb soldier: 0
+nb ant: 7, food: 39/50, nest level: 1, nb worker: 7, nb soldier: 0
+nb ant: 8, food: 38/50, nest level: 1, nb worker: 8, nb soldier: 0
+nb ant: 9, food: 36/50, nest level: 1, nb worker: 9, nb soldier: 0
+nb ant: 10, food: 37/50, nest level: 1, nb worker: 10, nb soldier: 0
+nb ant: 10, food: 38/50, nest level: 1, nb worker: 10, nb soldier: 0
+nb ant: 11, food: 34/50, nest level: 1, nb worker: 11, nb soldier: 0
+nb ant: 11, food: 34/50, nest level: 1, nb worker: 11, nb soldier: 0
+nb ant: 12, food: 33/50, nest level: 1, nb worker: 12, nb soldier: 0
+nb ant: 13, food: 35/50, nest level: 1, nb worker: 13, nb soldier: 0
+nb ant: 14, food: 32/50, nest level: 1, nb worker: 14, nb soldier: 0
+nb ant: 15, food: 32/50, nest level: 1, nb worker: 15, nb soldier: 0
+nb ant: 15, food: 32/250, nest level: 2, nb worker: 15, nb soldier: 0
+nb ant: 16, food: 71/250, nest level: 2, nb worker: 16, nb soldier: 0
+nb ant: 17, food: 105/250, nest level: 2, nb worker: 17, nb soldier: 0
+nb ant: 18, food: 142/250, nest level: 2, nb worker: 18, nb soldier: 0
+nb ant: 19, food: 186/250, nest level: 2, nb worker: 19, nb soldier: 0
+nb ant: 20, food: 225/250, nest level: 2, nb worker: 20, nb soldier: 0
+nb ant: 21, food: 227/250, nest level: 2, nb worker: 21, nb soldier: 0
+nb ant: 22, food: 224/250, nest level: 2, nb worker: 22, nb soldier: 0
+nb ant: 23, food: 224/250, nest level: 2, nb worker: 23, nb soldier: 0
+#31 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 23, food: 224/250, nest level: 2, nb worker: 23, nb soldier: 0
+nb ant: 24, food: 223/250, nest level: 2, nb worker: 24, nb soldier: 0
+nb ant: 25, food: 221/250, nest level: 2, nb worker: 25, nb soldier: 0
+nb ant: 26, food: 222/250, nest level: 2, nb worker: 26, nb soldier: 0
+nb ant: 27, food: 218/250, nest level: 2, nb worker: 27, nb soldier: 0
+nb ant: 28, food: 217/250, nest level: 2, nb worker: 28, nb soldier: 0
+nb ant: 28, food: 220/250, nest level: 2, nb worker: 28, nb soldier: 0
+nb ant: 29, food: 218/250, nest level: 2, nb worker: 29, nb soldier: 0
+nb ant: 30, food: 215/250, nest level: 2, nb worker: 30, nb soldier: 0
+nb ant: 30, food: 216/250, nest level: 2, nb worker: 30, nb soldier: 0
+#41 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 2 worker
+nb ant: 29, food: 216/250, nest level: 2, nb worker: 29, nb soldier: 0
+nb ant: 30, food: 217/250, nest level: 2, nb worker: 30, nb soldier: 0
+nb ant: 31, food: 217/250, nest level: 2, nb worker: 31, nb soldier: 0
+nb ant: 32, food: 216/250, nest level: 2, nb worker: 32, nb soldier: 0
+nb ant: 33, food: 214/250, nest level: 2, nb worker: 33, nb soldier: 0
+nb ant: 34, food: 211/250, nest level: 2, nb worker: 34, nb soldier: 0
+nb ant: 34, food: 212/250, nest level: 2, nb worker: 34, nb soldier: 0
+nb ant: 35, food: 212/250, nest level: 2, nb worker: 35, nb soldier: 0
+nb ant: 36, food: 211/250, nest level: 2, nb worker: 36, nb soldier: 0
+nb ant: 36, food: 210/250, nest level: 2, nb worker: 36, nb soldier: 0
+#51 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 37, food: 208/250, nest level: 2, nb worker: 37, nb soldier: 0
+nb ant: 38, food: 209/250, nest level: 2, nb worker: 38, nb soldier: 0
+nb ant: 39, food: 209/250, nest level: 2, nb worker: 39, nb soldier: 0
+nb ant: 39, food: 209/250, nest level: 2, nb worker: 39, nb soldier: 0
+nb ant: 40, food: 208/250, nest level: 2, nb worker: 40, nb soldier: 0
+nb ant: 40, food: 207/250, nest level: 2, nb worker: 40, nb soldier: 0
+nb ant: 41, food: 205/250, nest level: 2, nb worker: 41, nb soldier: 0
+nb ant: 41, food: 207/250, nest level: 2, nb worker: 41, nb soldier: 0
+nb ant: 42, food: 204/250, nest level: 2, nb worker: 42, nb soldier: 0
+nb ant: 43, food: 204/250, nest level: 2, nb worker: 43, nb soldier: 0
+#61 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 1 worker
+nb ant: 43, food: 203/250, nest level: 2, nb worker: 43, nb soldier: 0
+nb ant: 44, food: 202/250, nest level: 2, nb worker: 44, nb soldier: 0
+nb ant: 45, food: 200/250, nest level: 2, nb worker: 45, nb soldier: 0
+nb ant: 46, food: 201/250, nest level: 2, nb worker: 46, nb soldier: 0
+nb ant: 47, food: 201/250, nest level: 2, nb worker: 47, nb soldier: 0
+nb ant: 48, food: 200/250, nest level: 2, nb worker: 48, nb soldier: 0
+nb ant: 48, food: 199/250, nest level: 2, nb worker: 48, nb soldier: 0
+nb ant: 48, food: 198/250, nest level: 2, nb worker: 48, nb soldier: 0
+nb ant: 49, food: 196/250, nest level: 2, nb worker: 49, nb soldier: 0
+nb ant: 50, food: 197/250, nest level: 2, nb worker: 50, nb soldier: 0
+#71 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 51, food: 197/250, nest level: 2, nb worker: 51, nb soldier: 0
+nb ant: 51, food: 197/250, nest level: 2, nb worker: 51, nb soldier: 0
+nb ant: 51, food: 197/250, nest level: 2, nb worker: 51, nb soldier: 0
+nb ant: 52, food: 196/250, nest level: 2, nb worker: 52, nb soldier: 0
+nb ant: 52, food: 195/250, nest level: 2, nb worker: 52, nb soldier: 0
+nb ant: 53, food: 193/250, nest level: 2, nb worker: 53, nb soldier: 0
+nb ant: 54, food: 194/250, nest level: 2, nb worker: 54, nb soldier: 0
+nb ant: 55, food: 190/250, nest level: 2, nb worker: 55, nb soldier: 0
+nb ant: 55, food: 190/250, nest level: 2, nb worker: 55, nb soldier: 0
+nb ant: 56, food: 189/250, nest level: 2, nb worker: 56, nb soldier: 0
+#81 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 57, food: 189/250, nest level: 2, nb worker: 56, nb soldier: 1
+nb ant: 58, food: 188/250, nest level: 2, nb worker: 57, nb soldier: 1
+nb ant: 58, food: 187/250, nest level: 2, nb worker: 57, nb soldier: 1
+nb ant: 59, food: 185/250, nest level: 2, nb worker: 58, nb soldier: 1
+nb ant: 60, food: 186/250, nest level: 2, nb worker: 59, nb soldier: 1
+nb ant: 61, food: 182/250, nest level: 2, nb worker: 60, nb soldier: 1
+nb ant: 62, food: 179/250, nest level: 2, nb worker: 60, nb soldier: 2
+nb ant: 62, food: 180/250, nest level: 2, nb worker: 60, nb soldier: 2
+nb ant: 62, food: 181/250, nest level: 2, nb worker: 60, nb soldier: 2
+nb ant: 62, food: 182/250, nest level: 2, nb worker: 60, nb soldier: 2
+#91 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 63, food: 178/250, nest level: 2, nb worker: 61, nb soldier: 2
+nb ant: 64, food: 175/250, nest level: 2, nb worker: 61, nb soldier: 3
+nb ant: 64, food: 176/250, nest level: 2, nb worker: 61, nb soldier: 3
+nb ant: 64, food: 177/250, nest level: 2, nb worker: 61, nb soldier: 3
+nb ant: 65, food: 175/250, nest level: 2, nb worker: 61, nb soldier: 4
+nb ant: 66, food: 170/250, nest level: 2, nb worker: 61, nb soldier: 5
+nb ant: 67, food: 168/250, nest level: 2, nb worker: 62, nb soldier: 5
+nb ant: 68, food: 169/250, nest level: 2, nb worker: 63, nb soldier: 5
+nb ant: 69, food: 167/250, nest level: 2, nb worker: 63, nb soldier: 6
+nb ant: 70, food: 162/250, nest level: 2, nb worker: 63, nb soldier: 7
+#101 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 71, food: 160/250, nest level: 2, nb worker: 64, nb soldier: 7
+nb ant: 72, food: 159/250, nest level: 2, nb worker: 64, nb soldier: 8
+nb ant: 73, food: 155/250, nest level: 2, nb worker: 64, nb soldier: 9
+nb ant: 74, food: 154/250, nest level: 2, nb worker: 65, nb soldier: 9
+nb ant: 74, food: 153/250, nest level: 2, nb worker: 65, nb soldier: 9
+nb ant: 75, food: 153/250, nest level: 2, nb worker: 65, nb soldier: 10
+nb ant: 76, food: 150/250, nest level: 2, nb worker: 65, nb soldier: 11
+nb ant: 76, food: 147/250, nest level: 2, nb worker: 65, nb soldier: 11
+nb ant: 76, food: 148/250, nest level: 2, nb worker: 65, nb soldier: 11
+nb ant: 77, food: 148/250, nest level: 2, nb worker: 66, nb soldier: 11
+#111 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 78, food: 147/250, nest level: 2, nb worker: 67, nb soldier: 11
+nb ant: 79, food: 145/250, nest level: 2, nb worker: 68, nb soldier: 11
+nb ant: 79, food: 147/250, nest level: 2, nb worker: 68, nb soldier: 11
+nb ant: 79, food: 145/250, nest level: 2, nb worker: 68, nb soldier: 11
+nb ant: 80, food: 146/250, nest level: 2, nb worker: 69, nb soldier: 11
+nb ant: 81, food: 142/250, nest level: 2, nb worker: 70, nb soldier: 11
+nb ant: 81, food: 142/250, nest level: 2, nb worker: 70, nb soldier: 11
+nb ant: 82, food: 141/250, nest level: 2, nb worker: 71, nb soldier: 11
+nb ant: 83, food: 143/250, nest level: 2, nb worker: 72, nb soldier: 11
+nb ant: 84, food: 138/250, nest level: 2, nb worker: 72, nb soldier: 12
+nb ant: 84, food: 137/250, nest level: 2, nb worker: 72, nb soldier: 12
+nb ant: 85, food: 139/250, nest level: 2, nb worker: 73, nb soldier: 12
+nb ant: 86, food: 136/250, nest level: 2, nb worker: 74, nb soldier: 12
+nb ant: 86, food: 137/250, nest level: 2, nb worker: 74, nb soldier: 12
+nb ant: 87, food: 137/250, nest level: 2, nb worker: 75, nb soldier: 12
+nb ant: 87, food: 137/250, nest level: 2, nb worker: 75, nb soldier: 12
+nb ant: 88, food: 136/250, nest level: 2, nb worker: 76, nb soldier: 12
+nb ant: 89, food: 132/250, nest level: 2, nb worker: 76, nb soldier: 13
+nb ant: 90, food: 131/250, nest level: 2, nb worker: 77, nb soldier: 13
+nb ant: 91, food: 129/250, nest level: 2, nb worker: 78, nb soldier: 13
+#131 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 92, food: 130/250, nest level: 2, nb worker: 79, nb soldier: 13
+nb ant: 93, food: 126/250, nest level: 2, nb worker: 80, nb soldier: 13
+nb ant: 93, food: 126/250, nest level: 2, nb worker: 80, nb soldier: 13
+nb ant: 93, food: 126/250, nest level: 2, nb worker: 80, nb soldier: 13
+nb ant: 93, food: 126/250, nest level: 2, nb worker: 80, nb soldier: 13
+nb ant: 94, food: 123/250, nest level: 2, nb worker: 80, nb soldier: 14
+nb ant: 95, food: 123/250, nest level: 2, nb worker: 81, nb soldier: 14
+nb ant: 96, food: 122/250, nest level: 2, nb worker: 82, nb soldier: 14
+nb ant: 96, food: 121/250, nest level: 2, nb worker: 82, nb soldier: 14
+nb ant: 97, food: 123/250, nest level: 2, nb worker: 83, nb soldier: 14
+#141 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 98, food: 120/250, nest level: 2, nb worker: 84, nb soldier: 14
+nb ant: 98, food: 121/250, nest level: 2, nb worker: 84, nb soldier: 14
+nb ant: 99, food: 121/250, nest level: 2, nb worker: 85, nb soldier: 14
+nb ant: 100, food: 120/250, nest level: 2, nb worker: 86, nb soldier: 14
+nb ant: 100, food: 119/250, nest level: 2, nb worker: 86, nb soldier: 14
+nb ant: 101, food: 115/250, nest level: 2, nb worker: 86, nb soldier: 15
+nb ant: 100, food: 116/250, nest level: 2, nb worker: 85, nb soldier: 15
+nb ant: 101, food: 114/250, nest level: 2, nb worker: 85, nb soldier: 16
+nb ant: 102, food: 111/250, nest level: 2, nb worker: 86, nb soldier: 16
+nb ant: 103, food: 111/250, nest level: 2, nb worker: 87, nb soldier: 16
+nb ant: 103, food: 111/250, nest level: 2, nb worker: 87, nb soldier: 16
+nb ant: 102, food: 112/250, nest level: 2, nb worker: 86, nb soldier: 16
+nb ant: 103, food: 112/250, nest level: 2, nb worker: 87, nb soldier: 16
+nb ant: 104, food: 109/250, nest level: 2, nb worker: 87, nb soldier: 17
+nb ant: 105, food: 107/250, nest level: 2, nb worker: 87, nb soldier: 18
+nb ant: 106, food: 104/250, nest level: 2, nb worker: 88, nb soldier: 18
+nb ant: 107, food: 104/250, nest level: 2, nb worker: 89, nb soldier: 18
+nb ant: 108, food: 103/250, nest level: 2, nb worker: 90, nb soldier: 18
+nb ant: 109, food: 101/250, nest level: 2, nb worker: 91, nb soldier: 18
+nb ant: 110, food: 100/250, nest level: 2, nb worker: 91, nb soldier: 19
+#161 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 110, food: 99/250, nest level: 2, nb worker: 91, nb soldier: 19
+nb ant: 111, food: 97/450, nest level: 3, nb worker: 92, nb soldier: 19
+nb ant: 112, food: 282/450, nest level: 3, nb worker: 93, nb soldier: 19
+nb ant: 113, food: 294/450, nest level: 3, nb worker: 94, nb soldier: 19
+nb ant: 113, food: 294/450, nest level: 3, nb worker: 94, nb soldier: 19
+nb ant: 113, food: 294/450, nest level: 3, nb worker: 94, nb soldier: 19
+nb ant: 113, food: 294/450, nest level: 3, nb worker: 94, nb soldier: 19
+nb ant: 114, food: 293/450, nest level: 3, nb worker: 95, nb soldier: 19
+nb ant: 115, food: 295/450, nest level: 3, nb worker: 96, nb soldier: 19
+nb ant: 116, food: 292/450, nest level: 3, nb worker: 97, nb soldier: 19
+#171 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 116, food: 293/450, nest level: 3, nb worker: 97, nb soldier: 19
+nb ant: 117, food: 293/450, nest level: 3, nb worker: 98, nb soldier: 19
+nb ant: 118, food: 290/450, nest level: 3, nb worker: 98, nb soldier: 20
+nb ant: 118, food: 287/450, nest level: 3, nb worker: 98, nb soldier: 20
+nb ant: 118, food: 288/450, nest level: 3, nb worker: 98, nb soldier: 20
+nb ant: 118, food: 289/450, nest level: 3, nb worker: 98, nb soldier: 20
+nb ant: 119, food: 287/450, nest level: 3, nb worker: 98, nb soldier: 21
+nb ant: 120, food: 284/450, nest level: 3, nb worker: 99, nb soldier: 21
+nb ant: 121, food: 284/450, nest level: 3, nb worker: 100, nb soldier: 21
+nb ant: 122, food: 281/450, nest level: 3, nb worker: 100, nb soldier: 22
+#181 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 123, food: 281/450, nest level: 3, nb worker: 101, nb soldier: 22
+nb ant: 124, food: 278/450, nest level: 3, nb worker: 101, nb soldier: 23
+nb ant: 125, food: 274/450, nest level: 3, nb worker: 102, nb soldier: 23
+nb ant: 125, food: 274/450, nest level: 3, nb worker: 102, nb soldier: 23
+nb ant: 125, food: 274/450, nest level: 3, nb worker: 102, nb soldier: 23
+nb ant: 126, food: 271/450, nest level: 3, nb worker: 102, nb soldier: 24
+nb ant: 126, food: 272/450, nest level: 3, nb worker: 102, nb soldier: 24
+nb ant: 127, food: 270/450, nest level: 3, nb worker: 102, nb soldier: 25
+nb ant: 128, food: 267/450, nest level: 3, nb worker: 103, nb soldier: 25
+nb ant: 127, food: 269/450, nest level: 3, nb worker: 102, nb soldier: 25
+#191 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 127, food: 271/450, nest level: 3, nb worker: 102, nb soldier: 25
+nb ant: 128, food: 268/450, nest level: 3, nb worker: 103, nb soldier: 25
+nb ant: 128, food: 269/450, nest level: 3, nb worker: 103, nb soldier: 25
+nb ant: 129, food: 269/450, nest level: 3, nb worker: 104, nb soldier: 25
+nb ant: 130, food: 266/450, nest level: 3, nb worker: 104, nb soldier: 26
+nb ant: 131, food: 262/450, nest level: 3, nb worker: 105, nb soldier: 26
+nb ant: 132, food: 259/450, nest level: 3, nb worker: 105, nb soldier: 27
+nb ant: 132, food: 260/450, nest level: 3, nb worker: 105, nb soldier: 27
+nb ant: 133, food: 258/450, nest level: 3, nb worker: 105, nb soldier: 28
+nb ant: 133, food: 256/450, nest level: 3, nb worker: 105, nb soldier: 28
+#201 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 134, food: 257/450, nest level: 3, nb worker: 106, nb soldier: 28
+nb ant: 135, food: 257/450, nest level: 3, nb worker: 107, nb soldier: 28
+nb ant: 136, food: 256/450, nest level: 3, nb worker: 108, nb soldier: 28
+nb ant: 136, food: 255/450, nest level: 3, nb worker: 108, nb soldier: 28
+nb ant: 137, food: 253/450, nest level: 3, nb worker: 109, nb soldier: 28
+nb ant: 138, food: 254/450, nest level: 3, nb worker: 110, nb soldier: 28
+nb ant: 138, food: 251/450, nest level: 3, nb worker: 110, nb soldier: 28
+nb ant: 138, food: 252/450, nest level: 3, nb worker: 110, nb soldier: 28
+nb ant: 139, food: 252/450, nest level: 3, nb worker: 111, nb soldier: 28
+nb ant: 140, food: 251/450, nest level: 3, nb worker: 112, nb soldier: 28
+#211 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 140, food: 250/450, nest level: 3, nb worker: 112, nb soldier: 28
+nb ant: 141, food: 248/450, nest level: 3, nb worker: 113, nb soldier: 28
+nb ant: 142, food: 249/450, nest level: 3, nb worker: 114, nb soldier: 28
+nb ant: 142, food: 250/450, nest level: 3, nb worker: 114, nb soldier: 28
+nb ant: 143, food: 244/450, nest level: 3, nb worker: 114, nb soldier: 29
+nb ant: 144, food: 245/450, nest level: 3, nb worker: 115, nb soldier: 29
+nb ant: 145, food: 243/450, nest level: 3, nb worker: 115, nb soldier: 30
+nb ant: 145, food: 241/450, nest level: 3, nb worker: 115, nb soldier: 30
+nb ant: 146, food: 242/450, nest level: 3, nb worker: 116, nb soldier: 30
+nb ant: 147, food: 238/450, nest level: 3, nb worker: 117, nb soldier: 30
+#221 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 148, food: 237/450, nest level: 3, nb worker: 118, nb soldier: 30
+nb ant: 148, food: 240/450, nest level: 3, nb worker: 118, nb soldier: 30
+nb ant: 149, food: 236/450, nest level: 3, nb worker: 118, nb soldier: 31
+nb ant: 149, food: 236/450, nest level: 3, nb worker: 118, nb soldier: 31
+nb ant: 148, food: 235/450, nest level: 3, nb worker: 116, nb soldier: 32
+nb ant: 149, food: 233/450, nest level: 3, nb worker: 117, nb soldier: 32
+nb ant: 149, food: 235/450, nest level: 3, nb worker: 117, nb soldier: 32
+nb ant: 150, food: 232/450, nest level: 3, nb worker: 118, nb soldier: 32
+nb ant: 151, food: 232/450, nest level: 3, nb worker: 119, nb soldier: 32
+nb ant: 151, food: 232/450, nest level: 3, nb worker: 119, nb soldier: 32
+#231 - a spider attack the colony
+the menace kill 1 soldier
+the menace kill 0 worker
+nb ant: 151, food: 231/450, nest level: 3, nb worker: 120, nb soldier: 31
+nb ant: 152, food: 230/450, nest level: 3, nb worker: 120, nb soldier: 32
+nb ant: 153, food: 228/450, nest level: 3, nb worker: 121, nb soldier: 32
+nb ant: 154, food: 227/450, nest level: 3, nb worker: 121, nb soldier: 33
+nb ant: 153, food: 227/450, nest level: 3, nb worker: 120, nb soldier: 33
+nb ant: 154, food: 224/450, nest level: 3, nb worker: 120, nb soldier: 34
+nb ant: 155, food: 224/450, nest level: 3, nb worker: 121, nb soldier: 34
+nb ant: 156, food: 221/450, nest level: 3, nb worker: 121, nb soldier: 35
+nb ant: 157, food: 219/450, nest level: 3, nb worker: 121, nb soldier: 36
+nb ant: 157, food: 217/450, nest level: 3, nb worker: 121, nb soldier: 36
+#241 - a spider attack the colony
+the menace kill 1 soldier
+the menace kill 0 worker
+nb ant: 157, food: 218/450, nest level: 3, nb worker: 122, nb soldier: 35
+nb ant: 158, food: 217/450, nest level: 3, nb worker: 123, nb soldier: 35
+nb ant: 159, food: 219/450, nest level: 3, nb worker: 124, nb soldier: 35
+nb ant: 160, food: 216/450, nest level: 3, nb worker: 125, nb soldier: 35
+nb ant: 161, food: 216/450, nest level: 3, nb worker: 126, nb soldier: 35
+nb ant: 160, food: 215/450, nest level: 3, nb worker: 124, nb soldier: 36
+nb ant: 160, food: 214/450, nest level: 3, nb worker: 124, nb soldier: 36
+nb ant: 160, food: 213/450, nest level: 3, nb worker: 124, nb soldier: 36
+nb ant: 160, food: 214/450, nest level: 3, nb worker: 123, nb soldier: 37
+nb ant: 161, food: 210/450, nest level: 3, nb worker: 124, nb soldier: 37
+#251 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 161, food: 210/450, nest level: 3, nb worker: 124, nb soldier: 37
+nb ant: 162, food: 209/450, nest level: 3, nb worker: 125, nb soldier: 37
+nb ant: 162, food: 212/450, nest level: 3, nb worker: 125, nb soldier: 37
+nb ant: 162, food: 211/450, nest level: 3, nb worker: 125, nb soldier: 37
+nb ant: 162, food: 208/450, nest level: 3, nb worker: 124, nb soldier: 38
+nb ant: 161, food: 210/450, nest level: 3, nb worker: 123, nb soldier: 38
+nb ant: 161, food: 208/450, nest level: 3, nb worker: 123, nb soldier: 38
+nb ant: 161, food: 210/450, nest level: 3, nb worker: 123, nb soldier: 38
+nb ant: 161, food: 206/450, nest level: 3, nb worker: 122, nb soldier: 39
+nb ant: 162, food: 205/450, nest level: 3, nb worker: 123, nb soldier: 39
+nb ant: 163, food: 207/450, nest level: 3, nb worker: 124, nb soldier: 39
+nb ant: 162, food: 206/450, nest level: 3, nb worker: 123, nb soldier: 39
+nb ant: 161, food: 206/450, nest level: 3, nb worker: 122, nb soldier: 39
+nb ant: 162, food: 205/450, nest level: 3, nb worker: 123, nb soldier: 39
+nb ant: 162, food: 208/450, nest level: 3, nb worker: 123, nb soldier: 39
+nb ant: 162, food: 207/450, nest level: 3, nb worker: 123, nb soldier: 39
+nb ant: 162, food: 206/450, nest level: 3, nb worker: 123, nb soldier: 39
+nb ant: 163, food: 202/450, nest level: 3, nb worker: 123, nb soldier: 40
+nb ant: 164, food: 201/450, nest level: 3, nb worker: 124, nb soldier: 40
+nb ant: 164, food: 204/450, nest level: 3, nb worker: 124, nb soldier: 40
+#271 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 165, food: 200/450, nest level: 3, nb worker: 124, nb soldier: 41
+nb ant: 165, food: 200/450, nest level: 3, nb worker: 124, nb soldier: 41
+nb ant: 166, food: 197/450, nest level: 3, nb worker: 124, nb soldier: 42
+nb ant: 167, food: 197/450, nest level: 3, nb worker: 125, nb soldier: 42
+nb ant: 166, food: 198/450, nest level: 3, nb worker: 124, nb soldier: 42
+nb ant: 167, food: 192/450, nest level: 3, nb worker: 124, nb soldier: 43
+nb ant: 165, food: 196/450, nest level: 3, nb worker: 122, nb soldier: 43
+nb ant: 164, food: 197/450, nest level: 3, nb worker: 121, nb soldier: 43
+nb ant: 164, food: 198/450, nest level: 3, nb worker: 121, nb soldier: 43
+nb ant: 163, food: 196/450, nest level: 3, nb worker: 120, nb soldier: 43
+#281 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 164, food: 197/450, nest level: 3, nb worker: 121, nb soldier: 43
+nb ant: 165, food: 197/450, nest level: 3, nb worker: 122, nb soldier: 43
+nb ant: 166, food: 196/450, nest level: 3, nb worker: 123, nb soldier: 43
+nb ant: 167, food: 194/450, nest level: 3, nb worker: 124, nb soldier: 43
+nb ant: 167, food: 190/450, nest level: 3, nb worker: 123, nb soldier: 44
+nb ant: 167, food: 190/450, nest level: 3, nb worker: 123, nb soldier: 44
+nb ant: 167, food: 188/450, nest level: 3, nb worker: 122, nb soldier: 45
+nb ant: 167, food: 190/450, nest level: 3, nb worker: 122, nb soldier: 45
+nb ant: 168, food: 187/450, nest level: 3, nb worker: 123, nb soldier: 45
+nb ant: 168, food: 186/450, nest level: 3, nb worker: 122, nb soldier: 46
+#291 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 168, food: 185/450, nest level: 3, nb worker: 122, nb soldier: 46
+nb ant: 167, food: 189/450, nest level: 3, nb worker: 121, nb soldier: 46
+nb ant: 166, food: 190/450, nest level: 3, nb worker: 120, nb soldier: 46
+nb ant: 166, food: 187/450, nest level: 3, nb worker: 120, nb soldier: 46
+nb ant: 166, food: 188/450, nest level: 3, nb worker: 120, nb soldier: 46
+nb ant: 166, food: 189/450, nest level: 3, nb worker: 120, nb soldier: 46
+nb ant: 166, food: 190/450, nest level: 3, nb worker: 120, nb soldier: 46
+nb ant: 166, food: 187/450, nest level: 3, nb worker: 120, nb soldier: 46
+nb ant: 166, food: 188/450, nest level: 3, nb worker: 120, nb soldier: 46
+nb ant: 166, food: 189/450, nest level: 3, nb worker: 120, nb soldier: 46
+#301 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 164, food: 192/450, nest level: 3, nb worker: 118, nb soldier: 46
+nb ant: 164, food: 191/450, nest level: 3, nb worker: 118, nb soldier: 46
+nb ant: 165, food: 189/450, nest level: 3, nb worker: 119, nb soldier: 46
+nb ant: 166, food: 190/450, nest level: 3, nb worker: 120, nb soldier: 46
+nb ant: 167, food: 186/450, nest level: 3, nb worker: 121, nb soldier: 46
+nb ant: 167, food: 186/450, nest level: 3, nb worker: 121, nb soldier: 46
+nb ant: 167, food: 186/450, nest level: 3, nb worker: 121, nb soldier: 46
+nb ant: 166, food: 187/450, nest level: 3, nb worker: 120, nb soldier: 46
+nb ant: 166, food: 188/450, nest level: 3, nb worker: 120, nb soldier: 46
+nb ant: 166, food: 187/450, nest level: 3, nb worker: 119, nb soldier: 47
+nb ant: 166, food: 186/450, nest level: 3, nb worker: 119, nb soldier: 47
+nb ant: 167, food: 184/450, nest level: 3, nb worker: 120, nb soldier: 47
+nb ant: 167, food: 186/450, nest level: 3, nb worker: 120, nb soldier: 47
+nb ant: 168, food: 183/450, nest level: 3, nb worker: 121, nb soldier: 47
+nb ant: 168, food: 184/450, nest level: 3, nb worker: 121, nb soldier: 47
+nb ant: 167, food: 186/450, nest level: 3, nb worker: 120, nb soldier: 47
+nb ant: 167, food: 184/450, nest level: 3, nb worker: 120, nb soldier: 47
+nb ant: 168, food: 185/450, nest level: 3, nb worker: 121, nb soldier: 47
+nb ant: 167, food: 185/450, nest level: 3, nb worker: 119, nb soldier: 48
+nb ant: 166, food: 186/450, nest level: 3, nb worker: 118, nb soldier: 48
+#321 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 167, food: 182/450, nest level: 3, nb worker: 119, nb soldier: 48
+nb ant: 167, food: 182/450, nest level: 3, nb worker: 119, nb soldier: 48
+nb ant: 167, food: 182/450, nest level: 3, nb worker: 119, nb soldier: 48
+nb ant: 166, food: 183/450, nest level: 3, nb worker: 118, nb soldier: 48
+nb ant: 166, food: 184/450, nest level: 3, nb worker: 118, nb soldier: 48
+nb ant: 166, food: 185/450, nest level: 3, nb worker: 118, nb soldier: 48
+nb ant: 166, food: 186/450, nest level: 3, nb worker: 118, nb soldier: 48
+nb ant: 167, food: 182/450, nest level: 3, nb worker: 119, nb soldier: 48
+nb ant: 168, food: 179/450, nest level: 3, nb worker: 119, nb soldier: 49
+nb ant: 169, food: 177/450, nest level: 3, nb worker: 119, nb soldier: 50
+#331 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 169, food: 179/450, nest level: 3, nb worker: 119, nb soldier: 50
+nb ant: 168, food: 178/450, nest level: 3, nb worker: 118, nb soldier: 50
+nb ant: 168, food: 177/450, nest level: 3, nb worker: 118, nb soldier: 50
+nb ant: 169, food: 179/450, nest level: 3, nb worker: 119, nb soldier: 50
+nb ant: 169, food: 177/450, nest level: 3, nb worker: 119, nb soldier: 50
+nb ant: 169, food: 179/450, nest level: 3, nb worker: 119, nb soldier: 50
+nb ant: 166, food: 180/450, nest level: 3, nb worker: 116, nb soldier: 50
+nb ant: 167, food: 180/450, nest level: 3, nb worker: 117, nb soldier: 50
+nb ant: 168, food: 179/450, nest level: 3, nb worker: 118, nb soldier: 50
+nb ant: 168, food: 178/450, nest level: 3, nb worker: 118, nb soldier: 50
+#341 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 168, food: 177/450, nest level: 3, nb worker: 118, nb soldier: 50
+nb ant: 168, food: 180/450, nest level: 3, nb worker: 118, nb soldier: 50
+nb ant: 168, food: 179/450, nest level: 3, nb worker: 118, nb soldier: 50
+nb ant: 169, food: 177/450, nest level: 3, nb worker: 119, nb soldier: 50
+nb ant: 170, food: 178/450, nest level: 3, nb worker: 120, nb soldier: 50
+nb ant: 171, food: 174/450, nest level: 3, nb worker: 121, nb soldier: 50
+nb ant: 171, food: 174/450, nest level: 3, nb worker: 121, nb soldier: 50
+nb ant: 172, food: 173/450, nest level: 3, nb worker: 122, nb soldier: 50
+nb ant: 173, food: 175/450, nest level: 3, nb worker: 123, nb soldier: 50
+nb ant: 172, food: 174/450, nest level: 3, nb worker: 122, nb soldier: 50
+nb ant: 173, food: 172/450, nest level: 3, nb worker: 123, nb soldier: 50
+nb ant: 174, food: 173/450, nest level: 3, nb worker: 124, nb soldier: 50
+nb ant: 175, food: 173/450, nest level: 3, nb worker: 125, nb soldier: 50
+nb ant: 176, food: 170/450, nest level: 3, nb worker: 125, nb soldier: 51
+nb ant: 177, food: 166/450, nest level: 3, nb worker: 126, nb soldier: 51
+nb ant: 178, food: 165/450, nest level: 3, nb worker: 127, nb soldier: 51
+nb ant: 179, food: 167/450, nest level: 3, nb worker: 128, nb soldier: 51
+nb ant: 180, food: 162/450, nest level: 3, nb worker: 128, nb soldier: 52
+nb ant: 181, food: 160/450, nest level: 3, nb worker: 129, nb soldier: 52
+nb ant: 182, food: 159/450, nest level: 3, nb worker: 129, nb soldier: 53
+nb ant: 182, food: 158/450, nest level: 3, nb worker: 129, nb soldier: 53
+nb ant: 182, food: 157/450, nest level: 3, nb worker: 129, nb soldier: 53
+nb ant: 182, food: 160/450, nest level: 3, nb worker: 129, nb soldier: 53
+nb ant: 182, food: 159/450, nest level: 3, nb worker: 129, nb soldier: 53
+nb ant: 183, food: 157/450, nest level: 3, nb worker: 130, nb soldier: 53
+nb ant: 183, food: 157/450, nest level: 3, nb worker: 129, nb soldier: 54
+nb ant: 183, food: 157/450, nest level: 3, nb worker: 129, nb soldier: 54
+nb ant: 183, food: 157/450, nest level: 3, nb worker: 129, nb soldier: 54
+nb ant: 183, food: 157/450, nest level: 3, nb worker: 129, nb soldier: 54
+nb ant: 184, food: 156/450, nest level: 3, nb worker: 130, nb soldier: 54
+nb ant: 183, food: 156/450, nest level: 3, nb worker: 129, nb soldier: 54
+nb ant: 184, food: 153/450, nest level: 3, nb worker: 129, nb soldier: 55
+nb ant: 185, food: 153/450, nest level: 3, nb worker: 130, nb soldier: 55
+nb ant: 186, food: 150/450, nest level: 3, nb worker: 130, nb soldier: 56
+nb ant: 187, food: 146/450, nest level: 3, nb worker: 131, nb soldier: 56
+nb ant: 187, food: 146/450, nest level: 3, nb worker: 131, nb soldier: 56
+nb ant: 186, food: 147/450, nest level: 3, nb worker: 130, nb soldier: 56
+nb ant: 185, food: 149/450, nest level: 3, nb worker: 129, nb soldier: 56
+nb ant: 185, food: 153/450, nest level: 3, nb worker: 130, nb soldier: 55
+nb ant: 184, food: 154/450, nest level: 3, nb worker: 129, nb soldier: 55
+nb ant: 184, food: 151/450, nest level: 3, nb worker: 129, nb soldier: 55
+nb ant: 184, food: 152/450, nest level: 3, nb worker: 129, nb soldier: 55
+nb ant: 185, food: 152/450, nest level: 3, nb worker: 130, nb soldier: 55
+nb ant: 185, food: 152/450, nest level: 3, nb worker: 130, nb soldier: 55
+nb ant: 186, food: 149/450, nest level: 3, nb worker: 130, nb soldier: 56
+nb ant: 187, food: 149/450, nest level: 3, nb worker: 131, nb soldier: 56
+nb ant: 187, food: 149/450, nest level: 3, nb worker: 131, nb soldier: 56
+nb ant: 187, food: 149/450, nest level: 3, nb worker: 131, nb soldier: 56
+nb ant: 187, food: 147/450, nest level: 3, nb worker: 130, nb soldier: 57
+nb ant: 187, food: 145/450, nest level: 3, nb worker: 130, nb soldier: 57
+#391 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 187, food: 147/450, nest level: 3, nb worker: 130, nb soldier: 57
+nb ant: 188, food: 144/450, nest level: 3, nb worker: 131, nb soldier: 57
+nb ant: 186, food: 147/450, nest level: 3, nb worker: 129, nb soldier: 57
+nb ant: 186, food: 144/450, nest level: 3, nb worker: 128, nb soldier: 58
+nb ant: 187, food: 142/450, nest level: 3, nb worker: 128, nb soldier: 59
+nb ant: 187, food: 140/450, nest level: 3, nb worker: 128, nb soldier: 59
+nb ant: 188, food: 141/450, nest level: 3, nb worker: 129, nb soldier: 59
+nb ant: 189, food: 139/450, nest level: 3, nb worker: 129, nb soldier: 60
+nb ant: 189, food: 137/450, nest level: 3, nb worker: 129, nb soldier: 60
+nb ant: 189, food: 139/450, nest level: 3, nb worker: 129, nb soldier: 60
+#401 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 190, food: 136/450, nest level: 3, nb worker: 130, nb soldier: 60
+nb ant: 191, food: 136/450, nest level: 3, nb worker: 131, nb soldier: 60
+nb ant: 189, food: 138/450, nest level: 3, nb worker: 129, nb soldier: 60
+nb ant: 190, food: 135/450, nest level: 3, nb worker: 130, nb soldier: 60
+nb ant: 189, food: 137/450, nest level: 3, nb worker: 129, nb soldier: 60
+nb ant: 190, food: 138/450, nest level: 3, nb worker: 130, nb soldier: 60
+nb ant: 190, food: 135/450, nest level: 3, nb worker: 130, nb soldier: 60
+nb ant: 190, food: 136/450, nest level: 3, nb worker: 130, nb soldier: 60
+nb ant: 190, food: 137/450, nest level: 3, nb worker: 130, nb soldier: 60
+nb ant: 190, food: 138/450, nest level: 3, nb worker: 130, nb soldier: 60
+#411 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 190, food: 135/450, nest level: 3, nb worker: 130, nb soldier: 60
+nb ant: 191, food: 133/450, nest level: 3, nb worker: 130, nb soldier: 61
+nb ant: 191, food: 133/450, nest level: 3, nb worker: 129, nb soldier: 62
+nb ant: 192, food: 130/450, nest level: 3, nb worker: 129, nb soldier: 63
+nb ant: 193, food: 126/450, nest level: 3, nb worker: 130, nb soldier: 63
+nb ant: 193, food: 126/450, nest level: 3, nb worker: 130, nb soldier: 63
+nb ant: 194, food: 123/450, nest level: 3, nb worker: 130, nb soldier: 64
+nb ant: 194, food: 126/450, nest level: 3, nb worker: 131, nb soldier: 63
+nb ant: 194, food: 125/450, nest level: 3, nb worker: 131, nb soldier: 63
+nb ant: 194, food: 126/450, nest level: 3, nb worker: 130, nb soldier: 64
+#421 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 194, food: 123/450, nest level: 3, nb worker: 130, nb soldier: 64
+nb ant: 194, food: 122/450, nest level: 3, nb worker: 129, nb soldier: 65
+nb ant: 194, food: 121/450, nest level: 3, nb worker: 129, nb soldier: 65
+nb ant: 195, food: 123/450, nest level: 3, nb worker: 130, nb soldier: 65
+nb ant: 195, food: 121/450, nest level: 3, nb worker: 130, nb soldier: 65
+nb ant: 195, food: 123/450, nest level: 3, nb worker: 130, nb soldier: 65
+nb ant: 195, food: 121/450, nest level: 3, nb worker: 130, nb soldier: 65
+nb ant: 195, food: 123/450, nest level: 3, nb worker: 130, nb soldier: 65
+nb ant: 194, food: 122/450, nest level: 3, nb worker: 129, nb soldier: 65
+nb ant: 194, food: 121/450, nest level: 3, nb worker: 129, nb soldier: 65
+#431 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 195, food: 123/450, nest level: 3, nb worker: 130, nb soldier: 65
+nb ant: 194, food: 122/450, nest level: 3, nb worker: 129, nb soldier: 65
+nb ant: 194, food: 121/450, nest level: 3, nb worker: 129, nb soldier: 65
+nb ant: 193, food: 127/450, nest level: 3, nb worker: 129, nb soldier: 64
+nb ant: 193, food: 125/450, nest level: 3, nb worker: 129, nb soldier: 64
+nb ant: 192, food: 128/450, nest level: 3, nb worker: 128, nb soldier: 64
+nb ant: 192, food: 127/450, nest level: 3, nb worker: 128, nb soldier: 64
+nb ant: 190, food: 128/450, nest level: 3, nb worker: 126, nb soldier: 64
+nb ant: 191, food: 128/450, nest level: 3, nb worker: 127, nb soldier: 64
+nb ant: 191, food: 128/450, nest level: 3, nb worker: 127, nb soldier: 64
+#441 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 191, food: 128/450, nest level: 3, nb worker: 127, nb soldier: 64
+nb ant: 191, food: 128/450, nest level: 3, nb worker: 127, nb soldier: 64
+nb ant: 192, food: 127/450, nest level: 3, nb worker: 128, nb soldier: 64
+nb ant: 193, food: 125/450, nest level: 3, nb worker: 129, nb soldier: 64
+nb ant: 193, food: 127/450, nest level: 3, nb worker: 129, nb soldier: 64
+nb ant: 193, food: 125/450, nest level: 3, nb worker: 129, nb soldier: 64
+nb ant: 193, food: 125/450, nest level: 3, nb worker: 128, nb soldier: 65
+nb ant: 193, food: 125/450, nest level: 3, nb worker: 128, nb soldier: 65
+nb ant: 194, food: 124/450, nest level: 3, nb worker: 129, nb soldier: 65
+nb ant: 193, food: 124/450, nest level: 3, nb worker: 128, nb soldier: 65
+#451 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 194, food: 123/450, nest level: 3, nb worker: 129, nb soldier: 65
+nb ant: 192, food: 124/450, nest level: 3, nb worker: 127, nb soldier: 65
+nb ant: 192, food: 125/450, nest level: 3, nb worker: 127, nb soldier: 65
+nb ant: 192, food: 126/450, nest level: 3, nb worker: 127, nb soldier: 65
+nb ant: 192, food: 123/450, nest level: 3, nb worker: 127, nb soldier: 65
+nb ant: 192, food: 124/450, nest level: 3, nb worker: 127, nb soldier: 65
+nb ant: 189, food: 128/450, nest level: 3, nb worker: 124, nb soldier: 65
+nb ant: 190, food: 127/450, nest level: 3, nb worker: 125, nb soldier: 65
+nb ant: 189, food: 127/450, nest level: 3, nb worker: 124, nb soldier: 65
+nb ant: 190, food: 126/450, nest level: 3, nb worker: 125, nb soldier: 65
+#461 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 191, food: 124/450, nest level: 3, nb worker: 126, nb soldier: 65
+nb ant: 191, food: 126/450, nest level: 3, nb worker: 126, nb soldier: 65
+nb ant: 190, food: 125/450, nest level: 3, nb worker: 125, nb soldier: 65
+nb ant: 189, food: 129/450, nest level: 3, nb worker: 124, nb soldier: 65
+nb ant: 190, food: 128/450, nest level: 3, nb worker: 125, nb soldier: 65
+nb ant: 191, food: 126/450, nest level: 3, nb worker: 126, nb soldier: 65
+nb ant: 192, food: 123/450, nest level: 3, nb worker: 127, nb soldier: 65
+nb ant: 192, food: 124/450, nest level: 3, nb worker: 127, nb soldier: 65
+nb ant: 193, food: 124/450, nest level: 3, nb worker: 128, nb soldier: 65
+nb ant: 194, food: 123/450, nest level: 3, nb worker: 129, nb soldier: 65
+nb ant: 195, food: 121/450, nest level: 3, nb worker: 130, nb soldier: 65
+nb ant: 196, food: 122/450, nest level: 3, nb worker: 131, nb soldier: 65
+nb ant: 196, food: 119/450, nest level: 3, nb worker: 131, nb soldier: 65
+nb ant: 197, food: 119/450, nest level: 3, nb worker: 132, nb soldier: 65
+nb ant: 198, food: 118/450, nest level: 3, nb worker: 133, nb soldier: 65
+nb ant: 199, food: 114/450, nest level: 3, nb worker: 133, nb soldier: 66
+nb ant: 198, food: 115/450, nest level: 3, nb worker: 132, nb soldier: 66
+nb ant: 198, food: 116/450, nest level: 3, nb worker: 132, nb soldier: 66
+nb ant: 198, food: 117/450, nest level: 3, nb worker: 132, nb soldier: 66
+nb ant: 199, food: 117/450, nest level: 3, nb worker: 133, nb soldier: 66
+nb ant: 199, food: 117/450, nest level: 3, nb worker: 133, nb soldier: 66
+nb ant: 199, food: 117/450, nest level: 3, nb worker: 133, nb soldier: 66
+nb ant: 200, food: 114/450, nest level: 3, nb worker: 133, nb soldier: 67
+nb ant: 200, food: 111/450, nest level: 3, nb worker: 133, nb soldier: 67
+nb ant: 200, food: 112/450, nest level: 3, nb worker: 133, nb soldier: 67
+nb ant: 201, food: 112/450, nest level: 3, nb worker: 134, nb soldier: 67
+nb ant: 202, food: 111/450, nest level: 3, nb worker: 135, nb soldier: 67
+nb ant: 203, food: 107/450, nest level: 3, nb worker: 135, nb soldier: 68
+nb ant: 201, food: 109/450, nest level: 3, nb worker: 133, nb soldier: 68
+nb ant: 201, food: 111/450, nest level: 3, nb worker: 133, nb soldier: 68
+#491 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 202, food: 108/450, nest level: 3, nb worker: 134, nb soldier: 68
+nb ant: 200, food: 111/450, nest level: 3, nb worker: 132, nb soldier: 68
+nb ant: 200, food: 110/450, nest level: 3, nb worker: 132, nb soldier: 68
+nb ant: 199, food: 110/450, nest level: 3, nb worker: 131, nb soldier: 68
+nb ant: 200, food: 109/450, nest level: 3, nb worker: 132, nb soldier: 68
+nb ant: 200, food: 112/450, nest level: 3, nb worker: 132, nb soldier: 68
+nb ant: 200, food: 111/450, nest level: 3, nb worker: 132, nb soldier: 68
+nb ant: 200, food: 110/450, nest level: 3, nb worker: 132, nb soldier: 68
+nb ant: 199, food: 110/450, nest level: 3, nb worker: 131, nb soldier: 68
+nb ant: 200, food: 109/450, nest level: 3, nb worker: 132, nb soldier: 68
+#501 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 201, food: 111/450, nest level: 3, nb worker: 133, nb soldier: 68
+nb ant: 201, food: 109/450, nest level: 3, nb worker: 133, nb soldier: 68
+nb ant: 202, food: 110/450, nest level: 3, nb worker: 134, nb soldier: 68
+nb ant: 202, food: 107/450, nest level: 3, nb worker: 134, nb soldier: 68
+nb ant: 203, food: 107/450, nest level: 3, nb worker: 135, nb soldier: 68
+nb ant: 203, food: 107/450, nest level: 3, nb worker: 135, nb soldier: 68
+nb ant: 203, food: 107/450, nest level: 3, nb worker: 135, nb soldier: 68
+nb ant: 203, food: 107/450, nest level: 3, nb worker: 135, nb soldier: 68
+nb ant: 202, food: 110/450, nest level: 3, nb worker: 135, nb soldier: 67
+nb ant: 202, food: 111/450, nest level: 3, nb worker: 136, nb soldier: 66
+#511 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 203, food: 111/450, nest level: 3, nb worker: 137, nb soldier: 66
+nb ant: 204, food: 110/450, nest level: 3, nb worker: 138, nb soldier: 66
+nb ant: 205, food: 108/450, nest level: 3, nb worker: 139, nb soldier: 66
+nb ant: 205, food: 110/450, nest level: 3, nb worker: 139, nb soldier: 66
+nb ant: 205, food: 108/450, nest level: 3, nb worker: 139, nb soldier: 66
+nb ant: 206, food: 109/450, nest level: 3, nb worker: 140, nb soldier: 66
+nb ant: 207, food: 109/450, nest level: 3, nb worker: 141, nb soldier: 66
+nb ant: 204, food: 114/450, nest level: 3, nb worker: 139, nb soldier: 65
+nb ant: 203, food: 112/450, nest level: 3, nb worker: 138, nb soldier: 65
+nb ant: 204, food: 111/450, nest level: 3, nb worker: 138, nb soldier: 66
+nb ant: 205, food: 109/450, nest level: 3, nb worker: 139, nb soldier: 66
+nb ant: 205, food: 111/450, nest level: 3, nb worker: 139, nb soldier: 66
+nb ant: 204, food: 112/450, nest level: 3, nb worker: 139, nb soldier: 65
+nb ant: 204, food: 113/450, nest level: 3, nb worker: 139, nb soldier: 65
+nb ant: 204, food: 114/450, nest level: 3, nb worker: 139, nb soldier: 65
+nb ant: 203, food: 112/450, nest level: 3, nb worker: 138, nb soldier: 65
+nb ant: 202, food: 115/450, nest level: 3, nb worker: 137, nb soldier: 65
+nb ant: 203, food: 113/450, nest level: 3, nb worker: 138, nb soldier: 65
+nb ant: 203, food: 115/450, nest level: 3, nb worker: 138, nb soldier: 65
+nb ant: 202, food: 114/450, nest level: 3, nb worker: 137, nb soldier: 65
+nb ant: 203, food: 110/450, nest level: 3, nb worker: 137, nb soldier: 66
+nb ant: 203, food: 110/450, nest level: 3, nb worker: 137, nb soldier: 66
+nb ant: 202, food: 111/450, nest level: 3, nb worker: 136, nb soldier: 66
+nb ant: 203, food: 111/450, nest level: 3, nb worker: 137, nb soldier: 66
+nb ant: 202, food: 112/450, nest level: 3, nb worker: 136, nb soldier: 66
+nb ant: 203, food: 110/450, nest level: 3, nb worker: 136, nb soldier: 67
+nb ant: 204, food: 107/450, nest level: 3, nb worker: 137, nb soldier: 67
+nb ant: 205, food: 107/450, nest level: 3, nb worker: 138, nb soldier: 67
+nb ant: 206, food: 104/450, nest level: 3, nb worker: 138, nb soldier: 68
+nb ant: 206, food: 105/450, nest level: 3, nb worker: 138, nb soldier: 68
+nb ant: 205, food: 105/450, nest level: 3, nb worker: 136, nb soldier: 69
+nb ant: 206, food: 104/450, nest level: 3, nb worker: 137, nb soldier: 69
+nb ant: 207, food: 102/450, nest level: 3, nb worker: 138, nb soldier: 69
+nb ant: 207, food: 100/450, nest level: 3, nb worker: 138, nb soldier: 69
+nb ant: 208, food: 101/450, nest level: 3, nb worker: 139, nb soldier: 69
+nb ant: 209, food: 101/450, nest level: 3, nb worker: 140, nb soldier: 69
+nb ant: 210, food: 98/450, nest level: 3, nb worker: 140, nb soldier: 70
+nb ant: 209, food: 96/450, nest level: 3, nb worker: 139, nb soldier: 70
+nb ant: 209, food: 98/650, nest level: 4, nb worker: 139, nb soldier: 70
+nb ant: 210, food: 223/650, nest level: 4, nb worker: 140, nb soldier: 70
+#551 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 207, food: 296/650, nest level: 4, nb worker: 140, nb soldier: 67
+nb ant: 206, food: 307/650, nest level: 4, nb worker: 139, nb soldier: 67
+nb ant: 205, food: 307/650, nest level: 4, nb worker: 138, nb soldier: 67
+nb ant: 206, food: 306/650, nest level: 4, nb worker: 139, nb soldier: 67
+nb ant: 207, food: 304/650, nest level: 4, nb worker: 140, nb soldier: 67
+nb ant: 209, food: 304/650, nest level: 4, nb worker: 142, nb soldier: 67
+nb ant: 211, food: 302/650, nest level: 4, nb worker: 144, nb soldier: 67
+nb ant: 210, food: 301/650, nest level: 4, nb worker: 143, nb soldier: 67
+nb ant: 212, food: 302/650, nest level: 4, nb worker: 145, nb soldier: 67
+nb ant: 212, food: 299/650, nest level: 4, nb worker: 145, nb soldier: 67
+#561 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 212, food: 300/650, nest level: 4, nb worker: 145, nb soldier: 67
+nb ant: 212, food: 301/650, nest level: 4, nb worker: 145, nb soldier: 67
+nb ant: 214, food: 298/650, nest level: 4, nb worker: 146, nb soldier: 68
+nb ant: 213, food: 294/650, nest level: 4, nb worker: 144, nb soldier: 69
+nb ant: 214, food: 293/650, nest level: 4, nb worker: 145, nb soldier: 69
+nb ant: 215, food: 293/650, nest level: 4, nb worker: 145, nb soldier: 70
+nb ant: 217, food: 291/650, nest level: 4, nb worker: 147, nb soldier: 70
+nb ant: 216, food: 292/650, nest level: 4, nb worker: 147, nb soldier: 69
+nb ant: 217, food: 290/650, nest level: 4, nb worker: 147, nb soldier: 70
+nb ant: 216, food: 289/650, nest level: 4, nb worker: 146, nb soldier: 70
+#571 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 215, food: 286/650, nest level: 4, nb worker: 146, nb soldier: 69
+nb ant: 216, food: 291/650, nest level: 4, nb worker: 147, nb soldier: 69
+nb ant: 215, food: 293/650, nest level: 4, nb worker: 146, nb soldier: 69
+nb ant: 215, food: 295/650, nest level: 4, nb worker: 146, nb soldier: 69
+nb ant: 217, food: 289/650, nest level: 4, nb worker: 147, nb soldier: 70
+nb ant: 215, food: 293/650, nest level: 4, nb worker: 145, nb soldier: 70
+nb ant: 214, food: 294/650, nest level: 4, nb worker: 144, nb soldier: 70
+nb ant: 215, food: 290/650, nest level: 4, nb worker: 145, nb soldier: 70
+nb ant: 216, food: 287/650, nest level: 4, nb worker: 145, nb soldier: 71
+nb ant: 215, food: 289/650, nest level: 4, nb worker: 144, nb soldier: 71
+#581 - a snail attack the colony
+the menace kill 1 soldier
+the menace kill 0 worker
+nb ant: 216, food: 287/650, nest level: 4, nb worker: 145, nb soldier: 71
+nb ant: 218, food: 286/650, nest level: 4, nb worker: 147, nb soldier: 71
+nb ant: 220, food: 279/650, nest level: 4, nb worker: 147, nb soldier: 73
+nb ant: 219, food: 281/650, nest level: 4, nb worker: 146, nb soldier: 73
+nb ant: 219, food: 283/650, nest level: 4, nb worker: 146, nb soldier: 73
+nb ant: 221, food: 279/650, nest level: 4, nb worker: 148, nb soldier: 73
+nb ant: 223, food: 275/650, nest level: 4, nb worker: 149, nb soldier: 74
+nb ant: 223, food: 275/650, nest level: 4, nb worker: 149, nb soldier: 74
+nb ant: 225, food: 269/650, nest level: 4, nb worker: 149, nb soldier: 76
+nb ant: 227, food: 269/650, nest level: 4, nb worker: 151, nb soldier: 76
+nb ant: 229, food: 267/650, nest level: 4, nb worker: 153, nb soldier: 76
+nb ant: 231, food: 261/650, nest level: 4, nb worker: 154, nb soldier: 77
+nb ant: 233, food: 261/650, nest level: 4, nb worker: 156, nb soldier: 77
+nb ant: 233, food: 261/650, nest level: 4, nb worker: 156, nb soldier: 77
+nb ant: 235, food: 257/650, nest level: 4, nb worker: 157, nb soldier: 78
+nb ant: 236, food: 254/650, nest level: 4, nb worker: 157, nb soldier: 79
+nb ant: 238, food: 249/650, nest level: 4, nb worker: 159, nb soldier: 79
+nb ant: 236, food: 254/650, nest level: 4, nb worker: 157, nb soldier: 79
+nb ant: 237, food: 250/650, nest level: 4, nb worker: 158, nb soldier: 79
+nb ant: 238, food: 249/650, nest level: 4, nb worker: 159, nb soldier: 79
+#601 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 237, food: 249/650, nest level: 4, nb worker: 159, nb soldier: 78
+nb ant: 236, food: 256/650, nest level: 4, nb worker: 158, nb soldier: 78
+nb ant: 237, food: 250/650, nest level: 4, nb worker: 157, nb soldier: 80
+nb ant: 239, food: 246/650, nest level: 4, nb worker: 159, nb soldier: 80
+nb ant: 241, food: 244/650, nest level: 4, nb worker: 161, nb soldier: 80
+nb ant: 242, food: 243/650, nest level: 4, nb worker: 161, nb soldier: 81
+nb ant: 243, food: 241/650, nest level: 4, nb worker: 162, nb soldier: 81
+nb ant: 243, food: 245/650, nest level: 4, nb worker: 163, nb soldier: 80
+nb ant: 245, food: 239/650, nest level: 4, nb worker: 163, nb soldier: 82
+nb ant: 247, food: 235/650, nest level: 4, nb worker: 165, nb soldier: 82
+#611 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 246, food: 234/650, nest level: 4, nb worker: 166, nb soldier: 80
+nb ant: 245, food: 240/650, nest level: 4, nb worker: 165, nb soldier: 80
+nb ant: 246, food: 239/650, nest level: 4, nb worker: 165, nb soldier: 81
+nb ant: 246, food: 238/650, nest level: 4, nb worker: 165, nb soldier: 81
+nb ant: 247, food: 236/650, nest level: 4, nb worker: 166, nb soldier: 81
+nb ant: 247, food: 238/650, nest level: 4, nb worker: 166, nb soldier: 81
+nb ant: 247, food: 234/650, nest level: 4, nb worker: 165, nb soldier: 82
+nb ant: 247, food: 234/650, nest level: 4, nb worker: 165, nb soldier: 82
+nb ant: 248, food: 231/650, nest level: 4, nb worker: 165, nb soldier: 83
+nb ant: 249, food: 231/650, nest level: 4, nb worker: 166, nb soldier: 83
+#621 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 249, food: 233/650, nest level: 4, nb worker: 167, nb soldier: 82
+nb ant: 249, food: 237/650, nest level: 4, nb worker: 168, nb soldier: 81
+nb ant: 251, food: 235/650, nest level: 4, nb worker: 170, nb soldier: 81
+nb ant: 252, food: 230/650, nest level: 4, nb worker: 170, nb soldier: 82
+nb ant: 252, food: 229/650, nest level: 4, nb worker: 170, nb soldier: 82
+nb ant: 252, food: 232/650, nest level: 4, nb worker: 170, nb soldier: 82
+nb ant: 254, food: 229/650, nest level: 4, nb worker: 172, nb soldier: 82
+nb ant: 252, food: 232/650, nest level: 4, nb worker: 170, nb soldier: 82
+nb ant: 251, food: 234/650, nest level: 4, nb worker: 170, nb soldier: 81
+nb ant: 251, food: 232/650, nest level: 4, nb worker: 170, nb soldier: 81
+#631 - a snail attack the colony
+the menace kill 6 soldier
+the menace kill 0 worker
+nb ant: 246, food: 231/650, nest level: 4, nb worker: 170, nb soldier: 76
+nb ant: 247, food: 245/650, nest level: 4, nb worker: 170, nb soldier: 77
+nb ant: 248, food: 246/650, nest level: 4, nb worker: 171, nb soldier: 77
+nb ant: 247, food: 244/650, nest level: 4, nb worker: 170, nb soldier: 77
+nb ant: 248, food: 243/650, nest level: 4, nb worker: 170, nb soldier: 78
+nb ant: 250, food: 240/650, nest level: 4, nb worker: 172, nb soldier: 78
+nb ant: 249, food: 244/650, nest level: 4, nb worker: 172, nb soldier: 77
+nb ant: 250, food: 241/650, nest level: 4, nb worker: 172, nb soldier: 78
+nb ant: 252, food: 238/650, nest level: 4, nb worker: 173, nb soldier: 79
+nb ant: 254, food: 229/650, nest level: 4, nb worker: 173, nb soldier: 81
+#641 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 253, food: 230/650, nest level: 4, nb worker: 175, nb soldier: 78
+nb ant: 254, food: 233/650, nest level: 4, nb worker: 175, nb soldier: 79
+nb ant: 256, food: 234/650, nest level: 4, nb worker: 177, nb soldier: 79
+nb ant: 255, food: 232/650, nest level: 4, nb worker: 176, nb soldier: 79
+nb ant: 257, food: 232/650, nest level: 4, nb worker: 178, nb soldier: 79
+nb ant: 258, food: 229/650, nest level: 4, nb worker: 178, nb soldier: 80
+nb ant: 259, food: 227/650, nest level: 4, nb worker: 178, nb soldier: 81
+nb ant: 261, food: 221/650, nest level: 4, nb worker: 179, nb soldier: 82
+nb ant: 263, food: 221/650, nest level: 4, nb worker: 181, nb soldier: 82
+nb ant: 265, food: 219/650, nest level: 4, nb worker: 183, nb soldier: 82
+#651 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 260, food: 221/650, nest level: 4, nb worker: 182, nb soldier: 78
+nb ant: 262, food: 228/650, nest level: 4, nb worker: 183, nb soldier: 79
+nb ant: 263, food: 224/650, nest level: 4, nb worker: 183, nb soldier: 80
+nb ant: 265, food: 220/650, nest level: 4, nb worker: 184, nb soldier: 81
+nb ant: 264, food: 221/650, nest level: 4, nb worker: 183, nb soldier: 81
+nb ant: 265, food: 221/650, nest level: 4, nb worker: 184, nb soldier: 81
+nb ant: 267, food: 219/650, nest level: 4, nb worker: 186, nb soldier: 81
+nb ant: 269, food: 213/650, nest level: 4, nb worker: 187, nb soldier: 82
+nb ant: 268, food: 216/650, nest level: 4, nb worker: 186, nb soldier: 82
+nb ant: 267, food: 216/650, nest level: 4, nb worker: 185, nb soldier: 82
+#661 - a snail attack the colony
+the menace kill 4 soldier
+the menace kill 0 worker
+nb ant: 263, food: 216/650, nest level: 4, nb worker: 185, nb soldier: 78
+nb ant: 265, food: 226/650, nest level: 4, nb worker: 187, nb soldier: 78
+nb ant: 267, food: 222/650, nest level: 4, nb worker: 189, nb soldier: 78
+nb ant: 268, food: 221/650, nest level: 4, nb worker: 190, nb soldier: 78
+nb ant: 267, food: 227/650, nest level: 4, nb worker: 190, nb soldier: 77
+nb ant: 266, food: 226/650, nest level: 4, nb worker: 189, nb soldier: 77
+nb ant: 266, food: 225/650, nest level: 4, nb worker: 189, nb soldier: 77
+nb ant: 266, food: 228/650, nest level: 4, nb worker: 189, nb soldier: 77
+nb ant: 266, food: 227/650, nest level: 4, nb worker: 189, nb soldier: 77
+nb ant: 268, food: 222/650, nest level: 4, nb worker: 190, nb soldier: 78
+#671 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 270, food: 219/650, nest level: 4, nb worker: 192, nb soldier: 78
+nb ant: 271, food: 215/650, nest level: 4, nb worker: 191, nb soldier: 80
+nb ant: 272, food: 214/650, nest level: 4, nb worker: 192, nb soldier: 80
+nb ant: 272, food: 213/650, nest level: 4, nb worker: 192, nb soldier: 80
+nb ant: 274, food: 214/650, nest level: 4, nb worker: 194, nb soldier: 80
+nb ant: 274, food: 211/650, nest level: 4, nb worker: 194, nb soldier: 80
+nb ant: 274, food: 212/650, nest level: 4, nb worker: 194, nb soldier: 80
+nb ant: 274, food: 213/650, nest level: 4, nb worker: 194, nb soldier: 80
+nb ant: 274, food: 214/650, nest level: 4, nb worker: 194, nb soldier: 80
+nb ant: 274, food: 209/650, nest level: 4, nb worker: 193, nb soldier: 81
+#681 - a snail attack the colony
+the menace kill 4 soldier
+the menace kill 0 worker
+nb ant: 272, food: 210/650, nest level: 4, nb worker: 195, nb soldier: 77
+nb ant: 272, food: 215/650, nest level: 4, nb worker: 193, nb soldier: 79
+nb ant: 273, food: 211/650, nest level: 4, nb worker: 192, nb soldier: 81
+nb ant: 275, food: 207/650, nest level: 4, nb worker: 193, nb soldier: 82
+nb ant: 274, food: 208/650, nest level: 4, nb worker: 192, nb soldier: 82
+nb ant: 273, food: 208/650, nest level: 4, nb worker: 190, nb soldier: 83
+nb ant: 274, food: 205/650, nest level: 4, nb worker: 190, nb soldier: 84
+nb ant: 275, food: 203/650, nest level: 4, nb worker: 190, nb soldier: 85
+nb ant: 277, food: 199/650, nest level: 4, nb worker: 192, nb soldier: 85
+nb ant: 279, food: 197/650, nest level: 4, nb worker: 194, nb soldier: 85
+#691 - a snail attack the colony
+the menace kill 1 soldier
+the menace kill 0 worker
+nb ant: 279, food: 196/650, nest level: 4, nb worker: 194, nb soldier: 85
+nb ant: 280, food: 195/650, nest level: 4, nb worker: 194, nb soldier: 86
+nb ant: 282, food: 192/650, nest level: 4, nb worker: 196, nb soldier: 86
+nb ant: 283, food: 190/650, nest level: 4, nb worker: 196, nb soldier: 87
+nb ant: 285, food: 182/650, nest level: 4, nb worker: 196, nb soldier: 89
+nb ant: 287, food: 178/650, nest level: 4, nb worker: 197, nb soldier: 90
+nb ant: 287, food: 176/650, nest level: 4, nb worker: 196, nb soldier: 91
+nb ant: 289, food: 176/650, nest level: 4, nb worker: 198, nb soldier: 91
+nb ant: 291, food: 174/650, nest level: 4, nb worker: 200, nb soldier: 91
+nb ant: 293, food: 168/650, nest level: 4, nb worker: 201, nb soldier: 92
+#701 - a snail attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 294, food: 169/650, nest level: 4, nb worker: 202, nb soldier: 92
+nb ant: 295, food: 165/650, nest level: 4, nb worker: 201, nb soldier: 94
+nb ant: 297, food: 163/650, nest level: 4, nb worker: 203, nb soldier: 94
+nb ant: 299, food: 157/650, nest level: 4, nb worker: 204, nb soldier: 95
+nb ant: 299, food: 157/650, nest level: 4, nb worker: 203, nb soldier: 96
+nb ant: 299, food: 157/650, nest level: 4, nb worker: 203, nb soldier: 96
+nb ant: 300, food: 156/650, nest level: 4, nb worker: 204, nb soldier: 96
+nb ant: 300, food: 155/650, nest level: 4, nb worker: 204, nb soldier: 96
+nb ant: 300, food: 152/650, nest level: 4, nb worker: 203, nb soldier: 97
+nb ant: 302, food: 147/650, nest level: 4, nb worker: 203, nb soldier: 99
+#711 - a snail attack the colony
+the menace kill 4 soldier
+the menace kill 0 worker
+nb ant: 299, food: 143/650, nest level: 4, nb worker: 203, nb soldier: 96
+nb ant: 299, food: 155/650, nest level: 4, nb worker: 203, nb soldier: 96
+nb ant: 301, food: 149/650, nest level: 4, nb worker: 203, nb soldier: 98
+nb ant: 301, food: 151/650, nest level: 4, nb worker: 203, nb soldier: 98
+nb ant: 303, food: 145/650, nest level: 4, nb worker: 204, nb soldier: 99
+nb ant: 304, food: 146/650, nest level: 4, nb worker: 205, nb soldier: 99
+nb ant: 305, food: 142/650, nest level: 4, nb worker: 206, nb soldier: 99
+nb ant: 304, food: 143/650, nest level: 4, nb worker: 205, nb soldier: 99
+nb ant: 304, food: 144/650, nest level: 4, nb worker: 205, nb soldier: 99
+nb ant: 303, food: 146/650, nest level: 4, nb worker: 204, nb soldier: 99
+#721 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 300, food: 144/650, nest level: 4, nb worker: 204, nb soldier: 96
+nb ant: 300, food: 155/650, nest level: 4, nb worker: 204, nb soldier: 96
+nb ant: 299, food: 155/650, nest level: 4, nb worker: 203, nb soldier: 96
+nb ant: 299, food: 155/650, nest level: 4, nb worker: 203, nb soldier: 96
+nb ant: 300, food: 152/650, nest level: 4, nb worker: 203, nb soldier: 97
+nb ant: 302, food: 149/650, nest level: 4, nb worker: 204, nb soldier: 98
+nb ant: 301, food: 149/650, nest level: 4, nb worker: 202, nb soldier: 99
+nb ant: 302, food: 144/650, nest level: 4, nb worker: 201, nb soldier: 101
+nb ant: 303, food: 142/650, nest level: 4, nb worker: 202, nb soldier: 101
+nb ant: 303, food: 140/650, nest level: 4, nb worker: 202, nb soldier: 101
+#731 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 303, food: 140/650, nest level: 4, nb worker: 204, nb soldier: 99
+nb ant: 305, food: 142/650, nest level: 4, nb worker: 205, nb soldier: 100
+nb ant: 303, food: 142/650, nest level: 4, nb worker: 203, nb soldier: 100
+nb ant: 305, food: 136/650, nest level: 4, nb worker: 203, nb soldier: 102
+nb ant: 306, food: 137/650, nest level: 4, nb worker: 204, nb soldier: 102
+nb ant: 306, food: 138/650, nest level: 4, nb worker: 204, nb soldier: 102
+nb ant: 308, food: 133/850, nest level: 5, nb worker: 206, nb soldier: 102
+nb ant: 310, food: 334/850, nest level: 5, nb worker: 208, nb soldier: 102
+nb ant: 310, food: 331/850, nest level: 5, nb worker: 208, nb soldier: 102
+nb ant: 312, food: 330/850, nest level: 5, nb worker: 210, nb soldier: 102
+#741 - a snail attack the colony
+the menace kill 1 soldier
+the menace kill 0 worker
+nb ant: 312, food: 328/850, nest level: 5, nb worker: 211, nb soldier: 101
+nb ant: 314, food: 329/850, nest level: 5, nb worker: 212, nb soldier: 102
+nb ant: 312, food: 332/850, nest level: 5, nb worker: 210, nb soldier: 102
+nb ant: 312, food: 331/850, nest level: 5, nb worker: 210, nb soldier: 102
+nb ant: 312, food: 328/850, nest level: 5, nb worker: 209, nb soldier: 103
+nb ant: 313, food: 328/850, nest level: 5, nb worker: 210, nb soldier: 103
+nb ant: 313, food: 326/850, nest level: 5, nb worker: 209, nb soldier: 104
+nb ant: 314, food: 321/850, nest level: 5, nb worker: 209, nb soldier: 105
+nb ant: 315, food: 323/850, nest level: 5, nb worker: 210, nb soldier: 105
+nb ant: 317, food: 319/850, nest level: 5, nb worker: 212, nb soldier: 105
+#751 - a snail attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 316, food: 320/850, nest level: 5, nb worker: 211, nb soldier: 105
+nb ant: 316, food: 321/850, nest level: 5, nb worker: 211, nb soldier: 105
+nb ant: 318, food: 316/850, nest level: 5, nb worker: 211, nb soldier: 107
+nb ant: 319, food: 314/850, nest level: 5, nb worker: 212, nb soldier: 107
+nb ant: 318, food: 313/850, nest level: 5, nb worker: 211, nb soldier: 107
+nb ant: 319, food: 315/850, nest level: 5, nb worker: 212, nb soldier: 107
+nb ant: 320, food: 312/850, nest level: 5, nb worker: 213, nb soldier: 107
+nb ant: 320, food: 313/850, nest level: 5, nb worker: 213, nb soldier: 107
+nb ant: 318, food: 316/850, nest level: 5, nb worker: 211, nb soldier: 107
+nb ant: 320, food: 313/850, nest level: 5, nb worker: 213, nb soldier: 107
+#761 - a snail attack the colony
+the menace kill 1 soldier
+the menace kill 0 worker
+nb ant: 320, food: 313/850, nest level: 5, nb worker: 214, nb soldier: 106
+nb ant: 322, food: 312/850, nest level: 5, nb worker: 215, nb soldier: 107
+nb ant: 323, food: 308/850, nest level: 5, nb worker: 215, nb soldier: 108
+nb ant: 324, food: 307/850, nest level: 5, nb worker: 216, nb soldier: 108
+nb ant: 326, food: 304/850, nest level: 5, nb worker: 218, nb soldier: 108
+nb ant: 326, food: 305/850, nest level: 5, nb worker: 218, nb soldier: 108
+nb ant: 328, food: 302/850, nest level: 5, nb worker: 219, nb soldier: 109
+nb ant: 329, food: 296/850, nest level: 5, nb worker: 219, nb soldier: 110
+nb ant: 330, food: 297/850, nest level: 5, nb worker: 220, nb soldier: 110
+nb ant: 329, food: 299/850, nest level: 5, nb worker: 219, nb soldier: 110
+#771 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 329, food: 295/850, nest level: 5, nb worker: 221, nb soldier: 108
+nb ant: 331, food: 297/850, nest level: 5, nb worker: 222, nb soldier: 109
+nb ant: 332, food: 294/850, nest level: 5, nb worker: 221, nb soldier: 111
+nb ant: 332, food: 291/850, nest level: 5, nb worker: 221, nb soldier: 111
+nb ant: 332, food: 292/850, nest level: 5, nb worker: 221, nb soldier: 111
+nb ant: 334, food: 291/850, nest level: 5, nb worker: 223, nb soldier: 111
+nb ant: 335, food: 287/850, nest level: 5, nb worker: 223, nb soldier: 112
+nb ant: 337, food: 285/850, nest level: 5, nb worker: 225, nb soldier: 112
+nb ant: 338, food: 286/850, nest level: 5, nb worker: 226, nb soldier: 112
+nb ant: 339, food: 280/850, nest level: 5, nb worker: 226, nb soldier: 113
+#781 - a snail attack the colony
+the menace kill 4 soldier
+the menace kill 0 worker
+nb ant: 337, food: 280/850, nest level: 5, nb worker: 228, nb soldier: 109
+nb ant: 336, food: 291/850, nest level: 5, nb worker: 226, nb soldier: 110
+nb ant: 336, food: 290/850, nest level: 5, nb worker: 226, nb soldier: 110
+nb ant: 337, food: 288/850, nest level: 5, nb worker: 227, nb soldier: 110
+nb ant: 339, food: 284/850, nest level: 5, nb worker: 227, nb soldier: 112
+nb ant: 339, food: 284/850, nest level: 5, nb worker: 227, nb soldier: 112
+nb ant: 341, food: 280/850, nest level: 5, nb worker: 228, nb soldier: 113
+nb ant: 343, food: 276/850, nest level: 5, nb worker: 229, nb soldier: 114
+nb ant: 344, food: 273/850, nest level: 5, nb worker: 229, nb soldier: 115
+nb ant: 346, food: 272/850, nest level: 5, nb worker: 231, nb soldier: 115
+#791 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 346, food: 271/850, nest level: 5, nb worker: 231, nb soldier: 115
+nb ant: 348, food: 266/850, nest level: 5, nb worker: 232, nb soldier: 116
+nb ant: 349, food: 264/850, nest level: 5, nb worker: 233, nb soldier: 116
+nb ant: 350, food: 263/850, nest level: 5, nb worker: 233, nb soldier: 117
+nb ant: 351, food: 261/850, nest level: 5, nb worker: 234, nb soldier: 117
+nb ant: 352, food: 262/850, nest level: 5, nb worker: 235, nb soldier: 117
+nb ant: 354, food: 257/850, nest level: 5, nb worker: 237, nb soldier: 117
+nb ant: 354, food: 258/850, nest level: 5, nb worker: 236, nb soldier: 118
+nb ant: 356, food: 253/850, nest level: 5, nb worker: 238, nb soldier: 118
+nb ant: 357, food: 253/850, nest level: 5, nb worker: 238, nb soldier: 119
+#801 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 357, food: 251/850, nest level: 5, nb worker: 240, nb soldier: 117
+nb ant: 357, food: 255/850, nest level: 5, nb worker: 240, nb soldier: 117
+nb ant: 357, food: 257/850, nest level: 5, nb worker: 241, nb soldier: 116
+nb ant: 359, food: 257/850, nest level: 5, nb worker: 243, nb soldier: 116
+nb ant: 358, food: 260/850, nest level: 5, nb worker: 243, nb soldier: 115
+nb ant: 358, food: 255/850, nest level: 5, nb worker: 241, nb soldier: 117
+nb ant: 359, food: 253/850, nest level: 5, nb worker: 242, nb soldier: 117
+nb ant: 360, food: 252/850, nest level: 5, nb worker: 242, nb soldier: 118
+nb ant: 361, food: 248/850, nest level: 5, nb worker: 242, nb soldier: 119
+nb ant: 359, food: 250/850, nest level: 5, nb worker: 240, nb soldier: 119
+#811 - a snail attack the colony
+the menace kill 4 soldier
+the menace kill 0 worker
+nb ant: 356, food: 245/850, nest level: 5, nb worker: 240, nb soldier: 116
+nb ant: 356, food: 260/850, nest level: 5, nb worker: 240, nb soldier: 116
+nb ant: 356, food: 259/850, nest level: 5, nb worker: 240, nb soldier: 116
+nb ant: 358, food: 256/850, nest level: 5, nb worker: 242, nb soldier: 116
+nb ant: 359, food: 256/850, nest level: 5, nb worker: 243, nb soldier: 116
+nb ant: 359, food: 256/850, nest level: 5, nb worker: 243, nb soldier: 116
+nb ant: 360, food: 251/850, nest level: 5, nb worker: 242, nb soldier: 118
+nb ant: 362, food: 246/850, nest level: 5, nb worker: 243, nb soldier: 119
+nb ant: 364, food: 243/850, nest level: 5, nb worker: 245, nb soldier: 119
+nb ant: 366, food: 242/850, nest level: 5, nb worker: 247, nb soldier: 119
+#821 - a spider attack the colony
+the menace kill 1 soldier
+the menace kill 0 worker
+nb ant: 363, food: 243/850, nest level: 5, nb worker: 245, nb soldier: 118
+nb ant: 363, food: 245/850, nest level: 5, nb worker: 244, nb soldier: 119
+nb ant: 365, food: 245/850, nest level: 5, nb worker: 246, nb soldier: 119
+nb ant: 363, food: 247/850, nest level: 5, nb worker: 244, nb soldier: 119
+nb ant: 364, food: 240/850, nest level: 5, nb worker: 243, nb soldier: 121
+nb ant: 366, food: 237/850, nest level: 5, nb worker: 244, nb soldier: 122
+nb ant: 366, food: 238/850, nest level: 5, nb worker: 244, nb soldier: 122
+nb ant: 366, food: 235/850, nest level: 5, nb worker: 244, nb soldier: 122
+nb ant: 368, food: 234/850, nest level: 5, nb worker: 246, nb soldier: 122
+nb ant: 368, food: 233/850, nest level: 5, nb worker: 246, nb soldier: 122
+#831 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 366, food: 238/850, nest level: 5, nb worker: 244, nb soldier: 122
+nb ant: 368, food: 233/850, nest level: 5, nb worker: 246, nb soldier: 122
+nb ant: 370, food: 234/850, nest level: 5, nb worker: 248, nb soldier: 122
+nb ant: 370, food: 231/850, nest level: 5, nb worker: 248, nb soldier: 122
+nb ant: 371, food: 229/850, nest level: 5, nb worker: 248, nb soldier: 123
+nb ant: 368, food: 234/850, nest level: 5, nb worker: 245, nb soldier: 123
+nb ant: 370, food: 229/850, nest level: 5, nb worker: 247, nb soldier: 123
+nb ant: 372, food: 228/850, nest level: 5, nb worker: 248, nb soldier: 124
+nb ant: 374, food: 225/850, nest level: 5, nb worker: 250, nb soldier: 124
+nb ant: 376, food: 222/850, nest level: 5, nb worker: 251, nb soldier: 125
+#841 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 373, food: 219/850, nest level: 5, nb worker: 251, nb soldier: 122
+nb ant: 370, food: 232/850, nest level: 5, nb worker: 248, nb soldier: 122
+nb ant: 370, food: 233/850, nest level: 5, nb worker: 248, nb soldier: 122
+nb ant: 372, food: 228/850, nest level: 5, nb worker: 248, nb soldier: 124
+nb ant: 373, food: 226/850, nest level: 5, nb worker: 249, nb soldier: 124
+nb ant: 373, food: 224/850, nest level: 5, nb worker: 249, nb soldier: 124
+nb ant: 374, food: 223/850, nest level: 5, nb worker: 249, nb soldier: 125
+nb ant: 376, food: 220/850, nest level: 5, nb worker: 251, nb soldier: 125
+nb ant: 377, food: 220/850, nest level: 5, nb worker: 252, nb soldier: 125
+nb ant: 378, food: 217/850, nest level: 5, nb worker: 252, nb soldier: 126
+#851 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 376, food: 217/850, nest level: 5, nb worker: 253, nb soldier: 123
+nb ant: 378, food: 224/850, nest level: 5, nb worker: 255, nb soldier: 123
+nb ant: 380, food: 221/850, nest level: 5, nb worker: 257, nb soldier: 123
+nb ant: 379, food: 223/850, nest level: 5, nb worker: 256, nb soldier: 123
+nb ant: 379, food: 221/850, nest level: 5, nb worker: 256, nb soldier: 123
+nb ant: 377, food: 225/850, nest level: 5, nb worker: 254, nb soldier: 123
+nb ant: 378, food: 224/850, nest level: 5, nb worker: 255, nb soldier: 123
+nb ant: 379, food: 222/850, nest level: 5, nb worker: 256, nb soldier: 123
+nb ant: 379, food: 218/850, nest level: 5, nb worker: 255, nb soldier: 124
+nb ant: 381, food: 212/850, nest level: 5, nb worker: 255, nb soldier: 126
+#861 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 381, food: 212/850, nest level: 5, nb worker: 257, nb soldier: 124
+nb ant: 380, food: 217/850, nest level: 5, nb worker: 255, nb soldier: 125
+nb ant: 382, food: 216/850, nest level: 5, nb worker: 257, nb soldier: 125
+nb ant: 383, food: 212/850, nest level: 5, nb worker: 257, nb soldier: 126
+nb ant: 382, food: 213/850, nest level: 5, nb worker: 256, nb soldier: 126
+nb ant: 382, food: 214/850, nest level: 5, nb worker: 256, nb soldier: 126
+nb ant: 381, food: 212/850, nest level: 5, nb worker: 255, nb soldier: 126
+nb ant: 383, food: 210/850, nest level: 5, nb worker: 256, nb soldier: 127
+nb ant: 385, food: 204/850, nest level: 5, nb worker: 257, nb soldier: 128
+nb ant: 384, food: 207/850, nest level: 5, nb worker: 256, nb soldier: 128
+#871 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 385, food: 205/850, nest level: 5, nb worker: 257, nb soldier: 128
+nb ant: 386, food: 204/850, nest level: 5, nb worker: 257, nb soldier: 129
+nb ant: 388, food: 201/850, nest level: 5, nb worker: 259, nb soldier: 129
+nb ant: 388, food: 202/850, nest level: 5, nb worker: 259, nb soldier: 129
+nb ant: 387, food: 200/850, nest level: 5, nb worker: 258, nb soldier: 129
+nb ant: 388, food: 201/850, nest level: 5, nb worker: 259, nb soldier: 129
+nb ant: 389, food: 199/850, nest level: 5, nb worker: 259, nb soldier: 130
+nb ant: 390, food: 196/850, nest level: 5, nb worker: 260, nb soldier: 130
+nb ant: 390, food: 199/850, nest level: 5, nb worker: 261, nb soldier: 129
+nb ant: 392, food: 194/850, nest level: 5, nb worker: 262, nb soldier: 130
+#881 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 392, food: 189/850, nest level: 5, nb worker: 263, nb soldier: 129
+nb ant: 393, food: 197/850, nest level: 5, nb worker: 264, nb soldier: 129
+nb ant: 395, food: 193/850, nest level: 5, nb worker: 265, nb soldier: 130
+nb ant: 395, food: 193/850, nest level: 5, nb worker: 265, nb soldier: 130
+nb ant: 396, food: 192/850, nest level: 5, nb worker: 266, nb soldier: 130
+nb ant: 395, food: 192/850, nest level: 5, nb worker: 265, nb soldier: 130
+nb ant: 394, food: 193/850, nest level: 5, nb worker: 264, nb soldier: 130
+nb ant: 396, food: 190/850, nest level: 5, nb worker: 265, nb soldier: 131
+nb ant: 398, food: 181/850, nest level: 5, nb worker: 265, nb soldier: 133
+nb ant: 400, food: 182/850, nest level: 5, nb worker: 267, nb soldier: 133
+#891 - a snail attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 399, food: 178/850, nest level: 5, nb worker: 265, nb soldier: 134
+nb ant: 399, food: 178/850, nest level: 5, nb worker: 265, nb soldier: 134
+nb ant: 399, food: 178/850, nest level: 5, nb worker: 265, nb soldier: 134
+nb ant: 398, food: 179/850, nest level: 5, nb worker: 264, nb soldier: 134
+nb ant: 400, food: 178/850, nest level: 5, nb worker: 266, nb soldier: 134
+nb ant: 401, food: 176/850, nest level: 5, nb worker: 267, nb soldier: 134
+nb ant: 401, food: 178/850, nest level: 5, nb worker: 267, nb soldier: 134
+nb ant: 401, food: 176/850, nest level: 5, nb worker: 267, nb soldier: 134
+nb ant: 401, food: 178/850, nest level: 5, nb worker: 267, nb soldier: 134
+nb ant: 402, food: 175/850, nest level: 5, nb worker: 268, nb soldier: 134
+#901 - a tapir attack the colony
+the menace kill 11 soldier
+the menace kill 0 worker
+nb ant: 392, food: 175/850, nest level: 5, nb worker: 269, nb soldier: 123
+nb ant: 391, food: 209/850, nest level: 5, nb worker: 268, nb soldier: 123
+nb ant: 391, food: 211/850, nest level: 5, nb worker: 268, nb soldier: 123
+nb ant: 392, food: 206/850, nest level: 5, nb worker: 268, nb soldier: 124
+nb ant: 393, food: 200/850, nest level: 5, nb worker: 267, nb soldier: 126
+nb ant: 393, food: 200/850, nest level: 5, nb worker: 266, nb soldier: 127
+nb ant: 395, food: 196/850, nest level: 5, nb worker: 267, nb soldier: 128
+nb ant: 393, food: 198/850, nest level: 5, nb worker: 265, nb soldier: 128
+nb ant: 395, food: 194/850, nest level: 5, nb worker: 267, nb soldier: 128
+nb ant: 396, food: 193/850, nest level: 5, nb worker: 268, nb soldier: 128
+#911 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 394, food: 198/850, nest level: 5, nb worker: 266, nb soldier: 128
+nb ant: 392, food: 197/850, nest level: 5, nb worker: 264, nb soldier: 128
+nb ant: 393, food: 199/850, nest level: 5, nb worker: 265, nb soldier: 128
+nb ant: 394, food: 194/850, nest level: 5, nb worker: 265, nb soldier: 129
+nb ant: 394, food: 193/850, nest level: 5, nb worker: 265, nb soldier: 129
+nb ant: 395, food: 195/850, nest level: 5, nb worker: 266, nb soldier: 129
+nb ant: 395, food: 193/850, nest level: 5, nb worker: 266, nb soldier: 129
+nb ant: 394, food: 196/850, nest level: 5, nb worker: 265, nb soldier: 129
+nb ant: 395, food: 194/850, nest level: 5, nb worker: 266, nb soldier: 129
+nb ant: 396, food: 191/850, nest level: 5, nb worker: 267, nb soldier: 129
+#921 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 393, food: 191/850, nest level: 5, nb worker: 265, nb soldier: 128
+nb ant: 393, food: 197/850, nest level: 5, nb worker: 265, nb soldier: 128
+nb ant: 393, food: 197/850, nest level: 5, nb worker: 264, nb soldier: 129
+nb ant: 393, food: 195/850, nest level: 5, nb worker: 263, nb soldier: 130
+nb ant: 394, food: 192/850, nest level: 5, nb worker: 264, nb soldier: 130
+nb ant: 394, food: 193/850, nest level: 5, nb worker: 264, nb soldier: 130
+nb ant: 396, food: 190/850, nest level: 5, nb worker: 265, nb soldier: 131
+nb ant: 398, food: 185/850, nest level: 5, nb worker: 267, nb soldier: 131
+nb ant: 398, food: 188/850, nest level: 5, nb worker: 267, nb soldier: 131
+nb ant: 397, food: 188/850, nest level: 5, nb worker: 266, nb soldier: 131
+#931 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 395, food: 187/850, nest level: 5, nb worker: 267, nb soldier: 128
+nb ant: 397, food: 191/850, nest level: 5, nb worker: 268, nb soldier: 129
+nb ant: 396, food: 192/850, nest level: 5, nb worker: 267, nb soldier: 129
+nb ant: 398, food: 189/850, nest level: 5, nb worker: 268, nb soldier: 130
+nb ant: 397, food: 191/850, nest level: 5, nb worker: 267, nb soldier: 130
+nb ant: 399, food: 183/850, nest level: 5, nb worker: 267, nb soldier: 132
+nb ant: 399, food: 183/850, nest level: 5, nb worker: 267, nb soldier: 132
+nb ant: 400, food: 180/850, nest level: 5, nb worker: 267, nb soldier: 133
+nb ant: 399, food: 182/850, nest level: 5, nb worker: 266, nb soldier: 133
+nb ant: 399, food: 180/850, nest level: 5, nb worker: 266, nb soldier: 133
+#941 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 399, food: 182/850, nest level: 5, nb worker: 266, nb soldier: 133
+nb ant: 398, food: 181/850, nest level: 5, nb worker: 265, nb soldier: 133
+nb ant: 398, food: 184/850, nest level: 5, nb worker: 265, nb soldier: 133
+nb ant: 399, food: 182/850, nest level: 5, nb worker: 266, nb soldier: 133
+nb ant: 400, food: 179/850, nest level: 5, nb worker: 267, nb soldier: 133
+nb ant: 399, food: 181/850, nest level: 5, nb worker: 266, nb soldier: 133
+nb ant: 401, food: 181/850, nest level: 5, nb worker: 268, nb soldier: 133
+nb ant: 400, food: 182/850, nest level: 5, nb worker: 267, nb soldier: 133
+nb ant: 399, food: 176/850, nest level: 5, nb worker: 264, nb soldier: 135
+nb ant: 398, food: 179/850, nest level: 5, nb worker: 263, nb soldier: 135
+#951 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 398, food: 176/850, nest level: 5, nb worker: 265, nb soldier: 133
+nb ant: 399, food: 182/850, nest level: 5, nb worker: 266, nb soldier: 133
+nb ant: 398, food: 181/850, nest level: 5, nb worker: 265, nb soldier: 133
+nb ant: 399, food: 183/850, nest level: 5, nb worker: 266, nb soldier: 133
+nb ant: 400, food: 182/850, nest level: 5, nb worker: 268, nb soldier: 132
+nb ant: 402, food: 175/850, nest level: 5, nb worker: 268, nb soldier: 134
+nb ant: 401, food: 177/850, nest level: 5, nb worker: 267, nb soldier: 134
+nb ant: 402, food: 178/850, nest level: 5, nb worker: 268, nb soldier: 134
+nb ant: 403, food: 176/850, nest level: 5, nb worker: 270, nb soldier: 133
+nb ant: 402, food: 177/850, nest level: 5, nb worker: 268, nb soldier: 134
+#961 - a snail attack the colony
+the menace kill 4 soldier
+the menace kill 0 worker
+nb ant: 400, food: 176/850, nest level: 5, nb worker: 270, nb soldier: 130
+nb ant: 398, food: 191/850, nest level: 5, nb worker: 269, nb soldier: 129
+nb ant: 398, food: 190/850, nest level: 5, nb worker: 269, nb soldier: 129
+nb ant: 398, food: 187/850, nest level: 5, nb worker: 268, nb soldier: 130
+nb ant: 398, food: 184/850, nest level: 5, nb worker: 266, nb soldier: 132
+nb ant: 399, food: 180/850, nest level: 5, nb worker: 265, nb soldier: 134
+nb ant: 399, food: 180/850, nest level: 5, nb worker: 265, nb soldier: 134
+nb ant: 400, food: 179/850, nest level: 5, nb worker: 266, nb soldier: 134
+nb ant: 402, food: 176/850, nest level: 5, nb worker: 268, nb soldier: 134
+nb ant: 404, food: 175/850, nest level: 5, nb worker: 270, nb soldier: 134
+#971 - a snail attack the colony
+the menace kill 1 soldier
+the menace kill 0 worker
+nb ant: 405, food: 170/850, nest level: 5, nb worker: 271, nb soldier: 134
+nb ant: 404, food: 173/850, nest level: 5, nb worker: 270, nb soldier: 134
+nb ant: 403, food: 177/850, nest level: 5, nb worker: 269, nb soldier: 134
+nb ant: 401, food: 179/850, nest level: 5, nb worker: 267, nb soldier: 134
+nb ant: 403, food: 175/850, nest level: 5, nb worker: 269, nb soldier: 134
+nb ant: 400, food: 178/850, nest level: 5, nb worker: 266, nb soldier: 134
+nb ant: 400, food: 177/850, nest level: 5, nb worker: 266, nb soldier: 134
+nb ant: 401, food: 179/850, nest level: 5, nb worker: 267, nb soldier: 134
+nb ant: 401, food: 177/850, nest level: 5, nb worker: 267, nb soldier: 134
+nb ant: 400, food: 180/850, nest level: 5, nb worker: 266, nb soldier: 134
+#981 - a snail attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 402, food: 177/850, nest level: 5, nb worker: 268, nb soldier: 134
+nb ant: 402, food: 178/850, nest level: 5, nb worker: 268, nb soldier: 134
+nb ant: 404, food: 173/850, nest level: 5, nb worker: 270, nb soldier: 134
+nb ant: 406, food: 170/850, nest level: 5, nb worker: 270, nb soldier: 136
+nb ant: 404, food: 169/850, nest level: 5, nb worker: 268, nb soldier: 136
+nb ant: 404, food: 172/850, nest level: 5, nb worker: 268, nb soldier: 136
+nb ant: 405, food: 170/850, nest level: 5, nb worker: 269, nb soldier: 136
+nb ant: 406, food: 167/850, nest level: 5, nb worker: 270, nb soldier: 136
+nb ant: 408, food: 166/850, nest level: 5, nb worker: 272, nb soldier: 136
+nb ant: 405, food: 168/850, nest level: 5, nb worker: 269, nb soldier: 136
+#991 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 406, food: 169/850, nest level: 5, nb worker: 270, nb soldier: 136
+nb ant: 406, food: 170/850, nest level: 5, nb worker: 270, nb soldier: 136
+nb ant: 406, food: 167/850, nest level: 5, nb worker: 270, nb soldier: 136
+nb ant: 407, food: 167/850, nest level: 5, nb worker: 271, nb soldier: 136
+nb ant: 408, food: 166/850, nest level: 5, nb worker: 272, nb soldier: 136
+nb ant: 407, food: 166/850, nest level: 5, nb worker: 271, nb soldier: 136
+nb ant: 408, food: 165/850, nest level: 5, nb worker: 272, nb soldier: 136
+nb ant: 407, food: 169/850, nest level: 5, nb worker: 271, nb soldier: 136
+nb ant: 407, food: 169/850, nest level: 5, nb worker: 271, nb soldier: 136
+nb ant: 408, food: 168/850, nest level: 5, nb worker: 272, nb soldier: 136
+#1001 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 406, food: 169/850, nest level: 5, nb worker: 270, nb soldier: 136
+nb ant: 406, food: 172/850, nest level: 5, nb worker: 271, nb soldier: 135
+nb ant: 405, food: 172/850, nest level: 5, nb worker: 270, nb soldier: 135
+nb ant: 406, food: 171/850, nest level: 5, nb worker: 271, nb soldier: 135
+nb ant: 405, food: 173/850, nest level: 5, nb worker: 271, nb soldier: 134
+nb ant: 406, food: 170/850, nest level: 5, nb worker: 270, nb soldier: 136
+nb ant: 405, food: 168/850, nest level: 5, nb worker: 269, nb soldier: 136
+nb ant: 404, food: 171/850, nest level: 5, nb worker: 268, nb soldier: 136
+nb ant: 403, food: 171/850, nest level: 5, nb worker: 267, nb soldier: 136
+nb ant: 403, food: 171/850, nest level: 5, nb worker: 267, nb soldier: 136
+#1011 - a snail attack the colony
+the menace kill 1 soldier
+the menace kill 0 worker
+nb ant: 400, food: 179/850, nest level: 5, nb worker: 268, nb soldier: 132
+nb ant: 396, food: 186/850, nest level: 5, nb worker: 264, nb soldier: 132
+nb ant: 394, food: 187/850, nest level: 5, nb worker: 262, nb soldier: 132
+nb ant: 395, food: 187/850, nest level: 5, nb worker: 263, nb soldier: 132
+nb ant: 397, food: 185/850, nest level: 5, nb worker: 265, nb soldier: 132
+nb ant: 398, food: 182/850, nest level: 5, nb worker: 264, nb soldier: 134
+nb ant: 398, food: 179/850, nest level: 5, nb worker: 264, nb soldier: 134
+nb ant: 400, food: 178/850, nest level: 5, nb worker: 266, nb soldier: 134
+nb ant: 398, food: 179/850, nest level: 5, nb worker: 264, nb soldier: 134
+nb ant: 397, food: 181/850, nest level: 5, nb worker: 263, nb soldier: 134
+#1021 - a snail attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 399, food: 181/850, nest level: 5, nb worker: 265, nb soldier: 134
+nb ant: 401, food: 179/850, nest level: 5, nb worker: 267, nb soldier: 134
+nb ant: 397, food: 181/850, nest level: 5, nb worker: 263, nb soldier: 134
+nb ant: 398, food: 182/850, nest level: 5, nb worker: 264, nb soldier: 134
+nb ant: 398, food: 179/850, nest level: 5, nb worker: 264, nb soldier: 134
+nb ant: 397, food: 181/850, nest level: 5, nb worker: 263, nb soldier: 134
+nb ant: 399, food: 181/850, nest level: 5, nb worker: 265, nb soldier: 134
+nb ant: 398, food: 182/850, nest level: 5, nb worker: 264, nb soldier: 134
+nb ant: 395, food: 182/850, nest level: 5, nb worker: 261, nb soldier: 134
+nb ant: 395, food: 182/850, nest level: 5, nb worker: 261, nb soldier: 134
+#1031 - a snail attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 392, food: 187/850, nest level: 5, nb worker: 259, nb soldier: 133
+nb ant: 391, food: 189/850, nest level: 5, nb worker: 258, nb soldier: 133
+nb ant: 389, food: 193/850, nest level: 5, nb worker: 256, nb soldier: 133
+nb ant: 391, food: 191/850, nest level: 5, nb worker: 258, nb soldier: 133
+nb ant: 393, food: 187/850, nest level: 5, nb worker: 260, nb soldier: 133
+nb ant: 395, food: 185/850, nest level: 5, nb worker: 262, nb soldier: 133
+nb ant: 397, food: 185/850, nest level: 5, nb worker: 264, nb soldier: 133
+nb ant: 398, food: 186/850, nest level: 5, nb worker: 266, nb soldier: 132
+nb ant: 399, food: 182/850, nest level: 5, nb worker: 267, nb soldier: 132
+nb ant: 398, food: 183/850, nest level: 5, nb worker: 266, nb soldier: 132
+#1041 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 396, food: 182/850, nest level: 5, nb worker: 265, nb soldier: 131
+nb ant: 397, food: 184/850, nest level: 5, nb worker: 265, nb soldier: 132
+nb ant: 396, food: 187/850, nest level: 5, nb worker: 264, nb soldier: 132
+nb ant: 393, food: 195/850, nest level: 5, nb worker: 264, nb soldier: 129
+nb ant: 394, food: 192/850, nest level: 5, nb worker: 264, nb soldier: 130
+nb ant: 392, food: 195/850, nest level: 5, nb worker: 262, nb soldier: 130
+nb ant: 391, food: 195/850, nest level: 5, nb worker: 261, nb soldier: 130
+nb ant: 389, food: 197/850, nest level: 5, nb worker: 259, nb soldier: 130
+nb ant: 389, food: 199/850, nest level: 5, nb worker: 259, nb soldier: 130
+nb ant: 391, food: 195/850, nest level: 5, nb worker: 261, nb soldier: 130
+#1051 - a snail attack the colony
+the menace kill 5 soldier
+the menace kill 0 worker
+nb ant: 384, food: 197/850, nest level: 5, nb worker: 259, nb soldier: 125
+nb ant: 384, food: 212/850, nest level: 5, nb worker: 258, nb soldier: 126
+nb ant: 384, food: 209/850, nest level: 5, nb worker: 257, nb soldier: 127
+nb ant: 385, food: 209/850, nest level: 5, nb worker: 258, nb soldier: 127
+nb ant: 384, food: 210/850, nest level: 5, nb worker: 257, nb soldier: 127
+nb ant: 382, food: 211/850, nest level: 5, nb worker: 256, nb soldier: 126
+nb ant: 383, food: 209/850, nest level: 5, nb worker: 256, nb soldier: 127
+nb ant: 382, food: 212/850, nest level: 5, nb worker: 255, nb soldier: 127
+nb ant: 383, food: 210/850, nest level: 5, nb worker: 256, nb soldier: 127
+nb ant: 384, food: 207/850, nest level: 5, nb worker: 257, nb soldier: 127
+#1061 - a snail attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 382, food: 212/850, nest level: 5, nb worker: 256, nb soldier: 126
+nb ant: 384, food: 211/850, nest level: 5, nb worker: 258, nb soldier: 126
+nb ant: 383, food: 211/850, nest level: 5, nb worker: 257, nb soldier: 126
+nb ant: 384, food: 208/850, nest level: 5, nb worker: 257, nb soldier: 127
+nb ant: 385, food: 206/850, nest level: 5, nb worker: 257, nb soldier: 128
+nb ant: 385, food: 204/850, nest level: 5, nb worker: 257, nb soldier: 128
+nb ant: 384, food: 205/850, nest level: 5, nb worker: 255, nb soldier: 129
+nb ant: 385, food: 207/850, nest level: 5, nb worker: 257, nb soldier: 128
+nb ant: 387, food: 199/850, nest level: 5, nb worker: 257, nb soldier: 130
+nb ant: 388, food: 200/850, nest level: 5, nb worker: 259, nb soldier: 129
+#1071 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 388, food: 201/850, nest level: 5, nb worker: 259, nb soldier: 129
+nb ant: 388, food: 200/850, nest level: 5, nb worker: 258, nb soldier: 130
+nb ant: 387, food: 200/850, nest level: 5, nb worker: 257, nb soldier: 130
+nb ant: 389, food: 198/850, nest level: 5, nb worker: 259, nb soldier: 130
+nb ant: 389, food: 196/850, nest level: 5, nb worker: 259, nb soldier: 130
+nb ant: 388, food: 201/850, nest level: 5, nb worker: 259, nb soldier: 129
+nb ant: 389, food: 201/850, nest level: 5, nb worker: 260, nb soldier: 129
+nb ant: 390, food: 198/850, nest level: 5, nb worker: 260, nb soldier: 130
+nb ant: 390, food: 195/850, nest level: 5, nb worker: 260, nb soldier: 130
+nb ant: 388, food: 198/850, nest level: 5, nb worker: 258, nb soldier: 130
+#1081 - a snail attack the colony
+the menace kill 5 soldier
+the menace kill 0 worker
+nb ant: 383, food: 197/850, nest level: 5, nb worker: 258, nb soldier: 125
+nb ant: 384, food: 212/850, nest level: 5, nb worker: 258, nb soldier: 126
+nb ant: 385, food: 208/850, nest level: 5, nb worker: 258, nb soldier: 127
+nb ant: 384, food: 209/850, nest level: 5, nb worker: 257, nb soldier: 127
+nb ant: 384, food: 210/850, nest level: 5, nb worker: 257, nb soldier: 127
+nb ant: 386, food: 201/850, nest level: 5, nb worker: 257, nb soldier: 129
+nb ant: 385, food: 205/850, nest level: 5, nb worker: 256, nb soldier: 129
+nb ant: 385, food: 205/850, nest level: 5, nb worker: 256, nb soldier: 129
+nb ant: 384, food: 208/850, nest level: 5, nb worker: 256, nb soldier: 128
+nb ant: 385, food: 206/850, nest level: 5, nb worker: 257, nb soldier: 128
+#1091 - a snail attack the colony
+the menace kill 1 soldier
+the menace kill 0 worker
+nb ant: 385, food: 203/850, nest level: 5, nb worker: 258, nb soldier: 127
+nb ant: 386, food: 204/850, nest level: 5, nb worker: 258, nb soldier: 128
+nb ant: 386, food: 205/850, nest level: 5, nb worker: 258, nb soldier: 128
+nb ant: 386, food: 206/850, nest level: 5, nb worker: 258, nb soldier: 128
+nb ant: 387, food: 200/850, nest level: 5, nb worker: 258, nb soldier: 129
+nb ant: 382, food: 207/850, nest level: 5, nb worker: 253, nb soldier: 129
+nb ant: 381, food: 207/850, nest level: 5, nb worker: 252, nb soldier: 129
+nb ant: 382, food: 206/850, nest level: 5, nb worker: 253, nb soldier: 129
+nb ant: 380, food: 207/850, nest level: 5, nb worker: 251, nb soldier: 129
+nb ant: 382, food: 206/850, nest level: 5, nb worker: 253, nb soldier: 129
+#1101 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 380, food: 204/850, nest level: 5, nb worker: 254, nb soldier: 126
+nb ant: 379, food: 216/850, nest level: 5, nb worker: 253, nb soldier: 126
+nb ant: 380, food: 211/850, nest level: 5, nb worker: 252, nb soldier: 128
+nb ant: 379, food: 211/850, nest level: 5, nb worker: 251, nb soldier: 128
+nb ant: 380, food: 212/850, nest level: 5, nb worker: 253, nb soldier: 127
+nb ant: 380, food: 213/850, nest level: 5, nb worker: 253, nb soldier: 127
+nb ant: 381, food: 213/850, nest level: 5, nb worker: 254, nb soldier: 127
+nb ant: 378, food: 222/850, nest level: 5, nb worker: 254, nb soldier: 124
+nb ant: 377, food: 220/850, nest level: 5, nb worker: 253, nb soldier: 124
+nb ant: 377, food: 220/850, nest level: 5, nb worker: 252, nb soldier: 125
+#1111 - a snail attack the colony
+the menace kill 4 soldier
+the menace kill 0 worker
+nb ant: 371, food: 222/850, nest level: 5, nb worker: 250, nb soldier: 121
+nb ant: 372, food: 231/850, nest level: 5, nb worker: 251, nb soldier: 121
+nb ant: 372, food: 228/850, nest level: 5, nb worker: 249, nb soldier: 123
+nb ant: 374, food: 223/850, nest level: 5, nb worker: 249, nb soldier: 125
+nb ant: 375, food: 221/850, nest level: 5, nb worker: 250, nb soldier: 125
+nb ant: 376, food: 222/850, nest level: 5, nb worker: 251, nb soldier: 125
+nb ant: 374, food: 221/850, nest level: 5, nb worker: 249, nb soldier: 125
+nb ant: 375, food: 223/850, nest level: 5, nb worker: 250, nb soldier: 125
+nb ant: 376, food: 220/850, nest level: 5, nb worker: 251, nb soldier: 125
+nb ant: 377, food: 216/850, nest level: 5, nb worker: 250, nb soldier: 127
+#1121 - a tapir attack the colony
+the menace kill 12 soldier
+the menace kill 0 worker
+nb ant: 364, food: 219/850, nest level: 5, nb worker: 250, nb soldier: 114
+nb ant: 365, food: 253/850, nest level: 5, nb worker: 251, nb soldier: 114
+nb ant: 367, food: 251/850, nest level: 5, nb worker: 252, nb soldier: 115
+nb ant: 365, food: 251/850, nest level: 5, nb worker: 250, nb soldier: 115
+nb ant: 366, food: 248/850, nest level: 5, nb worker: 250, nb soldier: 116
+nb ant: 368, food: 247/850, nest level: 5, nb worker: 252, nb soldier: 116
+nb ant: 368, food: 242/850, nest level: 5, nb worker: 250, nb soldier: 118
+nb ant: 367, food: 242/850, nest level: 5, nb worker: 249, nb soldier: 118
+nb ant: 366, food: 243/850, nest level: 5, nb worker: 248, nb soldier: 118
+nb ant: 365, food: 245/850, nest level: 5, nb worker: 247, nb soldier: 118
+#1131 - a snail attack the colony
+the menace kill 4 soldier
+the menace kill 0 worker
+nb ant: 361, food: 245/850, nest level: 5, nb worker: 246, nb soldier: 115
+nb ant: 362, food: 256/850, nest level: 5, nb worker: 247, nb soldier: 115
+nb ant: 363, food: 254/850, nest level: 5, nb worker: 248, nb soldier: 115
+nb ant: 362, food: 253/850, nest level: 5, nb worker: 247, nb soldier: 115
+nb ant: 364, food: 252/850, nest level: 5, nb worker: 248, nb soldier: 116
+nb ant: 363, food: 252/850, nest level: 5, nb worker: 247, nb soldier: 116
+nb ant: 365, food: 250/850, nest level: 5, nb worker: 249, nb soldier: 116
+nb ant: 367, food: 244/850, nest level: 5, nb worker: 250, nb soldier: 117
+nb ant: 368, food: 243/850, nest level: 5, nb worker: 250, nb soldier: 118
+nb ant: 367, food: 243/850, nest level: 5, nb worker: 249, nb soldier: 118
+#1141 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 366, food: 244/850, nest level: 5, nb worker: 248, nb soldier: 118
+nb ant: 367, food: 244/850, nest level: 5, nb worker: 249, nb soldier: 118
+nb ant: 367, food: 244/850, nest level: 5, nb worker: 249, nb soldier: 118
+nb ant: 366, food: 243/850, nest level: 5, nb worker: 247, nb soldier: 119
+nb ant: 367, food: 243/850, nest level: 5, nb worker: 249, nb soldier: 118
+nb ant: 368, food: 238/850, nest level: 5, nb worker: 248, nb soldier: 120
+nb ant: 367, food: 236/850, nest level: 5, nb worker: 246, nb soldier: 121
+nb ant: 368, food: 235/850, nest level: 5, nb worker: 246, nb soldier: 122
+nb ant: 366, food: 236/850, nest level: 5, nb worker: 244, nb soldier: 122
+nb ant: 367, food: 236/850, nest level: 5, nb worker: 245, nb soldier: 122
+#1151 - a snail attack the colony
+the menace kill 4 soldier
+the menace kill 0 worker
+nb ant: 364, food: 231/850, nest level: 5, nb worker: 244, nb soldier: 120
+nb ant: 366, food: 240/850, nest level: 5, nb worker: 246, nb soldier: 120
+nb ant: 367, food: 240/850, nest level: 5, nb worker: 247, nb soldier: 120
+nb ant: 367, food: 240/850, nest level: 5, nb worker: 247, nb soldier: 120
+nb ant: 368, food: 237/850, nest level: 5, nb worker: 247, nb soldier: 121
+nb ant: 366, food: 240/850, nest level: 5, nb worker: 245, nb soldier: 121
+nb ant: 366, food: 239/850, nest level: 5, nb worker: 245, nb soldier: 121
+nb ant: 368, food: 234/850, nest level: 5, nb worker: 246, nb soldier: 122
+nb ant: 369, food: 232/850, nest level: 5, nb worker: 247, nb soldier: 122
+nb ant: 370, food: 231/850, nest level: 5, nb worker: 247, nb soldier: 123
+#1161 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 368, food: 227/850, nest level: 5, nb worker: 247, nb soldier: 121
+nb ant: 367, food: 237/850, nest level: 5, nb worker: 246, nb soldier: 121
+nb ant: 368, food: 236/850, nest level: 5, nb worker: 246, nb soldier: 122
+nb ant: 369, food: 234/850, nest level: 5, nb worker: 247, nb soldier: 122
+nb ant: 370, food: 229/850, nest level: 5, nb worker: 247, nb soldier: 123
+nb ant: 369, food: 233/850, nest level: 5, nb worker: 246, nb soldier: 123
+nb ant: 370, food: 232/850, nest level: 5, nb worker: 247, nb soldier: 123
+nb ant: 371, food: 230/850, nest level: 5, nb worker: 248, nb soldier: 123
+nb ant: 371, food: 226/850, nest level: 5, nb worker: 247, nb soldier: 124
+nb ant: 373, food: 224/850, nest level: 5, nb worker: 249, nb soldier: 124
+#1171 - a snail attack the colony
+the menace kill 1 soldier
+the menace kill 0 worker
+nb ant: 374, food: 222/850, nest level: 5, nb worker: 250, nb soldier: 124
+nb ant: 373, food: 224/850, nest level: 5, nb worker: 249, nb soldier: 124
+nb ant: 375, food: 224/850, nest level: 5, nb worker: 251, nb soldier: 124
+nb ant: 371, food: 230/850, nest level: 5, nb worker: 248, nb soldier: 123
+nb ant: 372, food: 225/850, nest level: 5, nb worker: 248, nb soldier: 124
+nb ant: 372, food: 228/850, nest level: 5, nb worker: 248, nb soldier: 124
+nb ant: 371, food: 228/850, nest level: 5, nb worker: 247, nb soldier: 124
+nb ant: 369, food: 230/850, nest level: 5, nb worker: 245, nb soldier: 124
+nb ant: 371, food: 226/850, nest level: 5, nb worker: 247, nb soldier: 124
+nb ant: 369, food: 228/850, nest level: 5, nb worker: 245, nb soldier: 124
+#1181 - a tapir attack the colony
+the menace kill 17 soldier
+the menace kill 0 worker
+nb ant: 353, food: 229/850, nest level: 5, nb worker: 246, nb soldier: 107
+nb ant: 353, food: 281/850, nest level: 5, nb worker: 246, nb soldier: 107
+nb ant: 355, food: 277/850, nest level: 5, nb worker: 247, nb soldier: 108
+nb ant: 357, food: 275/850, nest level: 5, nb worker: 249, nb soldier: 108
+nb ant: 358, food: 272/850, nest level: 5, nb worker: 250, nb soldier: 108
+nb ant: 359, food: 270/850, nest level: 5, nb worker: 250, nb soldier: 109
+nb ant: 359, food: 264/850, nest level: 5, nb worker: 248, nb soldier: 111
+nb ant: 359, food: 264/850, nest level: 5, nb worker: 247, nb soldier: 112
+nb ant: 360, food: 261/850, nest level: 5, nb worker: 247, nb soldier: 113
+nb ant: 360, food: 260/850, nest level: 5, nb worker: 246, nb soldier: 114
+#1191 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 356, food: 262/850, nest level: 5, nb worker: 246, nb soldier: 110
+nb ant: 358, food: 265/850, nest level: 5, nb worker: 247, nb soldier: 111
+nb ant: 357, food: 269/850, nest level: 5, nb worker: 246, nb soldier: 111
+nb ant: 354, food: 270/850, nest level: 5, nb worker: 242, nb soldier: 112
+nb ant: 353, food: 264/850, nest level: 5, nb worker: 239, nb soldier: 114
+nb ant: 354, food: 263/850, nest level: 5, nb worker: 239, nb soldier: 115
+nb ant: 355, food: 261/850, nest level: 5, nb worker: 240, nb soldier: 115
+nb ant: 357, food: 261/850, nest level: 5, nb worker: 242, nb soldier: 115
+nb ant: 359, food: 259/850, nest level: 5, nb worker: 244, nb soldier: 115
+nb ant: 357, food: 259/850, nest level: 5, nb worker: 242, nb soldier: 115
+#1201 - a snail attack the colony
+the menace kill 4 soldier
+the menace kill 0 worker
+nb ant: 353, food: 259/850, nest level: 5, nb worker: 242, nb soldier: 111
+nb ant: 353, food: 271/850, nest level: 5, nb worker: 242, nb soldier: 111
+nb ant: 352, food: 272/850, nest level: 5, nb worker: 241, nb soldier: 111
+nb ant: 352, food: 271/850, nest level: 5, nb worker: 240, nb soldier: 112
+nb ant: 354, food: 268/850, nest level: 5, nb worker: 242, nb soldier: 112
+nb ant: 353, food: 270/850, nest level: 5, nb worker: 241, nb soldier: 112
+nb ant: 355, food: 264/850, nest level: 5, nb worker: 242, nb soldier: 113
+nb ant: 354, food: 269/850, nest level: 5, nb worker: 242, nb soldier: 112
+nb ant: 355, food: 267/850, nest level: 5, nb worker: 242, nb soldier: 113
+nb ant: 353, food: 267/850, nest level: 5, nb worker: 240, nb soldier: 113
+#1211 - a snail attack the colony
+the menace kill 5 soldier
+the menace kill 0 worker
+nb ant: 348, food: 267/850, nest level: 5, nb worker: 240, nb soldier: 108
+nb ant: 350, food: 278/850, nest level: 5, nb worker: 241, nb soldier: 109
+nb ant: 347, food: 282/850, nest level: 5, nb worker: 239, nb soldier: 108
+nb ant: 349, food: 280/850, nest level: 5, nb worker: 241, nb soldier: 108
+nb ant: 351, food: 280/850, nest level: 5, nb worker: 243, nb soldier: 108
+nb ant: 350, food: 283/850, nest level: 5, nb worker: 243, nb soldier: 107
+nb ant: 350, food: 282/850, nest level: 5, nb worker: 243, nb soldier: 107
+nb ant: 350, food: 281/850, nest level: 5, nb worker: 243, nb soldier: 107
+nb ant: 350, food: 282/850, nest level: 5, nb worker: 242, nb soldier: 108
+nb ant: 351, food: 276/850, nest level: 5, nb worker: 242, nb soldier: 109
+#1221 - a snail attack the colony
+the menace kill 1 soldier
+the menace kill 0 worker
+nb ant: 350, food: 280/850, nest level: 5, nb worker: 243, nb soldier: 107
+nb ant: 352, food: 281/850, nest level: 5, nb worker: 245, nb soldier: 107
+nb ant: 352, food: 282/850, nest level: 5, nb worker: 245, nb soldier: 107
+nb ant: 354, food: 275/850, nest level: 5, nb worker: 246, nb soldier: 108
+nb ant: 354, food: 274/850, nest level: 5, nb worker: 245, nb soldier: 109
+nb ant: 353, food: 274/850, nest level: 5, nb worker: 244, nb soldier: 109
+nb ant: 355, food: 270/850, nest level: 5, nb worker: 245, nb soldier: 110
+nb ant: 357, food: 268/850, nest level: 5, nb worker: 247, nb soldier: 110
+nb ant: 358, food: 265/850, nest level: 5, nb worker: 246, nb soldier: 112
+nb ant: 359, food: 265/850, nest level: 5, nb worker: 247, nb soldier: 112
+nb ant: 361, food: 263/850, nest level: 5, nb worker: 249, nb soldier: 112
+nb ant: 362, food: 258/850, nest level: 5, nb worker: 249, nb soldier: 113
+nb ant: 362, food: 257/850, nest level: 5, nb worker: 249, nb soldier: 113
+nb ant: 363, food: 259/850, nest level: 5, nb worker: 250, nb soldier: 113
+nb ant: 361, food: 259/850, nest level: 5, nb worker: 248, nb soldier: 113
+nb ant: 362, food: 256/850, nest level: 5, nb worker: 248, nb soldier: 114
+nb ant: 363, food: 256/850, nest level: 5, nb worker: 249, nb soldier: 114
+nb ant: 363, food: 254/850, nest level: 5, nb worker: 248, nb soldier: 115
+nb ant: 364, food: 251/850, nest level: 5, nb worker: 249, nb soldier: 115
+nb ant: 364, food: 248/850, nest level: 5, nb worker: 247, nb soldier: 117
+#1241 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 359, food: 252/850, nest level: 5, nb worker: 244, nb soldier: 115
+nb ant: 359, food: 258/850, nest level: 5, nb worker: 244, nb soldier: 115
+nb ant: 358, food: 257/850, nest level: 5, nb worker: 243, nb soldier: 115
+nb ant: 354, food: 264/850, nest level: 5, nb worker: 239, nb soldier: 115
+nb ant: 354, food: 263/850, nest level: 5, nb worker: 239, nb soldier: 115
+nb ant: 353, food: 263/850, nest level: 5, nb worker: 238, nb soldier: 115
+nb ant: 351, food: 265/850, nest level: 5, nb worker: 236, nb soldier: 115
+nb ant: 349, food: 269/850, nest level: 5, nb worker: 234, nb soldier: 115
+nb ant: 351, food: 265/850, nest level: 5, nb worker: 235, nb soldier: 116
+nb ant: 353, food: 261/850, nest level: 5, nb worker: 236, nb soldier: 117
+#1251 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 354, food: 258/850, nest level: 5, nb worker: 236, nb soldier: 118
+nb ant: 355, food: 254/850, nest level: 5, nb worker: 237, nb soldier: 118
+nb ant: 354, food: 253/850, nest level: 5, nb worker: 235, nb soldier: 119
+nb ant: 355, food: 255/850, nest level: 5, nb worker: 236, nb soldier: 119
+nb ant: 355, food: 253/850, nest level: 5, nb worker: 236, nb soldier: 119
+nb ant: 355, food: 255/850, nest level: 5, nb worker: 236, nb soldier: 119
+nb ant: 356, food: 252/850, nest level: 5, nb worker: 237, nb soldier: 119
+nb ant: 357, food: 252/850, nest level: 5, nb worker: 238, nb soldier: 119
+nb ant: 358, food: 251/850, nest level: 5, nb worker: 239, nb soldier: 119
+nb ant: 359, food: 247/850, nest level: 5, nb worker: 239, nb soldier: 120
+#1261 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 354, food: 249/850, nest level: 5, nb worker: 237, nb soldier: 117
+nb ant: 354, food: 260/850, nest level: 5, nb worker: 237, nb soldier: 117
+nb ant: 353, food: 258/850, nest level: 5, nb worker: 235, nb soldier: 118
+nb ant: 354, food: 255/850, nest level: 5, nb worker: 236, nb soldier: 118
+nb ant: 355, food: 255/850, nest level: 5, nb worker: 237, nb soldier: 118
+nb ant: 355, food: 255/850, nest level: 5, nb worker: 237, nb soldier: 118
+nb ant: 354, food: 254/850, nest level: 5, nb worker: 235, nb soldier: 119
+nb ant: 355, food: 252/850, nest level: 5, nb worker: 236, nb soldier: 119
+nb ant: 357, food: 252/850, nest level: 5, nb worker: 238, nb soldier: 119
+nb ant: 358, food: 251/850, nest level: 5, nb worker: 239, nb soldier: 119
+nb ant: 360, food: 246/850, nest level: 5, nb worker: 240, nb soldier: 120
+nb ant: 360, food: 245/850, nest level: 5, nb worker: 240, nb soldier: 120
+nb ant: 361, food: 247/850, nest level: 5, nb worker: 241, nb soldier: 120
+nb ant: 361, food: 245/850, nest level: 5, nb worker: 241, nb soldier: 120
+nb ant: 361, food: 247/850, nest level: 5, nb worker: 241, nb soldier: 120
+nb ant: 360, food: 246/850, nest level: 5, nb worker: 240, nb soldier: 120
+nb ant: 362, food: 243/850, nest level: 5, nb worker: 242, nb soldier: 120
+nb ant: 363, food: 241/850, nest level: 5, nb worker: 242, nb soldier: 121
+nb ant: 362, food: 244/850, nest level: 5, nb worker: 241, nb soldier: 121
+nb ant: 362, food: 243/850, nest level: 5, nb worker: 241, nb soldier: 121
+#1281 - a snail attack the colony
+the menace kill 4 soldier
+the menace kill 0 worker
+nb ant: 356, food: 244/850, nest level: 5, nb worker: 239, nb soldier: 117
+nb ant: 358, food: 255/850, nest level: 5, nb worker: 241, nb soldier: 117
+nb ant: 357, food: 255/850, nest level: 5, nb worker: 240, nb soldier: 117
+nb ant: 359, food: 251/850, nest level: 5, nb worker: 241, nb soldier: 118
+nb ant: 360, food: 250/850, nest level: 5, nb worker: 242, nb soldier: 118
+nb ant: 362, food: 245/850, nest level: 5, nb worker: 243, nb soldier: 119
+nb ant: 363, food: 247/850, nest level: 5, nb worker: 244, nb soldier: 119
+nb ant: 363, food: 243/850, nest level: 5, nb worker: 243, nb soldier: 120
+nb ant: 361, food: 245/850, nest level: 5, nb worker: 241, nb soldier: 120
+nb ant: 363, food: 241/850, nest level: 5, nb worker: 241, nb soldier: 122
+nb ant: 364, food: 240/850, nest level: 5, nb worker: 242, nb soldier: 122
+nb ant: 364, food: 239/850, nest level: 5, nb worker: 242, nb soldier: 122
+nb ant: 366, food: 236/850, nest level: 5, nb worker: 244, nb soldier: 122
+nb ant: 367, food: 236/850, nest level: 5, nb worker: 245, nb soldier: 122
+nb ant: 367, food: 236/850, nest level: 5, nb worker: 245, nb soldier: 122
+nb ant: 369, food: 234/850, nest level: 5, nb worker: 247, nb soldier: 122
+nb ant: 371, food: 228/850, nest level: 5, nb worker: 248, nb soldier: 123
+nb ant: 372, food: 229/850, nest level: 5, nb worker: 249, nb soldier: 123
+nb ant: 373, food: 229/850, nest level: 5, nb worker: 250, nb soldier: 123
+nb ant: 375, food: 223/850, nest level: 5, nb worker: 250, nb soldier: 125
+#1301 - a snail attack the colony
+the menace kill 4 soldier
+the menace kill 0 worker
+nb ant: 369, food: 223/850, nest level: 5, nb worker: 248, nb soldier: 121
+nb ant: 370, food: 234/850, nest level: 5, nb worker: 249, nb soldier: 121
+nb ant: 371, food: 230/850, nest level: 5, nb worker: 249, nb soldier: 122
+nb ant: 372, food: 229/850, nest level: 5, nb worker: 250, nb soldier: 122
+nb ant: 373, food: 231/850, nest level: 5, nb worker: 251, nb soldier: 122
+nb ant: 375, food: 227/850, nest level: 5, nb worker: 253, nb soldier: 122
+nb ant: 376, food: 226/850, nest level: 5, nb worker: 254, nb soldier: 122
+nb ant: 377, food: 220/850, nest level: 5, nb worker: 253, nb soldier: 124
+nb ant: 378, food: 217/850, nest level: 5, nb worker: 252, nb soldier: 126
+nb ant: 379, food: 219/850, nest level: 5, nb worker: 254, nb soldier: 125
+#1311 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 379, food: 215/850, nest level: 5, nb worker: 253, nb soldier: 126
+nb ant: 381, food: 213/850, nest level: 5, nb worker: 255, nb soldier: 126
+nb ant: 382, food: 216/850, nest level: 5, nb worker: 257, nb soldier: 125
+nb ant: 381, food: 214/850, nest level: 5, nb worker: 255, nb soldier: 126
+nb ant: 382, food: 209/850, nest level: 5, nb worker: 255, nb soldier: 127
+nb ant: 383, food: 211/850, nest level: 5, nb worker: 256, nb soldier: 127
+nb ant: 383, food: 207/850, nest level: 5, nb worker: 255, nb soldier: 128
+nb ant: 384, food: 206/850, nest level: 5, nb worker: 256, nb soldier: 128
+nb ant: 382, food: 207/850, nest level: 5, nb worker: 254, nb soldier: 128
+nb ant: 381, food: 209/850, nest level: 5, nb worker: 253, nb soldier: 128
+#1321 - a snail attack the colony
+the menace kill 1 soldier
+the menace kill 0 worker
+nb ant: 382, food: 209/850, nest level: 5, nb worker: 255, nb soldier: 127
+nb ant: 382, food: 210/850, nest level: 5, nb worker: 254, nb soldier: 128
+nb ant: 378, food: 211/850, nest level: 5, nb worker: 250, nb soldier: 128
+nb ant: 378, food: 212/850, nest level: 5, nb worker: 250, nb soldier: 128
+nb ant: 380, food: 211/850, nest level: 5, nb worker: 252, nb soldier: 128
+nb ant: 381, food: 209/850, nest level: 5, nb worker: 253, nb soldier: 128
+nb ant: 381, food: 211/850, nest level: 5, nb worker: 253, nb soldier: 128
+nb ant: 383, food: 207/850, nest level: 5, nb worker: 255, nb soldier: 128
+nb ant: 381, food: 211/850, nest level: 5, nb worker: 254, nb soldier: 127
+nb ant: 380, food: 212/850, nest level: 5, nb worker: 253, nb soldier: 127
+#1331 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 378, food: 213/850, nest level: 5, nb worker: 253, nb soldier: 125
+nb ant: 378, food: 218/850, nest level: 5, nb worker: 252, nb soldier: 126
+nb ant: 378, food: 215/850, nest level: 5, nb worker: 252, nb soldier: 126
+nb ant: 380, food: 214/850, nest level: 5, nb worker: 254, nb soldier: 126
+nb ant: 382, food: 209/850, nest level: 5, nb worker: 255, nb soldier: 127
+nb ant: 379, food: 217/850, nest level: 5, nb worker: 253, nb soldier: 126
+nb ant: 380, food: 214/850, nest level: 5, nb worker: 253, nb soldier: 127
+nb ant: 381, food: 210/850, nest level: 5, nb worker: 254, nb soldier: 127
+nb ant: 380, food: 211/850, nest level: 5, nb worker: 253, nb soldier: 127
+nb ant: 379, food: 213/850, nest level: 5, nb worker: 252, nb soldier: 127
+#1341 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 377, food: 217/850, nest level: 5, nb worker: 250, nb soldier: 127
+nb ant: 376, food: 218/850, nest level: 5, nb worker: 249, nb soldier: 127
+nb ant: 378, food: 213/850, nest level: 5, nb worker: 251, nb soldier: 127
+nb ant: 378, food: 216/850, nest level: 5, nb worker: 251, nb soldier: 127
+nb ant: 377, food: 218/850, nest level: 5, nb worker: 251, nb soldier: 126
+nb ant: 377, food: 216/850, nest level: 5, nb worker: 251, nb soldier: 126
+nb ant: 377, food: 218/850, nest level: 5, nb worker: 251, nb soldier: 126
+nb ant: 377, food: 216/850, nest level: 5, nb worker: 251, nb soldier: 126
+nb ant: 379, food: 216/850, nest level: 5, nb worker: 253, nb soldier: 126
+nb ant: 378, food: 217/850, nest level: 5, nb worker: 252, nb soldier: 126
+#1351 - a spider attack the colony
+the menace kill 1 soldier
+the menace kill 0 worker
+nb ant: 378, food: 217/850, nest level: 5, nb worker: 253, nb soldier: 125
+nb ant: 379, food: 215/850, nest level: 5, nb worker: 252, nb soldier: 127
+nb ant: 381, food: 211/850, nest level: 5, nb worker: 254, nb soldier: 127
+nb ant: 379, food: 215/850, nest level: 5, nb worker: 253, nb soldier: 126
+nb ant: 378, food: 214/850, nest level: 5, nb worker: 251, nb soldier: 127
+nb ant: 375, food: 216/850, nest level: 5, nb worker: 248, nb soldier: 127
+nb ant: 375, food: 218/850, nest level: 5, nb worker: 248, nb soldier: 127
+nb ant: 375, food: 216/850, nest level: 5, nb worker: 248, nb soldier: 127
+nb ant: 375, food: 218/850, nest level: 5, nb worker: 248, nb soldier: 127
+nb ant: 374, food: 217/850, nest level: 5, nb worker: 247, nb soldier: 127
+#1361 - a snail attack the colony
+the menace kill 5 soldier
+the menace kill 0 worker
+nb ant: 371, food: 218/850, nest level: 5, nb worker: 249, nb soldier: 122
+nb ant: 372, food: 229/850, nest level: 5, nb worker: 250, nb soldier: 122
+nb ant: 370, food: 234/850, nest level: 5, nb worker: 248, nb soldier: 122
+nb ant: 371, food: 228/850, nest level: 5, nb worker: 248, nb soldier: 123
+nb ant: 372, food: 227/850, nest level: 5, nb worker: 248, nb soldier: 124
+nb ant: 370, food: 228/850, nest level: 5, nb worker: 246, nb soldier: 124
+nb ant: 371, food: 228/850, nest level: 5, nb worker: 247, nb soldier: 124
+nb ant: 370, food: 229/850, nest level: 5, nb worker: 246, nb soldier: 124
+nb ant: 368, food: 234/850, nest level: 5, nb worker: 245, nb soldier: 123
+nb ant: 368, food: 233/850, nest level: 5, nb worker: 246, nb soldier: 122
+#1371 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 367, food: 233/850, nest level: 5, nb worker: 246, nb soldier: 121
+nb ant: 367, food: 239/850, nest level: 5, nb worker: 246, nb soldier: 121
+nb ant: 366, food: 238/850, nest level: 5, nb worker: 245, nb soldier: 121
+nb ant: 367, food: 232/850, nest level: 5, nb worker: 244, nb soldier: 123
+nb ant: 367, food: 234/850, nest level: 5, nb worker: 244, nb soldier: 123
+nb ant: 368, food: 231/850, nest level: 5, nb worker: 245, nb soldier: 123
+nb ant: 367, food: 233/850, nest level: 5, nb worker: 244, nb soldier: 123
+nb ant: 367, food: 235/850, nest level: 5, nb worker: 244, nb soldier: 123
+nb ant: 369, food: 231/850, nest level: 5, nb worker: 246, nb soldier: 123
+nb ant: 368, food: 232/850, nest level: 5, nb worker: 245, nb soldier: 123
+#1381 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 367, food: 231/850, nest level: 5, nb worker: 247, nb soldier: 120
+nb ant: 367, food: 239/850, nest level: 5, nb worker: 247, nb soldier: 120
+nb ant: 368, food: 238/850, nest level: 5, nb worker: 248, nb soldier: 120
+nb ant: 367, food: 238/850, nest level: 5, nb worker: 247, nb soldier: 120
+nb ant: 367, food: 238/850, nest level: 5, nb worker: 247, nb soldier: 120
+nb ant: 369, food: 234/850, nest level: 5, nb worker: 248, nb soldier: 121
+nb ant: 368, food: 235/850, nest level: 5, nb worker: 247, nb soldier: 121
+nb ant: 369, food: 231/850, nest level: 5, nb worker: 246, nb soldier: 123
+nb ant: 371, food: 229/850, nest level: 5, nb worker: 248, nb soldier: 123
+nb ant: 372, food: 230/850, nest level: 5, nb worker: 249, nb soldier: 123
+#1391 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 370, food: 227/850, nest level: 5, nb worker: 249, nb soldier: 121
+nb ant: 372, food: 230/850, nest level: 5, nb worker: 250, nb soldier: 122
+nb ant: 370, food: 231/850, nest level: 5, nb worker: 248, nb soldier: 122
+nb ant: 370, food: 230/850, nest level: 5, nb worker: 247, nb soldier: 123
+nb ant: 371, food: 228/850, nest level: 5, nb worker: 248, nb soldier: 123
+nb ant: 372, food: 227/850, nest level: 5, nb worker: 248, nb soldier: 124
+nb ant: 372, food: 226/850, nest level: 5, nb worker: 248, nb soldier: 124
+nb ant: 374, food: 223/850, nest level: 5, nb worker: 250, nb soldier: 124
+nb ant: 376, food: 220/850, nest level: 5, nb worker: 251, nb soldier: 125
+nb ant: 374, food: 225/850, nest level: 5, nb worker: 250, nb soldier: 124
+#1401 - a snail attack the colony
+the menace kill 1 soldier
+the menace kill 0 worker
+nb ant: 372, food: 227/850, nest level: 5, nb worker: 249, nb soldier: 123
+nb ant: 373, food: 227/850, nest level: 5, nb worker: 250, nb soldier: 123
+nb ant: 375, food: 225/850, nest level: 5, nb worker: 252, nb soldier: 123
+nb ant: 376, food: 224/850, nest level: 5, nb worker: 252, nb soldier: 124
+nb ant: 376, food: 221/850, nest level: 5, nb worker: 251, nb soldier: 125
+nb ant: 378, food: 220/850, nest level: 5, nb worker: 253, nb soldier: 125
+nb ant: 379, food: 216/850, nest level: 5, nb worker: 253, nb soldier: 126
+nb ant: 377, food: 220/850, nest level: 5, nb worker: 252, nb soldier: 125
+nb ant: 376, food: 221/850, nest level: 5, nb worker: 251, nb soldier: 125
+nb ant: 377, food: 219/850, nest level: 5, nb worker: 251, nb soldier: 126
+#1411 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 376, food: 216/850, nest level: 5, nb worker: 252, nb soldier: 124
+nb ant: 373, food: 226/850, nest level: 5, nb worker: 249, nb soldier: 124
+nb ant: 371, food: 226/850, nest level: 5, nb worker: 247, nb soldier: 124
+nb ant: 372, food: 225/850, nest level: 5, nb worker: 248, nb soldier: 124
+nb ant: 370, food: 232/850, nest level: 5, nb worker: 247, nb soldier: 123
+nb ant: 371, food: 230/850, nest level: 5, nb worker: 248, nb soldier: 123
+nb ant: 372, food: 225/850, nest level: 5, nb worker: 248, nb soldier: 124
+nb ant: 374, food: 226/850, nest level: 5, nb worker: 250, nb soldier: 124
+nb ant: 373, food: 224/850, nest level: 5, nb worker: 249, nb soldier: 124
+nb ant: 372, food: 227/850, nest level: 5, nb worker: 248, nb soldier: 124
+#1421 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 373, food: 225/850, nest level: 5, nb worker: 249, nb soldier: 124
+nb ant: 373, food: 223/850, nest level: 5, nb worker: 247, nb soldier: 126
+nb ant: 373, food: 221/850, nest level: 5, nb worker: 247, nb soldier: 126
+nb ant: 374, food: 222/850, nest level: 5, nb worker: 248, nb soldier: 126
+nb ant: 375, food: 218/850, nest level: 5, nb worker: 249, nb soldier: 126
+nb ant: 376, food: 217/850, nest level: 5, nb worker: 250, nb soldier: 126
+nb ant: 376, food: 220/850, nest level: 5, nb worker: 250, nb soldier: 126
+nb ant: 376, food: 219/850, nest level: 5, nb worker: 250, nb soldier: 126
+nb ant: 375, food: 219/850, nest level: 5, nb worker: 249, nb soldier: 126
+nb ant: 375, food: 221/850, nest level: 5, nb worker: 250, nb soldier: 125
+#1431 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 376, food: 222/850, nest level: 5, nb worker: 251, nb soldier: 125
+nb ant: 374, food: 221/850, nest level: 5, nb worker: 249, nb soldier: 125
+nb ant: 371, food: 227/850, nest level: 5, nb worker: 246, nb soldier: 125
+nb ant: 370, food: 226/850, nest level: 5, nb worker: 245, nb soldier: 125
+nb ant: 370, food: 225/850, nest level: 5, nb worker: 245, nb soldier: 125
+nb ant: 370, food: 228/850, nest level: 5, nb worker: 245, nb soldier: 125
+nb ant: 368, food: 229/850, nest level: 5, nb worker: 243, nb soldier: 125
+nb ant: 368, food: 232/850, nest level: 5, nb worker: 244, nb soldier: 124
+nb ant: 366, food: 235/850, nest level: 5, nb worker: 243, nb soldier: 123
+nb ant: 368, food: 232/850, nest level: 5, nb worker: 245, nb soldier: 123
+#1441 - a snail attack the colony
+the menace kill 4 soldier
+the menace kill 0 worker
+nb ant: 365, food: 232/850, nest level: 5, nb worker: 246, nb soldier: 119
+nb ant: 367, food: 242/850, nest level: 5, nb worker: 248, nb soldier: 119
+nb ant: 368, food: 239/850, nest level: 5, nb worker: 249, nb soldier: 119
+nb ant: 370, food: 238/850, nest level: 5, nb worker: 251, nb soldier: 119
+nb ant: 372, food: 233/850, nest level: 5, nb worker: 252, nb soldier: 120
+nb ant: 371, food: 235/850, nest level: 5, nb worker: 250, nb soldier: 121
+nb ant: 373, food: 231/850, nest level: 5, nb worker: 252, nb soldier: 121
+nb ant: 374, food: 230/850, nest level: 5, nb worker: 253, nb soldier: 121
+nb ant: 375, food: 226/850, nest level: 5, nb worker: 253, nb soldier: 122
+nb ant: 374, food: 227/850, nest level: 5, nb worker: 252, nb soldier: 122
+#1451 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 374, food: 224/850, nest level: 5, nb worker: 253, nb soldier: 121
+nb ant: 375, food: 228/850, nest level: 5, nb worker: 253, nb soldier: 122
+nb ant: 376, food: 227/850, nest level: 5, nb worker: 254, nb soldier: 122
+nb ant: 377, food: 223/850, nest level: 5, nb worker: 254, nb soldier: 123
+nb ant: 378, food: 220/850, nest level: 5, nb worker: 254, nb soldier: 124
+nb ant: 380, food: 219/850, nest level: 5, nb worker: 256, nb soldier: 124
+nb ant: 380, food: 218/850, nest level: 5, nb worker: 256, nb soldier: 124
+nb ant: 382, food: 215/850, nest level: 5, nb worker: 258, nb soldier: 124
+nb ant: 383, food: 211/850, nest level: 5, nb worker: 257, nb soldier: 126
+nb ant: 382, food: 212/850, nest level: 5, nb worker: 256, nb soldier: 126
+#1461 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 379, food: 214/850, nest level: 5, nb worker: 255, nb soldier: 124
+nb ant: 379, food: 218/850, nest level: 5, nb worker: 255, nb soldier: 124
+nb ant: 381, food: 216/850, nest level: 5, nb worker: 257, nb soldier: 124
+nb ant: 378, food: 221/850, nest level: 5, nb worker: 254, nb soldier: 124
+nb ant: 377, food: 223/850, nest level: 5, nb worker: 253, nb soldier: 124
+nb ant: 376, food: 220/850, nest level: 5, nb worker: 251, nb soldier: 125
+nb ant: 375, food: 220/850, nest level: 5, nb worker: 249, nb soldier: 126
+nb ant: 376, food: 219/850, nest level: 5, nb worker: 250, nb soldier: 126
+nb ant: 374, food: 220/850, nest level: 5, nb worker: 248, nb soldier: 126
+nb ant: 374, food: 221/850, nest level: 5, nb worker: 248, nb soldier: 126
+#1471 - a snail attack the colony
+the menace kill 4 soldier
+the menace kill 0 worker
+nb ant: 372, food: 220/850, nest level: 5, nb worker: 250, nb soldier: 122
+nb ant: 371, food: 232/850, nest level: 5, nb worker: 249, nb soldier: 122
+nb ant: 371, food: 230/850, nest level: 5, nb worker: 248, nb soldier: 123
+nb ant: 372, food: 227/850, nest level: 5, nb worker: 249, nb soldier: 123
+nb ant: 372, food: 228/850, nest level: 5, nb worker: 249, nb soldier: 123
+nb ant: 372, food: 227/850, nest level: 5, nb worker: 248, nb soldier: 124
+nb ant: 372, food: 226/850, nest level: 5, nb worker: 248, nb soldier: 124
+nb ant: 373, food: 224/850, nest level: 5, nb worker: 249, nb soldier: 124
+nb ant: 375, food: 224/850, nest level: 5, nb worker: 251, nb soldier: 124
+nb ant: 376, food: 223/850, nest level: 5, nb worker: 252, nb soldier: 124
+#1481 - a snail attack the colony
+the menace kill 8 soldier
+the menace kill 0 worker
+nb ant: 369, food: 221/850, nest level: 5, nb worker: 253, nb soldier: 116
+nb ant: 369, food: 247/850, nest level: 5, nb worker: 253, nb soldier: 116
+nb ant: 369, food: 245/850, nest level: 5, nb worker: 253, nb soldier: 116
+nb ant: 369, food: 247/850, nest level: 5, nb worker: 253, nb soldier: 116
+nb ant: 370, food: 242/850, nest level: 5, nb worker: 253, nb soldier: 117
+nb ant: 371, food: 238/850, nest level: 5, nb worker: 253, nb soldier: 118
+nb ant: 372, food: 237/850, nest level: 5, nb worker: 254, nb soldier: 118
+nb ant: 373, food: 237/850, nest level: 5, nb worker: 254, nb soldier: 119
+nb ant: 373, food: 237/850, nest level: 5, nb worker: 254, nb soldier: 119
+nb ant: 375, food: 233/850, nest level: 5, nb worker: 255, nb soldier: 120
+#1491 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 374, food: 229/850, nest level: 5, nb worker: 256, nb soldier: 118
+nb ant: 376, food: 234/850, nest level: 5, nb worker: 257, nb soldier: 119
+nb ant: 375, food: 232/850, nest level: 5, nb worker: 256, nb soldier: 119
+nb ant: 375, food: 234/850, nest level: 5, nb worker: 256, nb soldier: 119
+nb ant: 377, food: 230/850, nest level: 5, nb worker: 258, nb soldier: 119
+nb ant: 377, food: 230/850, nest level: 5, nb worker: 258, nb soldier: 119
+nb ant: 375, food: 232/850, nest level: 5, nb worker: 256, nb soldier: 119
+nb ant: 375, food: 234/850, nest level: 5, nb worker: 256, nb soldier: 119
+nb ant: 377, food: 228/850, nest level: 5, nb worker: 257, nb soldier: 120
+nb ant: 376, food: 231/850, nest level: 5, nb worker: 256, nb soldier: 120
+#1501 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 374, food: 228/850, nest level: 5, nb worker: 255, nb soldier: 119
+nb ant: 374, food: 235/850, nest level: 5, nb worker: 255, nb soldier: 119
+nb ant: 374, food: 234/850, nest level: 5, nb worker: 255, nb soldier: 119
+nb ant: 373, food: 234/850, nest level: 5, nb worker: 254, nb soldier: 119
+nb ant: 374, food: 235/850, nest level: 5, nb worker: 256, nb soldier: 118
+nb ant: 374, food: 232/850, nest level: 5, nb worker: 254, nb soldier: 120
+nb ant: 376, food: 231/850, nest level: 5, nb worker: 256, nb soldier: 120
+nb ant: 375, food: 229/850, nest level: 5, nb worker: 254, nb soldier: 121
+nb ant: 375, food: 229/850, nest level: 5, nb worker: 253, nb soldier: 122
+nb ant: 376, food: 226/850, nest level: 5, nb worker: 253, nb soldier: 123
+#1511 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 376, food: 223/850, nest level: 5, nb worker: 253, nb soldier: 123
+nb ant: 376, food: 220/850, nest level: 5, nb worker: 251, nb soldier: 125
+nb ant: 377, food: 218/850, nest level: 5, nb worker: 251, nb soldier: 126
+nb ant: 378, food: 215/850, nest level: 5, nb worker: 252, nb soldier: 126
+nb ant: 379, food: 215/850, nest level: 5, nb worker: 253, nb soldier: 126
+nb ant: 381, food: 213/850, nest level: 5, nb worker: 255, nb soldier: 126
+nb ant: 377, food: 219/850, nest level: 5, nb worker: 251, nb soldier: 126
+nb ant: 377, food: 217/850, nest level: 5, nb worker: 251, nb soldier: 126
+nb ant: 376, food: 220/850, nest level: 5, nb worker: 250, nb soldier: 126
+nb ant: 376, food: 219/850, nest level: 5, nb worker: 250, nb soldier: 126
+#1521 - a snail attack the colony
+the menace kill 4 soldier
+the menace kill 0 worker
+nb ant: 369, food: 221/850, nest level: 5, nb worker: 247, nb soldier: 122
+nb ant: 369, food: 233/850, nest level: 5, nb worker: 246, nb soldier: 123
+nb ant: 370, food: 232/850, nest level: 5, nb worker: 247, nb soldier: 123
+nb ant: 369, food: 230/850, nest level: 5, nb worker: 245, nb soldier: 124
+nb ant: 371, food: 226/850, nest level: 5, nb worker: 247, nb soldier: 124
+nb ant: 373, food: 224/850, nest level: 5, nb worker: 249, nb soldier: 124
+nb ant: 373, food: 226/850, nest level: 5, nb worker: 249, nb soldier: 124
+nb ant: 374, food: 223/850, nest level: 5, nb worker: 250, nb soldier: 124
+nb ant: 374, food: 224/850, nest level: 5, nb worker: 250, nb soldier: 124
+nb ant: 375, food: 222/850, nest level: 5, nb worker: 250, nb soldier: 125
+#1531 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 374, food: 219/850, nest level: 5, nb worker: 251, nb soldier: 123
+nb ant: 376, food: 222/850, nest level: 5, nb worker: 252, nb soldier: 124
+nb ant: 377, food: 218/850, nest level: 5, nb worker: 252, nb soldier: 125
+nb ant: 378, food: 217/850, nest level: 5, nb worker: 253, nb soldier: 125
+nb ant: 377, food: 219/850, nest level: 5, nb worker: 251, nb soldier: 126
+nb ant: 377, food: 217/850, nest level: 5, nb worker: 251, nb soldier: 126
+nb ant: 375, food: 221/850, nest level: 5, nb worker: 249, nb soldier: 126
+nb ant: 377, food: 219/850, nest level: 5, nb worker: 251, nb soldier: 126
+nb ant: 379, food: 215/850, nest level: 5, nb worker: 253, nb soldier: 126
+nb ant: 378, food: 216/850, nest level: 5, nb worker: 252, nb soldier: 126
+#1541 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 375, food: 218/850, nest level: 5, nb worker: 251, nb soldier: 124
+nb ant: 377, food: 220/850, nest level: 5, nb worker: 253, nb soldier: 124
+nb ant: 378, food: 219/850, nest level: 5, nb worker: 253, nb soldier: 125
+nb ant: 377, food: 219/850, nest level: 5, nb worker: 252, nb soldier: 125
+nb ant: 376, food: 218/850, nest level: 5, nb worker: 250, nb soldier: 126
+nb ant: 376, food: 217/850, nest level: 5, nb worker: 250, nb soldier: 126
+nb ant: 375, food: 221/850, nest level: 5, nb worker: 249, nb soldier: 126
+nb ant: 374, food: 222/850, nest level: 5, nb worker: 248, nb soldier: 126
+nb ant: 375, food: 220/850, nest level: 5, nb worker: 250, nb soldier: 125
+nb ant: 376, food: 221/850, nest level: 5, nb worker: 251, nb soldier: 125
+#1551 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 375, food: 218/850, nest level: 5, nb worker: 252, nb soldier: 123
+nb ant: 377, food: 220/850, nest level: 5, nb worker: 253, nb soldier: 124
+nb ant: 377, food: 222/850, nest level: 5, nb worker: 253, nb soldier: 124
+nb ant: 376, food: 221/850, nest level: 5, nb worker: 252, nb soldier: 124
+nb ant: 373, food: 229/850, nest level: 5, nb worker: 250, nb soldier: 123
+nb ant: 374, food: 226/850, nest level: 5, nb worker: 250, nb soldier: 124
+nb ant: 373, food: 224/850, nest level: 5, nb worker: 249, nb soldier: 124
+nb ant: 373, food: 226/850, nest level: 5, nb worker: 249, nb soldier: 124
+nb ant: 374, food: 221/850, nest level: 5, nb worker: 249, nb soldier: 125
+nb ant: 375, food: 223/850, nest level: 5, nb worker: 250, nb soldier: 125
+#1561 - a snail attack the colony
+the menace kill 5 soldier
+the menace kill 0 worker
+nb ant: 368, food: 223/850, nest level: 5, nb worker: 248, nb soldier: 120
+nb ant: 367, food: 239/850, nest level: 5, nb worker: 247, nb soldier: 120
+nb ant: 368, food: 234/850, nest level: 5, nb worker: 246, nb soldier: 122
+nb ant: 368, food: 233/850, nest level: 5, nb worker: 246, nb soldier: 122
+nb ant: 369, food: 233/850, nest level: 5, nb worker: 246, nb soldier: 123
+nb ant: 370, food: 232/850, nest level: 5, nb worker: 247, nb soldier: 123
+nb ant: 371, food: 230/850, nest level: 5, nb worker: 248, nb soldier: 123
+nb ant: 372, food: 225/850, nest level: 5, nb worker: 248, nb soldier: 124
+nb ant: 374, food: 226/850, nest level: 5, nb worker: 250, nb soldier: 124
+nb ant: 374, food: 223/850, nest level: 5, nb worker: 250, nb soldier: 124
+#1571 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 373, food: 220/850, nest level: 5, nb worker: 251, nb soldier: 122
+nb ant: 373, food: 228/850, nest level: 5, nb worker: 250, nb soldier: 123
+nb ant: 373, food: 228/850, nest level: 5, nb worker: 250, nb soldier: 123
+nb ant: 374, food: 223/850, nest level: 5, nb worker: 249, nb soldier: 125
+nb ant: 375, food: 221/850, nest level: 5, nb worker: 250, nb soldier: 125
+nb ant: 376, food: 222/850, nest level: 5, nb worker: 251, nb soldier: 125
+nb ant: 377, food: 218/850, nest level: 5, nb worker: 252, nb soldier: 125
+nb ant: 375, food: 220/850, nest level: 5, nb worker: 250, nb soldier: 125
+nb ant: 372, food: 227/850, nest level: 5, nb worker: 248, nb soldier: 124
+nb ant: 372, food: 226/850, nest level: 5, nb worker: 248, nb soldier: 124
+#1581 - a snail attack the colony
+the menace kill 4 soldier
+the menace kill 0 worker
+nb ant: 370, food: 223/850, nest level: 5, nb worker: 250, nb soldier: 120
+nb ant: 371, food: 235/850, nest level: 5, nb worker: 251, nb soldier: 120
+nb ant: 371, food: 235/850, nest level: 5, nb worker: 251, nb soldier: 120
+nb ant: 372, food: 234/850, nest level: 5, nb worker: 252, nb soldier: 120
+nb ant: 371, food: 234/850, nest level: 5, nb worker: 251, nb soldier: 120
+nb ant: 373, food: 228/850, nest level: 5, nb worker: 251, nb soldier: 122
+nb ant: 374, food: 229/850, nest level: 5, nb worker: 252, nb soldier: 122
+nb ant: 375, food: 225/850, nest level: 5, nb worker: 251, nb soldier: 124
+nb ant: 377, food: 223/850, nest level: 5, nb worker: 253, nb soldier: 124
+nb ant: 376, food: 222/850, nest level: 5, nb worker: 252, nb soldier: 124
+#1591 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 374, food: 220/850, nest level: 5, nb worker: 253, nb soldier: 121
+nb ant: 373, food: 232/850, nest level: 5, nb worker: 252, nb soldier: 121
+nb ant: 372, food: 233/850, nest level: 5, nb worker: 251, nb soldier: 121
+nb ant: 372, food: 234/850, nest level: 5, nb worker: 251, nb soldier: 121
+nb ant: 374, food: 225/850, nest level: 5, nb worker: 251, nb soldier: 123
+nb ant: 373, food: 229/850, nest level: 5, nb worker: 250, nb soldier: 123
+nb ant: 372, food: 232/850, nest level: 5, nb worker: 250, nb soldier: 122
+nb ant: 373, food: 230/850, nest level: 5, nb worker: 251, nb soldier: 122
+nb ant: 374, food: 225/850, nest level: 5, nb worker: 251, nb soldier: 123
+nb ant: 372, food: 230/850, nest level: 5, nb worker: 249, nb soldier: 123
+#1601 - a snail attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 373, food: 226/850, nest level: 5, nb worker: 250, nb soldier: 123
+nb ant: 374, food: 223/850, nest level: 5, nb worker: 250, nb soldier: 124
+nb ant: 376, food: 220/850, nest level: 5, nb worker: 251, nb soldier: 125
+nb ant: 378, food: 219/850, nest level: 5, nb worker: 253, nb soldier: 125
+nb ant: 379, food: 217/850, nest level: 5, nb worker: 254, nb soldier: 125
+nb ant: 380, food: 218/850, nest level: 5, nb worker: 255, nb soldier: 125
+nb ant: 379, food: 216/850, nest level: 5, nb worker: 254, nb soldier: 125
+nb ant: 380, food: 215/850, nest level: 5, nb worker: 254, nb soldier: 126
+nb ant: 381, food: 211/850, nest level: 5, nb worker: 254, nb soldier: 127
+nb ant: 381, food: 211/850, nest level: 5, nb worker: 254, nb soldier: 127
+#1611 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 381, food: 211/850, nest level: 5, nb worker: 254, nb soldier: 127
+nb ant: 382, food: 210/850, nest level: 5, nb worker: 255, nb soldier: 127
+nb ant: 383, food: 208/850, nest level: 5, nb worker: 256, nb soldier: 127
+nb ant: 383, food: 210/850, nest level: 5, nb worker: 256, nb soldier: 127
+nb ant: 384, food: 207/850, nest level: 5, nb worker: 257, nb soldier: 127
+nb ant: 381, food: 211/850, nest level: 5, nb worker: 254, nb soldier: 127
+nb ant: 381, food: 211/850, nest level: 5, nb worker: 254, nb soldier: 127
+nb ant: 380, food: 212/850, nest level: 5, nb worker: 253, nb soldier: 127
+nb ant: 379, food: 214/850, nest level: 5, nb worker: 252, nb soldier: 127
+nb ant: 379, food: 212/850, nest level: 5, nb worker: 252, nb soldier: 127
+#1621 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 378, food: 213/850, nest level: 5, nb worker: 253, nb soldier: 125
+nb ant: 380, food: 218/850, nest level: 5, nb worker: 255, nb soldier: 125
+nb ant: 379, food: 218/850, nest level: 5, nb worker: 255, nb soldier: 124
+nb ant: 380, food: 217/850, nest level: 5, nb worker: 256, nb soldier: 124
+nb ant: 381, food: 219/850, nest level: 5, nb worker: 257, nb soldier: 124
+nb ant: 380, food: 218/850, nest level: 5, nb worker: 256, nb soldier: 124
+nb ant: 379, food: 218/850, nest level: 5, nb worker: 255, nb soldier: 124
+nb ant: 381, food: 216/850, nest level: 5, nb worker: 257, nb soldier: 124
+nb ant: 379, food: 220/850, nest level: 5, nb worker: 255, nb soldier: 124
+nb ant: 379, food: 220/850, nest level: 5, nb worker: 255, nb soldier: 124
+#1631 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 375, food: 221/850, nest level: 5, nb worker: 254, nb soldier: 121
+nb ant: 377, food: 229/850, nest level: 5, nb worker: 256, nb soldier: 121
+nb ant: 378, food: 228/850, nest level: 5, nb worker: 257, nb soldier: 121
+nb ant: 379, food: 226/850, nest level: 5, nb worker: 258, nb soldier: 121
+nb ant: 379, food: 224/850, nest level: 5, nb worker: 258, nb soldier: 121
+nb ant: 379, food: 226/850, nest level: 5, nb worker: 258, nb soldier: 121
+nb ant: 379, food: 222/850, nest level: 5, nb worker: 257, nb soldier: 122
+nb ant: 379, food: 222/850, nest level: 5, nb worker: 257, nb soldier: 122
+nb ant: 378, food: 221/850, nest level: 5, nb worker: 255, nb soldier: 123
+nb ant: 379, food: 221/850, nest level: 5, nb worker: 255, nb soldier: 124
+#1641 - a snail attack the colony
+the menace kill 1 soldier
+the menace kill 0 worker
+nb ant: 377, food: 222/850, nest level: 5, nb worker: 254, nb soldier: 123
+nb ant: 378, food: 219/850, nest level: 5, nb worker: 254, nb soldier: 124
+nb ant: 377, food: 221/850, nest level: 5, nb worker: 253, nb soldier: 124
+nb ant: 378, food: 222/850, nest level: 5, nb worker: 254, nb soldier: 124
+nb ant: 380, food: 215/850, nest level: 5, nb worker: 255, nb soldier: 125
+nb ant: 381, food: 213/850, nest level: 5, nb worker: 255, nb soldier: 126
+nb ant: 383, food: 211/850, nest level: 5, nb worker: 256, nb soldier: 127
+nb ant: 380, food: 212/850, nest level: 5, nb worker: 253, nb soldier: 127
+nb ant: 382, food: 211/850, nest level: 5, nb worker: 255, nb soldier: 127
+nb ant: 383, food: 209/850, nest level: 5, nb worker: 256, nb soldier: 127
+#1651 - a snail attack the colony
+the menace kill 5 soldier
+the menace kill 0 worker
+nb ant: 376, food: 215/850, nest level: 5, nb worker: 255, nb soldier: 121
+nb ant: 371, food: 237/850, nest level: 5, nb worker: 252, nb soldier: 119
+nb ant: 368, food: 242/850, nest level: 5, nb worker: 249, nb soldier: 119
+nb ant: 369, food: 238/850, nest level: 5, nb worker: 250, nb soldier: 119
+nb ant: 366, food: 243/850, nest level: 5, nb worker: 248, nb soldier: 118
+nb ant: 366, food: 242/850, nest level: 5, nb worker: 247, nb soldier: 119
+nb ant: 368, food: 239/850, nest level: 5, nb worker: 249, nb soldier: 119
+nb ant: 369, food: 239/850, nest level: 5, nb worker: 250, nb soldier: 119
+nb ant: 370, food: 234/850, nest level: 5, nb worker: 249, nb soldier: 121
+nb ant: 370, food: 231/850, nest level: 5, nb worker: 248, nb soldier: 122
+#1661 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 368, food: 234/850, nest level: 5, nb worker: 246, nb soldier: 122
+nb ant: 368, food: 233/850, nest level: 5, nb worker: 246, nb soldier: 122
+nb ant: 369, food: 233/850, nest level: 5, nb worker: 246, nb soldier: 123
+nb ant: 369, food: 233/850, nest level: 5, nb worker: 246, nb soldier: 123
+nb ant: 369, food: 233/850, nest level: 5, nb worker: 246, nb soldier: 123
+nb ant: 366, food: 236/850, nest level: 5, nb worker: 243, nb soldier: 123
+nb ant: 365, food: 238/850, nest level: 5, nb worker: 243, nb soldier: 122
+nb ant: 366, food: 235/850, nest level: 5, nb worker: 244, nb soldier: 122
+nb ant: 367, food: 237/850, nest level: 5, nb worker: 246, nb soldier: 121
+nb ant: 368, food: 236/850, nest level: 5, nb worker: 246, nb soldier: 122
+#1671 - a tapir attack the colony
+the menace kill 15 soldier
+the menace kill 0 worker
+nb ant: 355, food: 231/850, nest level: 5, nb worker: 247, nb soldier: 108
+nb ant: 355, food: 275/850, nest level: 5, nb worker: 247, nb soldier: 108
+nb ant: 356, food: 274/850, nest level: 5, nb worker: 248, nb soldier: 108
+nb ant: 354, food: 275/850, nest level: 5, nb worker: 246, nb soldier: 108
+nb ant: 356, food: 272/850, nest level: 5, nb worker: 247, nb soldier: 109
+nb ant: 357, food: 270/850, nest level: 5, nb worker: 247, nb soldier: 110
+nb ant: 358, food: 265/850, nest level: 5, nb worker: 247, nb soldier: 111
+nb ant: 360, food: 264/850, nest level: 5, nb worker: 248, nb soldier: 112
+nb ant: 361, food: 260/850, nest level: 5, nb worker: 248, nb soldier: 113
+nb ant: 362, food: 259/850, nest level: 5, nb worker: 249, nb soldier: 113
+#1681 - a snail attack the colony
+the menace kill 1 soldier
+the menace kill 0 worker
+nb ant: 361, food: 258/850, nest level: 5, nb worker: 249, nb soldier: 112
+nb ant: 363, food: 258/850, nest level: 5, nb worker: 251, nb soldier: 112
+nb ant: 365, food: 254/850, nest level: 5, nb worker: 252, nb soldier: 113
+nb ant: 366, food: 253/850, nest level: 5, nb worker: 253, nb soldier: 113
+nb ant: 368, food: 252/850, nest level: 5, nb worker: 254, nb soldier: 114
+nb ant: 367, food: 252/850, nest level: 5, nb worker: 253, nb soldier: 114
+nb ant: 369, food: 248/850, nest level: 5, nb worker: 254, nb soldier: 115
+nb ant: 369, food: 248/850, nest level: 5, nb worker: 254, nb soldier: 115
+nb ant: 370, food: 245/850, nest level: 5, nb worker: 254, nb soldier: 116
+nb ant: 367, food: 251/850, nest level: 5, nb worker: 252, nb soldier: 115
+#1691 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 366, food: 245/850, nest level: 5, nb worker: 253, nb soldier: 113
+nb ant: 367, food: 251/850, nest level: 5, nb worker: 252, nb soldier: 115
+nb ant: 367, food: 249/850, nest level: 5, nb worker: 252, nb soldier: 115
+nb ant: 368, food: 250/850, nest level: 5, nb worker: 253, nb soldier: 115
+nb ant: 368, food: 249/850, nest level: 5, nb worker: 254, nb soldier: 114
+nb ant: 369, food: 247/850, nest level: 5, nb worker: 253, nb soldier: 116
+nb ant: 366, food: 248/850, nest level: 5, nb worker: 250, nb soldier: 116
+nb ant: 365, food: 250/850, nest level: 5, nb worker: 249, nb soldier: 116
+nb ant: 365, food: 248/850, nest level: 5, nb worker: 249, nb soldier: 116
+nb ant: 364, food: 251/850, nest level: 5, nb worker: 248, nb soldier: 116
+#1701 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 363, food: 251/850, nest level: 5, nb worker: 247, nb soldier: 116
+nb ant: 363, food: 251/850, nest level: 5, nb worker: 247, nb soldier: 116
+nb ant: 364, food: 248/850, nest level: 5, nb worker: 247, nb soldier: 117
+nb ant: 365, food: 248/850, nest level: 5, nb worker: 248, nb soldier: 117
+nb ant: 362, food: 251/850, nest level: 5, nb worker: 245, nb soldier: 117
+nb ant: 364, food: 248/850, nest level: 5, nb worker: 247, nb soldier: 117
+nb ant: 365, food: 244/850, nest level: 5, nb worker: 246, nb soldier: 119
+nb ant: 365, food: 244/850, nest level: 5, nb worker: 246, nb soldier: 119
+nb ant: 363, food: 246/850, nest level: 5, nb worker: 244, nb soldier: 119
+nb ant: 365, food: 240/850, nest level: 5, nb worker: 245, nb soldier: 120
+#1711 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 364, food: 241/850, nest level: 5, nb worker: 246, nb soldier: 118
+nb ant: 365, food: 247/850, nest level: 5, nb worker: 247, nb soldier: 118
+nb ant: 367, food: 241/850, nest level: 5, nb worker: 248, nb soldier: 119
+nb ant: 368, food: 240/850, nest level: 5, nb worker: 248, nb soldier: 120
+nb ant: 368, food: 239/850, nest level: 5, nb worker: 248, nb soldier: 120
+nb ant: 369, food: 235/850, nest level: 5, nb worker: 248, nb soldier: 121
+nb ant: 371, food: 233/850, nest level: 5, nb worker: 250, nb soldier: 121
+nb ant: 371, food: 235/850, nest level: 5, nb worker: 250, nb soldier: 121
+nb ant: 373, food: 231/850, nest level: 5, nb worker: 252, nb soldier: 121
+nb ant: 375, food: 227/850, nest level: 5, nb worker: 253, nb soldier: 122
+#1721 - a snail attack the colony
+the menace kill 4 soldier
+the menace kill 0 worker
+nb ant: 371, food: 225/850, nest level: 5, nb worker: 252, nb soldier: 119
+nb ant: 371, food: 237/850, nest level: 5, nb worker: 251, nb soldier: 120
+nb ant: 371, food: 237/850, nest level: 5, nb worker: 251, nb soldier: 120
+nb ant: 371, food: 235/850, nest level: 5, nb worker: 250, nb soldier: 121
+nb ant: 372, food: 232/850, nest level: 5, nb worker: 251, nb soldier: 121
+nb ant: 373, food: 230/850, nest level: 5, nb worker: 251, nb soldier: 122
+nb ant: 373, food: 228/850, nest level: 5, nb worker: 251, nb soldier: 122
+nb ant: 375, food: 226/850, nest level: 5, nb worker: 252, nb soldier: 123
+nb ant: 376, food: 221/850, nest level: 5, nb worker: 252, nb soldier: 124
+nb ant: 376, food: 222/850, nest level: 5, nb worker: 251, nb soldier: 125
+#1731 - a snail attack the colony
+the menace kill 4 soldier
+the menace kill 0 worker
+nb ant: 372, food: 217/850, nest level: 5, nb worker: 250, nb soldier: 122
+nb ant: 374, food: 228/850, nest level: 5, nb worker: 251, nb soldier: 123
+nb ant: 375, food: 226/850, nest level: 5, nb worker: 252, nb soldier: 123
+nb ant: 375, food: 220/850, nest level: 5, nb worker: 250, nb soldier: 125
+nb ant: 376, food: 221/850, nest level: 5, nb worker: 251, nb soldier: 125
+nb ant: 377, food: 219/850, nest level: 5, nb worker: 251, nb soldier: 126
+nb ant: 377, food: 217/850, nest level: 5, nb worker: 251, nb soldier: 126
+nb ant: 377, food: 219/850, nest level: 5, nb worker: 251, nb soldier: 126
+nb ant: 375, food: 219/850, nest level: 5, nb worker: 249, nb soldier: 126
+nb ant: 376, food: 218/850, nest level: 5, nb worker: 250, nb soldier: 126
+#1741 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 375, food: 215/850, nest level: 5, nb worker: 252, nb soldier: 123
+nb ant: 376, food: 222/850, nest level: 5, nb worker: 252, nb soldier: 124
+nb ant: 377, food: 220/850, nest level: 5, nb worker: 253, nb soldier: 124
+nb ant: 375, food: 224/850, nest level: 5, nb worker: 251, nb soldier: 124
+nb ant: 374, food: 225/850, nest level: 5, nb worker: 250, nb soldier: 124
+nb ant: 375, food: 225/850, nest level: 5, nb worker: 251, nb soldier: 124
+nb ant: 373, food: 227/850, nest level: 5, nb worker: 249, nb soldier: 124
+nb ant: 372, food: 222/850, nest level: 5, nb worker: 246, nb soldier: 126
+nb ant: 373, food: 220/850, nest level: 5, nb worker: 247, nb soldier: 126
+nb ant: 373, food: 222/850, nest level: 5, nb worker: 247, nb soldier: 126
+#1751 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 372, food: 219/850, nest level: 5, nb worker: 248, nb soldier: 124
+nb ant: 373, food: 225/850, nest level: 5, nb worker: 249, nb soldier: 124
+nb ant: 374, food: 224/850, nest level: 5, nb worker: 249, nb soldier: 125
+nb ant: 374, food: 223/850, nest level: 5, nb worker: 249, nb soldier: 125
+nb ant: 373, food: 223/850, nest level: 5, nb worker: 248, nb soldier: 125
+nb ant: 373, food: 223/850, nest level: 5, nb worker: 248, nb soldier: 125
+nb ant: 372, food: 224/850, nest level: 5, nb worker: 247, nb soldier: 125
+nb ant: 371, food: 228/850, nest level: 5, nb worker: 247, nb soldier: 124
+nb ant: 372, food: 229/850, nest level: 5, nb worker: 249, nb soldier: 123
+nb ant: 374, food: 226/850, nest level: 5, nb worker: 250, nb soldier: 124
+#1761 - a tapir attack the colony
+the menace kill 13 soldier
+the menace kill 0 worker
+nb ant: 360, food: 224/850, nest level: 5, nb worker: 249, nb soldier: 111
+nb ant: 358, food: 269/850, nest level: 5, nb worker: 248, nb soldier: 110
+nb ant: 358, food: 270/850, nest level: 5, nb worker: 248, nb soldier: 110
+nb ant: 359, food: 264/850, nest level: 5, nb worker: 248, nb soldier: 111
+nb ant: 359, food: 264/850, nest level: 5, nb worker: 247, nb soldier: 112
+nb ant: 361, food: 262/850, nest level: 5, nb worker: 249, nb soldier: 112
+nb ant: 362, food: 259/850, nest level: 5, nb worker: 250, nb soldier: 112
+nb ant: 363, food: 259/850, nest level: 5, nb worker: 251, nb soldier: 112
+nb ant: 364, food: 258/850, nest level: 5, nb worker: 252, nb soldier: 112
+nb ant: 366, food: 255/850, nest level: 5, nb worker: 254, nb soldier: 112
+#1771 - a snail attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 367, food: 253/850, nest level: 5, nb worker: 254, nb soldier: 113
+nb ant: 369, food: 251/850, nest level: 5, nb worker: 255, nb soldier: 114
+nb ant: 367, food: 251/850, nest level: 5, nb worker: 253, nb soldier: 114
+nb ant: 364, food: 254/850, nest level: 5, nb worker: 250, nb soldier: 114
+nb ant: 365, food: 252/850, nest level: 5, nb worker: 251, nb soldier: 114
+nb ant: 367, food: 248/850, nest level: 5, nb worker: 251, nb soldier: 116
+nb ant: 365, food: 250/850, nest level: 5, nb worker: 249, nb soldier: 116
+nb ant: 366, food: 245/850, nest level: 5, nb worker: 249, nb soldier: 117
+nb ant: 367, food: 245/850, nest level: 5, nb worker: 249, nb soldier: 118
+nb ant: 366, food: 246/850, nest level: 5, nb worker: 248, nb soldier: 118
+#1781 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 368, food: 241/850, nest level: 5, nb worker: 250, nb soldier: 118
+nb ant: 368, food: 244/850, nest level: 5, nb worker: 250, nb soldier: 118
+nb ant: 368, food: 239/850, nest level: 5, nb worker: 248, nb soldier: 120
+nb ant: 370, food: 234/850, nest level: 5, nb worker: 249, nb soldier: 121
+nb ant: 368, food: 235/850, nest level: 5, nb worker: 247, nb soldier: 121
+nb ant: 367, food: 237/850, nest level: 5, nb worker: 246, nb soldier: 121
+nb ant: 368, food: 238/850, nest level: 5, nb worker: 247, nb soldier: 121
+nb ant: 368, food: 233/850, nest level: 5, nb worker: 246, nb soldier: 122
+nb ant: 369, food: 231/850, nest level: 5, nb worker: 245, nb soldier: 124
+nb ant: 371, food: 227/850, nest level: 5, nb worker: 247, nb soldier: 124
+nb ant: 371, food: 229/850, nest level: 5, nb worker: 248, nb soldier: 123
+nb ant: 370, food: 232/850, nest level: 5, nb worker: 247, nb soldier: 123
+nb ant: 371, food: 228/850, nest level: 5, nb worker: 247, nb soldier: 124
+nb ant: 370, food: 229/850, nest level: 5, nb worker: 246, nb soldier: 124
+nb ant: 370, food: 230/850, nest level: 5, nb worker: 246, nb soldier: 124
+nb ant: 369, food: 228/850, nest level: 5, nb worker: 245, nb soldier: 124
+nb ant: 369, food: 230/850, nest level: 5, nb worker: 245, nb soldier: 124
+nb ant: 370, food: 227/850, nest level: 5, nb worker: 246, nb soldier: 124
+nb ant: 369, food: 229/850, nest level: 5, nb worker: 245, nb soldier: 124
+nb ant: 367, food: 233/850, nest level: 5, nb worker: 243, nb soldier: 124
+#1801 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 366, food: 232/850, nest level: 5, nb worker: 244, nb soldier: 122
+nb ant: 367, food: 236/850, nest level: 5, nb worker: 245, nb soldier: 122
+nb ant: 367, food: 236/850, nest level: 5, nb worker: 245, nb soldier: 122
+nb ant: 369, food: 232/850, nest level: 5, nb worker: 246, nb soldier: 123
+nb ant: 366, food: 237/850, nest level: 5, nb worker: 244, nb soldier: 122
+nb ant: 368, food: 236/850, nest level: 5, nb worker: 246, nb soldier: 122
+nb ant: 367, food: 234/850, nest level: 5, nb worker: 244, nb soldier: 123
+nb ant: 368, food: 231/850, nest level: 5, nb worker: 245, nb soldier: 123
+nb ant: 366, food: 234/850, nest level: 5, nb worker: 243, nb soldier: 123
+nb ant: 364, food: 235/850, nest level: 5, nb worker: 241, nb soldier: 123
+#1811 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 364, food: 234/850, nest level: 5, nb worker: 243, nb soldier: 121
+nb ant: 364, food: 239/850, nest level: 5, nb worker: 243, nb soldier: 121
+nb ant: 365, food: 237/850, nest level: 5, nb worker: 243, nb soldier: 122
+nb ant: 363, food: 241/850, nest level: 5, nb worker: 241, nb soldier: 122
+nb ant: 365, food: 239/850, nest level: 5, nb worker: 243, nb soldier: 122
+nb ant: 366, food: 236/850, nest level: 5, nb worker: 244, nb soldier: 122
+nb ant: 364, food: 239/850, nest level: 5, nb worker: 242, nb soldier: 122
+nb ant: 364, food: 238/850, nest level: 5, nb worker: 242, nb soldier: 122
+nb ant: 364, food: 237/850, nest level: 5, nb worker: 242, nb soldier: 122
+nb ant: 365, food: 239/850, nest level: 5, nb worker: 243, nb soldier: 122
+#1821 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 366, food: 236/850, nest level: 5, nb worker: 244, nb soldier: 122
+nb ant: 365, food: 238/850, nest level: 5, nb worker: 243, nb soldier: 122
+nb ant: 364, food: 237/850, nest level: 5, nb worker: 242, nb soldier: 122
+nb ant: 364, food: 240/850, nest level: 5, nb worker: 242, nb soldier: 122
+nb ant: 361, food: 242/850, nest level: 5, nb worker: 239, nb soldier: 122
+nb ant: 361, food: 240/850, nest level: 5, nb worker: 239, nb soldier: 122
+nb ant: 363, food: 240/850, nest level: 5, nb worker: 241, nb soldier: 122
+nb ant: 365, food: 238/850, nest level: 5, nb worker: 243, nb soldier: 122
+nb ant: 366, food: 235/850, nest level: 5, nb worker: 244, nb soldier: 122
+nb ant: 367, food: 235/850, nest level: 5, nb worker: 245, nb soldier: 122
+#1831 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 364, food: 233/850, nest level: 5, nb worker: 244, nb soldier: 120
+nb ant: 364, food: 244/850, nest level: 5, nb worker: 244, nb soldier: 120
+nb ant: 362, food: 245/850, nest level: 5, nb worker: 242, nb soldier: 120
+nb ant: 361, food: 245/850, nest level: 5, nb worker: 240, nb soldier: 121
+nb ant: 361, food: 245/850, nest level: 5, nb worker: 240, nb soldier: 121
+nb ant: 363, food: 243/850, nest level: 5, nb worker: 242, nb soldier: 121
+nb ant: 362, food: 242/850, nest level: 5, nb worker: 241, nb soldier: 121
+nb ant: 362, food: 241/850, nest level: 5, nb worker: 241, nb soldier: 121
+nb ant: 364, food: 242/850, nest level: 5, nb worker: 243, nb soldier: 121
+nb ant: 363, food: 240/850, nest level: 5, nb worker: 242, nb soldier: 121
+#1841 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 361, food: 241/850, nest level: 5, nb worker: 243, nb soldier: 118
+nb ant: 363, food: 247/850, nest level: 5, nb worker: 244, nb soldier: 119
+nb ant: 362, food: 246/850, nest level: 5, nb worker: 243, nb soldier: 119
+nb ant: 364, food: 241/850, nest level: 5, nb worker: 244, nb soldier: 120
+nb ant: 364, food: 240/850, nest level: 5, nb worker: 242, nb soldier: 122
+nb ant: 365, food: 238/850, nest level: 5, nb worker: 243, nb soldier: 122
+nb ant: 365, food: 236/850, nest level: 5, nb worker: 243, nb soldier: 122
+nb ant: 365, food: 238/850, nest level: 5, nb worker: 243, nb soldier: 122
+nb ant: 366, food: 235/850, nest level: 5, nb worker: 244, nb soldier: 122
+nb ant: 366, food: 236/850, nest level: 5, nb worker: 244, nb soldier: 122
+#1851 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 362, food: 240/850, nest level: 5, nb worker: 244, nb soldier: 118
+nb ant: 363, food: 248/850, nest level: 5, nb worker: 245, nb soldier: 118
+nb ant: 364, food: 245/850, nest level: 5, nb worker: 245, nb soldier: 119
+nb ant: 364, food: 246/850, nest level: 5, nb worker: 245, nb soldier: 119
+nb ant: 366, food: 241/850, nest level: 5, nb worker: 247, nb soldier: 119
+nb ant: 367, food: 241/850, nest level: 5, nb worker: 247, nb soldier: 120
+nb ant: 366, food: 242/850, nest level: 5, nb worker: 246, nb soldier: 120
+nb ant: 366, food: 239/850, nest level: 5, nb worker: 246, nb soldier: 120
+nb ant: 367, food: 237/850, nest level: 5, nb worker: 246, nb soldier: 121
+nb ant: 366, food: 238/850, nest level: 5, nb worker: 244, nb soldier: 122
+#1861 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 364, food: 234/850, nest level: 5, nb worker: 245, nb soldier: 119
+nb ant: 362, food: 245/850, nest level: 5, nb worker: 243, nb soldier: 119
+nb ant: 362, food: 246/850, nest level: 5, nb worker: 242, nb soldier: 120
+nb ant: 362, food: 243/850, nest level: 5, nb worker: 242, nb soldier: 120
+nb ant: 362, food: 244/850, nest level: 5, nb worker: 242, nb soldier: 120
+nb ant: 361, food: 246/850, nest level: 5, nb worker: 241, nb soldier: 120
+nb ant: 360, food: 245/850, nest level: 5, nb worker: 240, nb soldier: 120
+nb ant: 362, food: 246/850, nest level: 5, nb worker: 242, nb soldier: 120
+nb ant: 363, food: 240/850, nest level: 5, nb worker: 242, nb soldier: 121
+nb ant: 362, food: 243/850, nest level: 5, nb worker: 241, nb soldier: 121
+#1871 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 361, food: 241/850, nest level: 5, nb worker: 242, nb soldier: 119
+nb ant: 363, food: 245/850, nest level: 5, nb worker: 243, nb soldier: 120
+nb ant: 364, food: 244/850, nest level: 5, nb worker: 244, nb soldier: 120
+nb ant: 362, food: 245/850, nest level: 5, nb worker: 242, nb soldier: 120
+nb ant: 361, food: 247/850, nest level: 5, nb worker: 241, nb soldier: 120
+nb ant: 362, food: 242/850, nest level: 5, nb worker: 241, nb soldier: 121
+nb ant: 361, food: 242/850, nest level: 5, nb worker: 240, nb soldier: 121
+nb ant: 362, food: 241/850, nest level: 5, nb worker: 241, nb soldier: 121
+nb ant: 363, food: 243/850, nest level: 5, nb worker: 242, nb soldier: 121
+nb ant: 364, food: 242/850, nest level: 5, nb worker: 244, nb soldier: 120
+#1881 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 361, food: 241/850, nest level: 5, nb worker: 244, nb soldier: 117
+nb ant: 362, food: 248/850, nest level: 5, nb worker: 243, nb soldier: 119
+nb ant: 363, food: 246/850, nest level: 5, nb worker: 244, nb soldier: 119
+nb ant: 362, food: 245/850, nest level: 5, nb worker: 243, nb soldier: 119
+nb ant: 362, food: 248/850, nest level: 5, nb worker: 243, nb soldier: 119
+nb ant: 362, food: 247/850, nest level: 5, nb worker: 243, nb soldier: 119
+nb ant: 363, food: 243/850, nest level: 5, nb worker: 243, nb soldier: 120
+nb ant: 363, food: 243/850, nest level: 5, nb worker: 243, nb soldier: 120
+nb ant: 364, food: 240/850, nest level: 5, nb worker: 243, nb soldier: 121
+nb ant: 364, food: 241/850, nest level: 5, nb worker: 243, nb soldier: 121
+#1891 - a tapir attack the colony
+the menace kill 9 soldier
+the menace kill 0 worker
+nb ant: 353, food: 246/850, nest level: 5, nb worker: 242, nb soldier: 111
+nb ant: 355, food: 266/850, nest level: 5, nb worker: 243, nb soldier: 112
+nb ant: 355, food: 264/850, nest level: 5, nb worker: 242, nb soldier: 113
+nb ant: 356, food: 263/850, nest level: 5, nb worker: 242, nb soldier: 114
+nb ant: 357, food: 259/850, nest level: 5, nb worker: 242, nb soldier: 115
+nb ant: 357, food: 261/850, nest level: 5, nb worker: 243, nb soldier: 114
+nb ant: 359, food: 259/850, nest level: 5, nb worker: 244, nb soldier: 115
+nb ant: 358, food: 258/850, nest level: 5, nb worker: 243, nb soldier: 115
+nb ant: 357, food: 256/850, nest level: 5, nb worker: 241, nb soldier: 116
+nb ant: 357, food: 258/850, nest level: 5, nb worker: 241, nb soldier: 116
+#1901 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 355, food: 255/850, nest level: 5, nb worker: 242, nb soldier: 113
+nb ant: 356, food: 264/850, nest level: 5, nb worker: 243, nb soldier: 113
+nb ant: 356, food: 265/850, nest level: 5, nb worker: 243, nb soldier: 113
+nb ant: 356, food: 264/850, nest level: 5, nb worker: 242, nb soldier: 114
+nb ant: 355, food: 264/850, nest level: 5, nb worker: 241, nb soldier: 114
+nb ant: 354, food: 265/850, nest level: 5, nb worker: 240, nb soldier: 114
+nb ant: 353, food: 269/850, nest level: 5, nb worker: 240, nb soldier: 113
+nb ant: 355, food: 267/850, nest level: 5, nb worker: 242, nb soldier: 113
+nb ant: 356, food: 262/850, nest level: 5, nb worker: 242, nb soldier: 114
+nb ant: 356, food: 261/850, nest level: 5, nb worker: 242, nb soldier: 114
+#1911 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 352, food: 265/850, nest level: 5, nb worker: 241, nb soldier: 111
+nb ant: 354, food: 270/850, nest level: 5, nb worker: 242, nb soldier: 112
+nb ant: 355, food: 268/850, nest level: 5, nb worker: 244, nb soldier: 111
+nb ant: 356, food: 267/850, nest level: 5, nb worker: 244, nb soldier: 112
+nb ant: 358, food: 260/850, nest level: 5, nb worker: 244, nb soldier: 114
+nb ant: 357, food: 262/850, nest level: 5, nb worker: 243, nb soldier: 114
+nb ant: 358, food: 257/850, nest level: 5, nb worker: 243, nb soldier: 115
+nb ant: 358, food: 258/850, nest level: 5, nb worker: 242, nb soldier: 116
+nb ant: 359, food: 252/850, nest level: 5, nb worker: 242, nb soldier: 117
+nb ant: 360, food: 253/850, nest level: 5, nb worker: 243, nb soldier: 117
+#1921 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 360, food: 252/850, nest level: 5, nb worker: 245, nb soldier: 115
+nb ant: 358, food: 259/850, nest level: 5, nb worker: 243, nb soldier: 115
+nb ant: 355, food: 263/850, nest level: 5, nb worker: 241, nb soldier: 114
+nb ant: 355, food: 263/850, nest level: 5, nb worker: 241, nb soldier: 114
+nb ant: 356, food: 262/850, nest level: 5, nb worker: 242, nb soldier: 114
+nb ant: 356, food: 261/850, nest level: 5, nb worker: 242, nb soldier: 114
+nb ant: 358, food: 260/850, nest level: 5, nb worker: 243, nb soldier: 115
+nb ant: 360, food: 257/850, nest level: 5, nb worker: 245, nb soldier: 115
+nb ant: 358, food: 260/850, nest level: 5, nb worker: 243, nb soldier: 115
+nb ant: 359, food: 258/850, nest level: 5, nb worker: 244, nb soldier: 115
+#1931 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 358, food: 250/850, nest level: 5, nb worker: 244, nb soldier: 114
+nb ant: 358, food: 257/850, nest level: 5, nb worker: 243, nb soldier: 115
+nb ant: 358, food: 260/850, nest level: 5, nb worker: 243, nb soldier: 115
+nb ant: 357, food: 260/850, nest level: 5, nb worker: 242, nb soldier: 115
+nb ant: 358, food: 257/850, nest level: 5, nb worker: 242, nb soldier: 116
+nb ant: 359, food: 257/850, nest level: 5, nb worker: 243, nb soldier: 116
+nb ant: 358, food: 258/850, nest level: 5, nb worker: 242, nb soldier: 116
+nb ant: 356, food: 257/850, nest level: 5, nb worker: 240, nb soldier: 116
+nb ant: 355, food: 261/850, nest level: 5, nb worker: 239, nb soldier: 116
+nb ant: 357, food: 257/850, nest level: 5, nb worker: 240, nb soldier: 117
+#1941 - a tapir attack the colony
+the menace kill 11 soldier
+the menace kill 0 worker
+nb ant: 347, food: 256/850, nest level: 5, nb worker: 241, nb soldier: 106
+nb ant: 348, food: 287/850, nest level: 5, nb worker: 242, nb soldier: 106
+nb ant: 346, food: 288/850, nest level: 5, nb worker: 240, nb soldier: 106
+nb ant: 347, food: 288/850, nest level: 5, nb worker: 241, nb soldier: 106
+nb ant: 349, food: 286/850, nest level: 5, nb worker: 243, nb soldier: 106
+nb ant: 349, food: 280/850, nest level: 5, nb worker: 241, nb soldier: 108
+nb ant: 349, food: 282/850, nest level: 5, nb worker: 241, nb soldier: 108
+nb ant: 348, food: 281/850, nest level: 5, nb worker: 240, nb soldier: 108
+nb ant: 350, food: 280/850, nest level: 5, nb worker: 241, nb soldier: 109
+nb ant: 351, food: 276/850, nest level: 5, nb worker: 241, nb soldier: 110
+#1951 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 351, food: 276/850, nest level: 5, nb worker: 241, nb soldier: 110
+nb ant: 351, food: 276/850, nest level: 5, nb worker: 241, nb soldier: 110
+nb ant: 350, food: 277/850, nest level: 5, nb worker: 240, nb soldier: 110
+nb ant: 350, food: 278/850, nest level: 5, nb worker: 240, nb soldier: 110
+nb ant: 352, food: 273/850, nest level: 5, nb worker: 242, nb soldier: 110
+nb ant: 353, food: 275/850, nest level: 5, nb worker: 243, nb soldier: 110
+nb ant: 355, food: 269/850, nest level: 5, nb worker: 244, nb soldier: 111
+nb ant: 357, food: 269/850, nest level: 5, nb worker: 246, nb soldier: 111
+nb ant: 359, food: 267/850, nest level: 5, nb worker: 248, nb soldier: 111
+nb ant: 361, food: 259/850, nest level: 5, nb worker: 248, nb soldier: 113
+#1961 - a snail attack the colony
+the menace kill 5 soldier
+the menace kill 0 worker
+nb ant: 355, food: 260/850, nest level: 5, nb worker: 247, nb soldier: 108
+nb ant: 356, food: 273/850, nest level: 5, nb worker: 247, nb soldier: 109
+nb ant: 355, food: 273/850, nest level: 5, nb worker: 245, nb soldier: 110
+nb ant: 357, food: 269/850, nest level: 5, nb worker: 246, nb soldier: 111
+nb ant: 358, food: 266/850, nest level: 5, nb worker: 246, nb soldier: 112
+nb ant: 360, food: 261/850, nest level: 5, nb worker: 248, nb soldier: 112
+nb ant: 360, food: 262/850, nest level: 5, nb worker: 247, nb soldier: 113
+nb ant: 362, food: 257/850, nest level: 5, nb worker: 249, nb soldier: 113
+nb ant: 360, food: 262/850, nest level: 5, nb worker: 247, nb soldier: 113
+nb ant: 360, food: 257/850, nest level: 5, nb worker: 246, nb soldier: 114
+#1971 - a snail attack the colony
+the menace kill 4 soldier
+the menace kill 0 worker
+nb ant: 356, food: 260/850, nest level: 5, nb worker: 246, nb soldier: 110
+nb ant: 357, food: 270/850, nest level: 5, nb worker: 247, nb soldier: 110
+nb ant: 358, food: 263/850, nest level: 5, nb worker: 246, nb soldier: 112
+nb ant: 358, food: 262/850, nest level: 5, nb worker: 245, nb soldier: 113
+nb ant: 359, food: 260/850, nest level: 5, nb worker: 246, nb soldier: 113
+nb ant: 360, food: 261/850, nest level: 5, nb worker: 247, nb soldier: 113
+nb ant: 358, food: 264/850, nest level: 5, nb worker: 245, nb soldier: 113
+nb ant: 356, food: 265/850, nest level: 5, nb worker: 243, nb soldier: 113
+nb ant: 355, food: 267/850, nest level: 5, nb worker: 242, nb soldier: 113
+nb ant: 357, food: 261/850, nest level: 5, nb worker: 243, nb soldier: 114
+#1981 - a tapir attack the colony
+the menace kill 15 soldier
+the menace kill 0 worker
+nb ant: 341, food: 264/850, nest level: 5, nb worker: 242, nb soldier: 99
+nb ant: 340, food: 309/850, nest level: 5, nb worker: 241, nb soldier: 99
+nb ant: 341, food: 309/850, nest level: 5, nb worker: 242, nb soldier: 99
+nb ant: 339, food: 311/850, nest level: 5, nb worker: 240, nb soldier: 99
+nb ant: 340, food: 308/850, nest level: 5, nb worker: 241, nb soldier: 99
+nb ant: 340, food: 309/850, nest level: 5, nb worker: 241, nb soldier: 99
+nb ant: 341, food: 305/850, nest level: 5, nb worker: 240, nb soldier: 101
+nb ant: 343, food: 301/850, nest level: 5, nb worker: 241, nb soldier: 102
+nb ant: 344, food: 300/850, nest level: 5, nb worker: 242, nb soldier: 102
+nb ant: 346, food: 297/850, nest level: 5, nb worker: 244, nb soldier: 102
+#1991 - a snail attack the colony
+the menace kill 1 soldier
+the menace kill 0 worker
+nb ant: 347, food: 296/850, nest level: 5, nb worker: 246, nb soldier: 101
+nb ant: 347, food: 294/850, nest level: 5, nb worker: 244, nb soldier: 103
+nb ant: 348, food: 287/850, nest level: 5, nb worker: 243, nb soldier: 105
+nb ant: 348, food: 288/850, nest level: 5, nb worker: 243, nb soldier: 105
+nb ant: 350, food: 285/850, nest level: 5, nb worker: 244, nb soldier: 106
+nb ant: 352, food: 280/850, nest level: 5, nb worker: 244, nb soldier: 108
+nb ant: 350, food: 281/850, nest level: 5, nb worker: 242, nb soldier: 108
+nb ant: 350, food: 278/850, nest level: 5, nb worker: 240, nb soldier: 110
+nb ant: 348, food: 277/850, nest level: 5, nb worker: 238, nb soldier: 110
+nb ant: 349, food: 277/850, nest level: 5, nb worker: 238, nb soldier: 111
+#2001 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 347, food: 279/850, nest level: 5, nb worker: 236, nb soldier: 111
+nb ant: 348, food: 276/850, nest level: 5, nb worker: 237, nb soldier: 111
+nb ant: 349, food: 274/850, nest level: 5, nb worker: 237, nb soldier: 112
+nb ant: 347, food: 274/850, nest level: 5, nb worker: 235, nb soldier: 112
+nb ant: 346, food: 275/850, nest level: 5, nb worker: 234, nb soldier: 112
+nb ant: 348, food: 274/850, nest level: 5, nb worker: 236, nb soldier: 112
+nb ant: 350, food: 267/850, nest level: 5, nb worker: 236, nb soldier: 114
+nb ant: 351, food: 265/850, nest level: 5, nb worker: 236, nb soldier: 115
+nb ant: 352, food: 264/850, nest level: 5, nb worker: 236, nb soldier: 116
+nb ant: 352, food: 263/850, nest level: 5, nb worker: 236, nb soldier: 116
+#2011 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 351, food: 260/850, nest level: 5, nb worker: 238, nb soldier: 113
+nb ant: 353, food: 266/850, nest level: 5, nb worker: 239, nb soldier: 114
+nb ant: 352, food: 265/850, nest level: 5, nb worker: 238, nb soldier: 114
+nb ant: 350, food: 270/850, nest level: 5, nb worker: 236, nb soldier: 114
+nb ant: 351, food: 266/850, nest level: 5, nb worker: 237, nb soldier: 114
+nb ant: 351, food: 264/850, nest level: 5, nb worker: 236, nb soldier: 115
+nb ant: 353, food: 262/850, nest level: 5, nb worker: 237, nb soldier: 116
+nb ant: 352, food: 261/850, nest level: 5, nb worker: 236, nb soldier: 116
+nb ant: 353, food: 263/850, nest level: 5, nb worker: 237, nb soldier: 116
+nb ant: 353, food: 261/850, nest level: 5, nb worker: 237, nb soldier: 116
+#2021 - a snail attack the colony
+the menace kill 3 soldier
+the menace kill 0 worker
+nb ant: 349, food: 264/850, nest level: 5, nb worker: 236, nb soldier: 113
+nb ant: 351, food: 268/850, nest level: 5, nb worker: 237, nb soldier: 114
+nb ant: 352, food: 265/850, nest level: 5, nb worker: 237, nb soldier: 115
+nb ant: 354, food: 262/850, nest level: 5, nb worker: 238, nb soldier: 116
+nb ant: 355, food: 256/850, nest level: 5, nb worker: 238, nb soldier: 117
+nb ant: 353, food: 262/850, nest level: 5, nb worker: 237, nb soldier: 116
+nb ant: 355, food: 258/850, nest level: 5, nb worker: 239, nb soldier: 116
+nb ant: 356, food: 257/850, nest level: 5, nb worker: 240, nb soldier: 116
+nb ant: 352, food: 264/850, nest level: 5, nb worker: 236, nb soldier: 116
+nb ant: 353, food: 262/850, nest level: 5, nb worker: 237, nb soldier: 116
+#2031 - a snail attack the colony
+the menace kill 1 soldier
+the menace kill 0 worker
+nb ant: 354, food: 256/850, nest level: 5, nb worker: 238, nb soldier: 116
+nb ant: 355, food: 260/850, nest level: 5, nb worker: 239, nb soldier: 116
+nb ant: 356, food: 259/850, nest level: 5, nb worker: 240, nb soldier: 116
+nb ant: 358, food: 256/850, nest level: 5, nb worker: 242, nb soldier: 116
+nb ant: 358, food: 255/850, nest level: 5, nb worker: 241, nb soldier: 117
+nb ant: 359, food: 249/850, nest level: 5, nb worker: 240, nb soldier: 119
+nb ant: 360, food: 248/850, nest level: 5, nb worker: 240, nb soldier: 120
+nb ant: 362, food: 245/850, nest level: 5, nb worker: 242, nb soldier: 120
+nb ant: 360, food: 248/850, nest level: 5, nb worker: 240, nb soldier: 120
+nb ant: 359, food: 248/850, nest level: 5, nb worker: 239, nb soldier: 120
+#2041 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 358, food: 249/850, nest level: 5, nb worker: 238, nb soldier: 120
+nb ant: 359, food: 249/850, nest level: 5, nb worker: 239, nb soldier: 120
+nb ant: 360, food: 248/850, nest level: 5, nb worker: 240, nb soldier: 120
+nb ant: 361, food: 246/850, nest level: 5, nb worker: 241, nb soldier: 120
+nb ant: 362, food: 243/850, nest level: 5, nb worker: 242, nb soldier: 120
+nb ant: 362, food: 244/850, nest level: 5, nb worker: 242, nb soldier: 120
+nb ant: 362, food: 245/850, nest level: 5, nb worker: 242, nb soldier: 120
+nb ant: 363, food: 243/850, nest level: 5, nb worker: 242, nb soldier: 121
+nb ant: 364, food: 240/850, nest level: 5, nb worker: 243, nb soldier: 121
+nb ant: 362, food: 243/850, nest level: 5, nb worker: 241, nb soldier: 121
+#2051 - a snail attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 364, food: 240/850, nest level: 5, nb worker: 243, nb soldier: 121
+nb ant: 364, food: 239/850, nest level: 5, nb worker: 242, nb soldier: 122
+nb ant: 364, food: 238/850, nest level: 5, nb worker: 242, nb soldier: 122
+nb ant: 364, food: 237/850, nest level: 5, nb worker: 242, nb soldier: 122
+nb ant: 364, food: 240/850, nest level: 5, nb worker: 242, nb soldier: 122
+nb ant: 366, food: 237/850, nest level: 5, nb worker: 244, nb soldier: 122
+nb ant: 367, food: 237/850, nest level: 5, nb worker: 245, nb soldier: 122
+nb ant: 366, food: 238/850, nest level: 5, nb worker: 244, nb soldier: 122
+nb ant: 367, food: 234/850, nest level: 5, nb worker: 245, nb soldier: 122
+nb ant: 369, food: 230/850, nest level: 5, nb worker: 246, nb soldier: 123
+#2061 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 368, food: 231/850, nest level: 5, nb worker: 245, nb soldier: 123
+nb ant: 368, food: 232/850, nest level: 5, nb worker: 245, nb soldier: 123
+nb ant: 370, food: 231/850, nest level: 5, nb worker: 247, nb soldier: 123
+nb ant: 372, food: 226/850, nest level: 5, nb worker: 248, nb soldier: 124
+nb ant: 372, food: 225/850, nest level: 5, nb worker: 248, nb soldier: 124
+nb ant: 374, food: 226/850, nest level: 5, nb worker: 250, nb soldier: 124
+nb ant: 374, food: 223/850, nest level: 5, nb worker: 250, nb soldier: 124
+nb ant: 374, food: 224/850, nest level: 5, nb worker: 250, nb soldier: 124
+nb ant: 375, food: 222/850, nest level: 5, nb worker: 250, nb soldier: 125
+nb ant: 375, food: 220/850, nest level: 5, nb worker: 250, nb soldier: 125
+#2071 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 373, food: 222/850, nest level: 5, nb worker: 250, nb soldier: 123
+nb ant: 375, food: 222/850, nest level: 5, nb worker: 251, nb soldier: 124
+nb ant: 375, food: 220/850, nest level: 5, nb worker: 250, nb soldier: 125
+nb ant: 374, food: 223/850, nest level: 5, nb worker: 249, nb soldier: 125
+nb ant: 374, food: 222/850, nest level: 5, nb worker: 249, nb soldier: 125
+nb ant: 375, food: 220/850, nest level: 5, nb worker: 250, nb soldier: 125
+nb ant: 375, food: 222/850, nest level: 5, nb worker: 250, nb soldier: 125
+nb ant: 376, food: 219/850, nest level: 5, nb worker: 251, nb soldier: 125
+nb ant: 376, food: 220/850, nest level: 5, nb worker: 251, nb soldier: 125
+nb ant: 377, food: 220/850, nest level: 5, nb worker: 252, nb soldier: 125
+#2081 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 376, food: 221/850, nest level: 5, nb worker: 251, nb soldier: 125
+nb ant: 373, food: 225/850, nest level: 5, nb worker: 248, nb soldier: 125
+nb ant: 374, food: 224/850, nest level: 5, nb worker: 249, nb soldier: 125
+nb ant: 375, food: 222/850, nest level: 5, nb worker: 250, nb soldier: 125
+nb ant: 375, food: 220/850, nest level: 5, nb worker: 250, nb soldier: 125
+nb ant: 375, food: 222/850, nest level: 5, nb worker: 250, nb soldier: 125
+nb ant: 376, food: 219/850, nest level: 5, nb worker: 251, nb soldier: 125
+nb ant: 378, food: 216/850, nest level: 5, nb worker: 252, nb soldier: 126
+nb ant: 378, food: 217/850, nest level: 5, nb worker: 252, nb soldier: 126
+nb ant: 378, food: 218/850, nest level: 5, nb worker: 252, nb soldier: 126
+#2091 - a snail attack the colony
+the menace kill 1 soldier
+the menace kill 0 worker
+nb ant: 377, food: 215/850, nest level: 5, nb worker: 252, nb soldier: 125
+nb ant: 376, food: 220/850, nest level: 5, nb worker: 251, nb soldier: 125
+nb ant: 372, food: 225/850, nest level: 5, nb worker: 247, nb soldier: 125
+nb ant: 373, food: 225/850, nest level: 5, nb worker: 248, nb soldier: 125
+nb ant: 375, food: 223/850, nest level: 5, nb worker: 250, nb soldier: 125
+nb ant: 375, food: 221/850, nest level: 5, nb worker: 250, nb soldier: 125
+nb ant: 376, food: 222/850, nest level: 5, nb worker: 251, nb soldier: 125
+nb ant: 374, food: 217/850, nest level: 5, nb worker: 247, nb soldier: 127
+nb ant: 374, food: 222/850, nest level: 5, nb worker: 248, nb soldier: 126
+nb ant: 375, food: 218/850, nest level: 5, nb worker: 249, nb soldier: 126
+#2101 - a snail attack the colony
+the menace kill 2 soldier
+the menace kill 0 worker
+nb ant: 374, food: 217/850, nest level: 5, nb worker: 250, nb soldier: 124
+nb ant: 374, food: 226/850, nest level: 5, nb worker: 250, nb soldier: 124
+nb ant: 375, food: 222/850, nest level: 5, nb worker: 251, nb soldier: 124
+nb ant: 375, food: 222/850, nest level: 5, nb worker: 251, nb soldier: 124
+nb ant: 375, food: 222/850, nest level: 5, nb worker: 251, nb soldier: 124
+nb ant: 377, food: 220/850, nest level: 5, nb worker: 253, nb soldier: 124
+nb ant: 379, food: 220/850, nest level: 5, nb worker: 255, nb soldier: 124
+nb ant: 378, food: 217/850, nest level: 5, nb worker: 252, nb soldier: 126
+nb ant: 379, food: 217/850, nest level: 5, nb worker: 253, nb soldier: 126
+nb ant: 380, food: 216/850, nest level: 5, nb worker: 254, nb soldier: 126
+#2111 - a snail attack the colony
+the menace kill 1 soldier
+the menace kill 0 worker
+nb ant: 380, food: 212/850, nest level: 5, nb worker: 254, nb soldier: 126
+nb ant: 382, food: 211/850, nest level: 5, nb worker: 255, nb soldier: 127
+nb ant: 382, food: 208/850, nest level: 5, nb worker: 254, nb soldier: 128
+nb ant: 383, food: 208/850, nest level: 5, nb worker: 255, nb soldier: 128
+nb ant: 382, food: 209/850, nest level: 5, nb worker: 254, nb soldier: 128
+nb ant: 384, food: 208/850, nest level: 5, nb worker: 256, nb soldier: 128
+nb ant: 385, food: 206/850, nest level: 5, nb worker: 257, nb soldier: 128
+nb ant: 385, food: 204/850, nest level: 5, nb worker: 257, nb soldier: 128
+nb ant: 385, food: 204/850, nest level: 5, nb worker: 256, nb soldier: 129
+nb ant: 384, food: 205/850, nest level: 5, nb worker: 255, nb soldier: 129
+#2121 - a spider attack the colony
+the menace kill 0 soldier
+the menace kill 0 worker
+nb ant: 383, food: 207/850, nest level: 5, nb worker: 254, nb soldier: 129
+nb ant: 384, food: 204/850, nest level: 5, nb worker: 255, nb soldier: 129
+nb ant: 385, food: 204/850, nest level: 5, nb worker: 256, nb soldier: 129
+nb ant: 387, food: 202/850, nest level: 5, nb worker: 258, nb soldier: 129
+nb ant: 389, food: 198/850, nest level: 5, nb worker: 260, nb soldier: 129
+nb ant: 389, food: 200/850, nest level: 5, nb worker: 261, nb soldier: 128
