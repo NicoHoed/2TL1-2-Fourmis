@@ -49,7 +49,7 @@ class Colony:
 
         for ant in self.__ant:
             if ant.role == 'soldier':
-                menace_life -= 3
+                menace_life -= SOLDIER_DAMAGE
                 if randint(0, 100) < menace_power / 3:
                     ants_to_remove.append(ant)
                 if menace_life <= 0:
@@ -65,7 +65,7 @@ class Colony:
         if isAlive:
             for ant in self.__ant:
                 if ant.role == 'worker':
-                    menace_life -= 1
+                    menace_life -= WORKER_DAMAGE
                     if randint(0, 100) < menace_power:
                         ants_to_remove.append(ant)
                     if menace_life <= 0:
