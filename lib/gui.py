@@ -44,7 +44,7 @@ class AntSimulationApp:
         self.nb_ant_frame = Frame(self.info_box)
         self.nb_ant_frame.pack()
 
-        self.nb_ant_text = Label(self.nb_ant_frame, text='Nombre de fourmi :')
+        self.nb_ant_text = Label(self.nb_ant_frame, text='Number of ants :')
         self.nb_ant_text.pack(side='left')
 
         self.nb_ant_label = Label(self.nb_ant_frame, textvariable=self.nb_ant_var)
@@ -55,7 +55,7 @@ class AntSimulationApp:
         self.nb_ant_worker_frame = Frame(self.info_box)
         self.nb_ant_worker_frame.pack()
 
-        self.nb_ant_worker_text = Label(self.nb_ant_worker_frame, text="Nombre d'ouvrière:")
+        self.nb_ant_worker_text = Label(self.nb_ant_worker_frame, text="Number of workers:")
         self.nb_ant_worker_text.pack(side='left')
 
         self.nb_ant_worker_label = Label(self.nb_ant_worker_frame, textvariable=self.nb_ant_worker_var)
@@ -66,7 +66,7 @@ class AntSimulationApp:
         self.nb_ant_soldier_frame = Frame(self.info_box)
         self.nb_ant_soldier_frame.pack()
 
-        self.nb_ant_soldier_text = Label(self.nb_ant_soldier_frame, text="Nombre de soldats:")
+        self.nb_ant_soldier_text = Label(self.nb_ant_soldier_frame, text="Number of soldiers:")
         self.nb_ant_soldier_text.pack(side='left')
 
         self.nb_ant_soldier_label = Label(self.nb_ant_soldier_frame, textvariable=self.nb_ant_soldier_var)
@@ -77,7 +77,7 @@ class AntSimulationApp:
         self.nest_food_stock_frame = Frame(self.info_box)
         self.nest_food_stock_frame.pack()
 
-        self.nest_food_stock_text = Label(self.nest_food_stock_frame, text='Quantité de nourriture :')
+        self.nest_food_stock_text = Label(self.nest_food_stock_frame, text='Food quantity :')
         self.nest_food_stock_text.pack(side='left')
 
         self.nest_food_stock_label = Label(self.nest_food_stock_frame, textvariable=self.nest_food_stock_var)
@@ -88,7 +88,7 @@ class AntSimulationApp:
         self.nest_level_frame = Frame(self.info_box)
         self.nest_level_frame.pack()
 
-        self.nest_level_text = Label(self.nest_level_frame, text='Niveau du nid :')
+        self.nest_level_text = Label(self.nest_level_frame, text='Nest level :')
         self.nest_level_text.pack(side='left')
 
         self.nest_level_label = Label(self.nest_level_frame, textvariable=self.nest_level_var)
