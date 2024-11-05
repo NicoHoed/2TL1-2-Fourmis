@@ -1,5 +1,7 @@
 from json import dump, load
 from os import path, listdir
+import tkinter as tk
+from json import dump
 
 keys = ['name', 'life', 'min_nest_level', 'spawn_prob', 'power']
 """
@@ -9,6 +11,49 @@ keys = ['name', 'life', 'min_nest_level', 'spawn_prob', 'power']
     spaw_prob: 0...100 probability of the menace to spawn, max 1 all 10 cycle
     power: 0...100 probability to kill an ant when fight probability are divided by 3 when fight soldier
 """
+
+
+class App:
+    def __init__(self, root):
+        self.root = root
+
+        self.label_list = []
+        self.entry_list = []
+        self.var_entry = []
+        self.sub_frame_list = []
+
+        for entry in keys:
+            frame = tk.Frame(root)
+            self.label_list.append(tk.Label(frame, text=f'{entry}: ').pack(side='left'))
+            var = tk.StringVar()
+            self.entry_list.append(tk.Entry(frame, textvariable=var).pack(side='left'))
+            self.var_entry.append(var)
+            self.sub_frame_list.append(frame)
+            frame.pack()
+
+        self.done_button = tk.Button(root, command=self.done, text='Done')
+        self.done_button.pack()
+
+
+    def done(self):
+        value = [x.get() for x in self.var_entry]
+
+        if '' in value:
+            return
+
+        dict_value = {}
+        for val in range(len(value)):
+            dict_value[keys[val]] = value[val]
+
+
+        with open(f'../monster/{value[0]}.json', 'x', encoding='utf-8') as file:
+            dump(dict_value, file, indent=4)
+            root.quit()
+
+
+
+
+
 
 
 def create_monster(directory: str) -> None:
@@ -71,6 +116,9 @@ if __name__ == '__main__':
 
     #create_monster('../monster')
 
-    for predator in listdir('../monster'):
-        print('working on', predator)
-        update_monster_json(path.join('..', 'monster'), predator)
+    #for predator in listdir('../monster'):
+    #    print('working on', predator)
+    #    update_monster_json(path.join('..', 'monster'), predator)
+    root = tk.Tk()
+    app = App(root)
+    root.mainloop()
