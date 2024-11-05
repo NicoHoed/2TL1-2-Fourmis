@@ -292,6 +292,7 @@ counter = 0
 
 def start(colony: Colony, root: tk.Tk, app: gui.AntSimulationApp, predators: list[monster.Monster], logging: logger.Logger) -> None:
     global counter
+
     if colony.live:
         counter += 1
         colony.queen.lay_eggs()
@@ -311,13 +312,16 @@ def start(colony: Colony, root: tk.Tk, app: gui.AntSimulationApp, predators: lis
                     break
 
 
-
-        app.update_display()
         app.update_value(colony.info())
+        app.update_display()
+
         logging.log(repr(colony))
 
         #root.after(100, lambda a=colony, b=root, c=app, d=predators, e=logging: start(a, b, c, d, e))
         root.after(100, start, colony, root, app, predators, logging)
+
+    else:
+        app.update_value((0, colony.nest.ant_capacity, colony.nest.food_stock,colony.nest.food_capacity, colony.nest.level, 0, 0))
 
 def run() -> None:
     predators = []
