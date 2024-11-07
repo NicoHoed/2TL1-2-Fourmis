@@ -21,11 +21,16 @@ class Ant:
         self.life = 0
         self.life_span = self.life_by_role[role]
 
-    def do(self):
-        self.die()
 
     def detect_pheromone(self):
         pass
+
+    def track_pheromone(self):
+        pass
+
+    def move(self):
+        pass
+
 
     def die(self):
         self.life += 1
@@ -119,11 +124,11 @@ class Pheromone:
     """
 
     def __init__(self, p_type, intensity):
-        self.p_type = p_type
-        self.intensity = intensity
+        self.__p_type = p_type
+        self.__intensity = intensity
 
     def dispel(self):
-        self.intensity = - 1
+        self.__intensity = - 1
 
 
 class Nest:

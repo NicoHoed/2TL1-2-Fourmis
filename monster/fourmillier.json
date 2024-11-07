@@ -1,7 +1,7 @@
 {
     "name": "fourmillier",
     "life": "250",
-    "min_nest_level": "3",
+    "min_nest_level": "5",
     "spawn_prob": "25",
     "power": "50"
 }
