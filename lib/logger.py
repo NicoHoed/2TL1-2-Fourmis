@@ -1,5 +1,6 @@
 import os
 from datetime import datetime
+from idlelib.debugger_r import debugging
 from os import path
 import sqlite3 as sq
 import tkinter as tk
@@ -12,6 +13,7 @@ class Logger:
     def __init__(self, directory, database, debugging = False):
         self.directory = directory
         self.database = database
+        self.debugging = debugging
         self.is_ready = True
         self.current_table = None
 
@@ -29,6 +31,7 @@ class Logger:
             self.cur = self.conn.cursor()
             if not debugging:
                 file = open(path.join(self.directory, self.filename), 'x')
+                file.write('Start of log\n')
                 file.close()
                 self.create_table()
         except Exception as e:
@@ -124,7 +127,11 @@ class AppLogger:
 
     def open_log(self):
         print(self.menu_choice.get())
-        file_path = os.path.join(os.getcwd(), 'log', f'{self.menu_choice.get()[6:]}.log')
+        if not self.logger.debugging:
+            file_path = os.path.join(os.getcwd(), 'log', f'{self.menu_choice.get()[6:]}.log')
+        else:
+            file_path = os.path.join(os.getcwd(), '..', 'log', f'{self.menu_choice.get()[6:]}.log')
+        print(file_path)
         threading.Thread(target=lambda: os.system(f'notepad.exe {file_path}')).start()
 
     def update_option_menu(self):
@@ -146,7 +153,7 @@ class AppLogger:
 
 if __name__ == '__main__':
     root = tk.Tk()
-    logging = Logger('../log', '../log/log.db', debugging=False)
+    logging = Logger('../log', '../log/log.db', debugging=True)
     app = AppLogger(root, logging)
 
     root.mainloop()
