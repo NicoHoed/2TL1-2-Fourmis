@@ -1,4 +1,4 @@
-from . import monster, gui, logger, monsterCreation
+from . import threat, gui, logger, threatCreation
 
 
-__all__ = ['monster', 'gui', 'logger', 'monsterCreation']
+__all__ = ['threat', 'gui', 'logger', 'threatCreation']
