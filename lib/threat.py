@@ -4,7 +4,7 @@ import json
 
 class Threat:
     def __init__(self, file: str):
-        with open(path.join('monster', file) if __name__ != '__main__' else path.join('..', 'monster', file), 'r', encoding='utf-8') as file:
+        with open(path.join('threats', file) if __name__ != '__main__' else path.join('..', 'threats', file), 'r', encoding='utf-8') as file:
             try:
                 data = dict(load(file))
                 self.life = int(data['life'])

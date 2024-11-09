@@ -331,7 +331,7 @@ def start(colony: Colony, root: tk.Tk, app: gui.AntSimulationApp, predators: lis
 
 def run() -> None:
     predators = []
-    for x in os.listdir('monster'):
+    for x in os.listdir('threats'):
         predators.append(threat.Threat(x)) if x.endswith('.json') else None
 
     [print(x) for x in predators]
@@ -339,7 +339,7 @@ def run() -> None:
 
     logging = logger.Logger('log', os.path.join('log', 'log.db'))
 
-    if logging.ready:
+    if logging.is_ready:
 
         root = tk.Tk()
         root.geometry('1196x562')
