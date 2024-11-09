@@ -337,7 +337,7 @@ def run() -> None:
     [print(x) for x in predators]
     colony = Colony()
 
-    logging = logger.Logger('log', os.path.join('log', 'log.db'))
+    logging = logger.Logger('log',  'export', os.path.join('log', 'log.db'))
 
     if logging.is_ready:
 

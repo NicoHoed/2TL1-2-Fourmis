@@ -1,6 +1,6 @@
 import os
 from datetime import datetime
-from idlelib.debugger_r import debugging
+import csv
 from os import path
 import sqlite3 as sq
 import tkinter as tk
@@ -10,8 +10,9 @@ import threading
 
 
 class Logger:
-    def __init__(self, directory, database, debugging = False):
-        self.directory = directory
+    def __init__(self, log_directory, export_directory, database, debugging = False):
+        self.log_directory = log_directory
+        self.export_directory = export_directory
         self.database = database
         self.debugging = debugging
         self.is_ready = True
@@ -30,7 +31,7 @@ class Logger:
             self.conn = sq.connect(self.database)
             self.cur = self.conn.cursor()
             if not debugging:
-                file = open(path.join(self.directory, self.filename), 'x')
+                file = open(path.join(self.log_directory, self.filename), 'x')
                 file.write('Start of log\n')
                 file.close()
                 self.create_table()
@@ -43,7 +44,7 @@ class Logger:
 
 
     def log(self, msg):
-        with open(path.join(self.directory, self.filename), 'a') as file:
+        with open(path.join(self.log_directory, self.filename), 'a') as file:
             file.write(msg+'\n')
 
     def get_table(self):
@@ -75,6 +76,17 @@ class Logger:
 
         self.conn.commit()
 
+    def export_data(self, table):
+        """script find on gitHub : https://gist.github.com/shitalmule04/82d2091e2f43cb63029500b56ab7a8cc and modify"""
+        cur = self.conn.cursor()
+        cur.execute(f"""SELECT * from {table}""")
+        with open(f"{self.export_directory}/{table[6:]}.csv", "w", newline='') as csv_file:
+            csv_writer = csv.writer(csv_file, delimiter=",")
+            csv_writer.writerow([i[0] for i in cur.description])
+            csv_writer.writerows(cur)
+
+        messagebox.showinfo('Success', f'file have been save to {os.path.join(os.getcwd(), self.export_directory, table[6:])}.csv')
+
 
 
 class AppLogger:
@@ -90,13 +102,6 @@ class AppLogger:
         self.no_log_text = '------- no log -------'
 
 
-        self.option = logger.get_table()
-        self.menu_choice = tk.StringVar()
-        self.menu_choice.set(self.option[0] if self.option else self.disable_button())
-
-        self.menu = ttk.OptionMenu(self.root, self.menu_choice, self.menu_choice.get(),  *self.option)
-        self.menu.grid(row = 0, column = 0)
-
         self.del_button = ttk.Button(self.root, command=self.del_table, text='delete log')
         self.del_button.grid(row = 0, column = 1, sticky='w')
 
@@ -110,28 +115,40 @@ class AppLogger:
         self.view_log_button.grid(row=3, column=1, sticky='w')
 
 
+        self.option = logger.get_table()
+        self.menu_choice = tk.StringVar()
+        self.menu_choice.set(self.option[0] if self.option else self.disable_button())
+
+        self.menu = ttk.OptionMenu(self.root, self.menu_choice, self.menu_choice.get(),  *self.option)
+        self.menu.grid(row = 0, column = 0)
+
+
+
+
     def del_table(self):
         self.logger.delete_table(self.menu_choice.get())
-        if f'{self.menu_choice.get()[6:]}.log' in os.listdir(os.path.join(os.getcwd(), self.logger.directory)):
-            file_path = os.path.join(os.getcwd(), self.logger.directory, f'{self.menu_choice.get()[6:]}.log')
+        if f'{self.menu_choice.get()[6:]}.log' in os.listdir(os.path.join(os.getcwd(), self.logger.log_directory)):
+            file_path = os.path.join(os.getcwd(), self.logger.log_directory, f'{self.menu_choice.get()[6:]}.log')
             os.remove(file_path)
         self.option = self.logger.get_table()
         self.update_option_menu()
 
 
     def export_table(self):
-        tk.messagebox.showinfo('WIP', 'Not available')
+        #tk.messagebox.showinfo('WIP', 'Not available')
+        self.logger.export_data(self.menu_choice.get())
+
 
     def show_graphe(self):
         print(self.menu_choice.get())
 
     def open_log(self):
-        print(self.menu_choice.get())
+        #print(self.menu_choice.get())
         if not self.logger.debugging:
             file_path = os.path.join(os.getcwd(), 'log', f'{self.menu_choice.get()[6:]}.log')
         else:
             file_path = os.path.join(os.getcwd(), '..', 'log', f'{self.menu_choice.get()[6:]}.log')
-        print(file_path)
+        #print(file_path)
         threading.Thread(target=lambda: os.system(f'notepad.exe {file_path}')).start()
 
     def update_option_menu(self):
@@ -153,7 +170,7 @@ class AppLogger:
 
 if __name__ == '__main__':
     root = tk.Tk()
-    logging = Logger('../log', '../log/log.db', debugging=True)
+    logging = Logger('../log', '../export', '../log/log.db', debugging=True)
     app = AppLogger(root, logging)
 
     root.mainloop()
