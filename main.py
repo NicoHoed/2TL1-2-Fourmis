@@ -4,7 +4,7 @@ from time import sleep
 import tkinter as tk
 
 
-from lib import monster, gui, logger
+from lib import threat, gui, logger
 from config import *
 
 
@@ -75,7 +75,7 @@ class Queen(Ant):
     def lay_eggs(self):
         if randint(0, 100) > 25 and self.colony.nest.food_stock > QUANTITY_FOOD_FOR_LAYING_EGG:
             #print('lay egg', len([ant for ant in self.colony.ant if ant.role == 'soldier']) < len([ant for ant in self.colony.ant if ant.role == 'worker']) * MAX_SOLDIER_FOR_WORKER / 100)
-            if len(self.colony.ant) > QUANTITY_ANT_FOR_LAYING_SOLDIER and len([ant for ant in self.colony.ant if ant.role == 'soldier']) < len([ant for ant in self.colony.ant if ant.role == 'worker']) * MAX_SOLDIER_FOR_WORKER / 100:
+            if algo_laying_egg(self.colony):
                 for x in range(int(self.colony.nest.level/2 if self.colony.nest.level > 1 else 1)):
                     #print('lay egg')
                     self.colony.ant = Worker(self.colony) if randint(0, 100) > 35 else Soldier(self.colony)
@@ -183,7 +183,7 @@ class Colony:
         if len(self.__ant) > self.__nest.ant_capacity - 10 and randint(0, 100) <= 10:
             self.__nest.upgrade()
 
-    def react_to_menace(self, menace: monster.Monster) -> str:
+    def react_to_menace(self, menace: threat.Threat) -> str:
         text = f'a {menace.name} attack the colony\n'
 
         #print(f'a {menace.name} attack the colony')
@@ -295,7 +295,7 @@ class Colony:
 
 counter = 0
 
-def start(colony: Colony, root: tk.Tk, app: gui.AntSimulationApp, predators: list[monster.Monster], logging: logger.Logger) -> None:
+def start(colony: Colony, root: tk.Tk, app: gui.AntSimulationApp, predators: list[threat.Threat], logging: logger.Logger) -> None:
     global counter
 
     if colony.live:
@@ -321,6 +321,7 @@ def start(colony: Colony, root: tk.Tk, app: gui.AntSimulationApp, predators: lis
         app.update_display()
 
         logging.log(repr(colony))
+        logging.log_db(colony.info())
 
         #root.after(100, lambda a=colony, b=root, c=app, d=predators, e=logging: start(a, b, c, d, e))
         root.after(100, start, colony, root, app, predators, logging)
@@ -331,12 +332,13 @@ def start(colony: Colony, root: tk.Tk, app: gui.AntSimulationApp, predators: lis
 def run() -> None:
     predators = []
     for x in os.listdir('monster'):
-        predators.append(monster.Monster(x)) if x.endswith('.json') else None
+        predators.append(threat.Threat(x)) if x.endswith('.json') else None
 
     [print(x) for x in predators]
     colony = Colony()
 
-    logging = logger.Logger('log')
+    logging = logger.Logger('log', os.path.join('log', 'log.db'))
+
     if logging.ready:
 
         root = tk.Tk()
@@ -348,7 +350,7 @@ def run() -> None:
 
         root.mainloop()
 
-
+        logging.conn.close()
 
 
 if __name__ == '__main__':
