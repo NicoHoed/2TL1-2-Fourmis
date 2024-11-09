@@ -45,7 +45,7 @@ class Logger:
 
     def log(self, msg):
         with open(path.join(self.log_directory, self.filename), 'a') as file:
-            file.write(msg+'\n')
+            file.write(msg)
 
     def get_table(self):
         table = self.cur.execute("SELECT name FROM sqlite_master WHERE type='table';")
@@ -87,6 +87,9 @@ class Logger:
 
         messagebox.showinfo('Success', f'file have been save to {os.path.join(os.getcwd(), self.export_directory, table[6:])}.csv')
 
+    def get_data(self, table):
+        return self.cur.execute(f"""select * from {table}""").fetchall()
+
 
 
 class AppLogger:
@@ -95,7 +98,7 @@ class AppLogger:
         self.logger = logger
 
         self.root.title('Manage log')
-        self.root.geometry('250x250')
+        self.root.geometry('300x150')
 
         self.root.grid_columnconfigure(1, weight=1)
 
@@ -115,9 +118,10 @@ class AppLogger:
         self.view_log_button.grid(row=3, column=1, sticky='w')
 
 
-        self.option = logger.get_table()
+
+        self.option = to_human_format(self.logger.get_table())
         self.menu_choice = tk.StringVar()
-        self.menu_choice.set(self.option[0] if self.option else self.disable_button())
+        self.menu_choice.set(list(self.option.keys())[0] if self.option else self.disable_button())
 
         self.menu = ttk.OptionMenu(self.root, self.menu_choice, self.menu_choice.get(),  *self.option)
         self.menu.grid(row = 0, column = 0)
@@ -126,28 +130,32 @@ class AppLogger:
 
 
     def del_table(self):
-        self.logger.delete_table(self.menu_choice.get())
-        if f'{self.menu_choice.get()[6:]}.log' in os.listdir(os.path.join(os.getcwd(), self.logger.log_directory)):
-            file_path = os.path.join(os.getcwd(), self.logger.log_directory, f'{self.menu_choice.get()[6:]}.log')
+        table = self.option[self.menu_choice.get()]
+        self.logger.delete_table(table)
+        if f'{table[6:]}.log' in os.listdir(os.path.join(os.getcwd(), self.logger.log_directory)):
+            file_path = os.path.join(os.getcwd(), self.logger.log_directory, f'{table[6:]}.log')
             os.remove(file_path)
-        self.option = self.logger.get_table()
+        self.option = to_human_format(self.logger.get_table())
         self.update_option_menu()
 
 
     def export_table(self):
+        table = self.option[self.menu_choice.get()]
         #tk.messagebox.showinfo('WIP', 'Not available')
-        self.logger.export_data(self.menu_choice.get())
+        self.logger.export_data(table)
 
 
     def show_graphe(self):
-        print(self.menu_choice.get())
+        table = self.option[self.menu_choice.get()]
+        [print(data) for data in self.logger.get_data(table)]
 
     def open_log(self):
+        table = self.option[self.menu_choice.get()]
         #print(self.menu_choice.get())
         if not self.logger.debugging:
-            file_path = os.path.join(os.getcwd(), 'log', f'{self.menu_choice.get()[6:]}.log')
+            file_path = os.path.join(os.getcwd(), 'log', f'{table[6:]}.log')
         else:
-            file_path = os.path.join(os.getcwd(), '..', 'log', f'{self.menu_choice.get()[6:]}.log')
+            file_path = os.path.join(os.getcwd(), '..', 'log', f'{table[6:]}.log')
         #print(file_path)
         threading.Thread(target=lambda: os.system(f'notepad.exe {file_path}')).start()
 
@@ -157,15 +165,25 @@ class AppLogger:
         for string in self.option:
             menu.add_command(label=string,
                              command=lambda value=string: self.menu_choice.set(value))
-        self.menu_choice.set(self.option[0] if self.option else self.disable_button())
+        print(self.option)
+        self.menu_choice.set(list(self.option.keys())[0] if self.option else self.disable_button())
 
     def disable_button(self):
-        #print('button disable')
+        print('button disable')
         self.del_button['state'] = tk.DISABLED
         self.export_button['state'] = tk.DISABLED
         self.view_log_button['state'] = tk.DISABLED
         self.graphe_button['state'] = tk.DISABLED
         return self.no_log_text
+
+
+def to_human_format(tables):
+    table_dict = {}
+    for table in tables:
+        timestamp = datetime.strptime(table[6:], "%Y%m%d%H%M%S")
+        table_dict[timestamp.strftime("%B %d, %Y, %I:%M:%S %p")] = table
+
+    return table_dict
 
 
 if __name__ == '__main__':

@@ -73,7 +73,7 @@ class Queen(Ant):
         self.colony = colony
 
     def lay_eggs(self):
-        if randint(0, 100) > 25 and self.colony.nest.food_stock > QUANTITY_FOOD_FOR_LAYING_EGG:
+        if randint(0, 100) > PROBABILITY_TO_LAY_EGG and self.colony.nest.food_stock > QUANTITY_FOOD_FOR_LAYING_EGG:
             #print('lay egg', len([ant for ant in self.colony.ant if ant.role == 'soldier']) < len([ant for ant in self.colony.ant if ant.role == 'worker']) * MAX_SOLDIER_FOR_WORKER / 100)
             if algo_laying_egg(self.colony):
                 for x in range(int(self.colony.nest.level/2 if self.colony.nest.level > 1 else 1)):
@@ -221,12 +221,11 @@ class Colony:
         self.__ant = [ant for ant in self.__ant if ant not in ants_to_remove]
 
         #print('the menace kill ', len(ants_to_remove), 'worker')
-        text += f'the menace kill {len(ants_to_remove)} worker'
+        text += f'the menace kill {len(ants_to_remove)} worker\n'
 
         if isAlive or len(self.__ant) == 0:
             self.destruct_nest()
 
-        print(text)
         return text
 
 
@@ -313,14 +312,16 @@ def start(colony: Colony, root: tk.Tk, app: gui.AntSimulationApp, predators: lis
         if counter % 10 == 1:
             for predator in predators:
                 if colony.nest.level >= predator.min_nest_level and randint(0, 100) > predator.spawn_prob:
-                    logging.log(f'#{counter} - {colony.react_to_menace(predator)}')
+                    text = colony.react_to_menace(predator)
+                    logging.log(text)
+                    app.console.write(text)
                     break
 
 
         app.update_value(colony.info())
         app.update_display()
 
-        logging.log(repr(colony))
+        logging.log(f'#{counter} - {repr(colony)}\n')
         logging.log_db(colony.info())
 
         #root.after(100, lambda a=colony, b=root, c=app, d=predators, e=logging: start(a, b, c, d, e))
@@ -351,6 +352,7 @@ def run() -> None:
         root.mainloop()
 
         logging.conn.close()
+        print('database connection close')
 
 
 if __name__ == '__main__':

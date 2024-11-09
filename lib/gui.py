@@ -100,7 +100,7 @@ class AntSimulationApp:
         self.log_display.pack(fill='both', expand=True)
 
         # Redirect standard output to the ScrolledText widget
-        sys.stdout = TextRedirector(self.log_display)
+        self.console = Console(self.log_display)
         
         # Start the simulation
         self.update_display()
@@ -124,7 +124,7 @@ class AntSimulationApp:
         self.nb_ant_soldier_var.set(nb_soldier)
 
 
-class TextRedirector:
+class Console:
     def __init__(self, widget):
         self.widget = widget
         self.line_counter = 0  # Track the current line number
