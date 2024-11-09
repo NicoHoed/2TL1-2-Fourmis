@@ -5,7 +5,7 @@ from json import dump
 
 keys = ['name', 'life', 'min_nest_level', 'spawn_prob', 'power']
 """
-    name: name of the monster
+    name: name of the threats
     life: number of life point -> soldier deal 3 damage, worker deal 1
     min_nest_level: minimum level of the nest for the menace appear
     spaw_prob: 0...100 probability of the menace to spawn, max 1 all 10 cycle
@@ -46,7 +46,7 @@ class App:
             dict_value[keys[val]] = value[val]
 
 
-        with open(f'../monster/{value[0]}.json', 'x', encoding='utf-8') as file:
+        with open(f'../threats/{value[0]}.json', 'x', encoding='utf-8') as file:
             dump(dict_value, file, indent=4)
             root.quit()
 
@@ -58,17 +58,17 @@ class App:
 
 def create_monster(directory: str) -> None:
     global keys
-    # Creation of the monster dictionary
+    # Creation of the threats dictionary
     monster = {}
     for key in range(len(keys)):
         monster[keys[key]] = input(f"{keys[key]} :")
 
-    # Save the monster in a JSON file
+    # Save the threats in a JSON file
     with open(path.join(directory, f"{monster['name']}.json"), "w", encoding='utf-8') as file:
         dump(monster, file, indent=4)
 
-    print(f"The monster {monster['name']} was created successfully !")
-    #print(monster)
+    print(f"The threats {monster['name']} was created successfully !")
+    #print(threats)
 
 
 def update_monster_json(directory: str, file: str) -> None:
@@ -87,7 +87,7 @@ def update_monster_json(directory: str, file: str) -> None:
     needRewrite = False
     for key in keys:
         if key not in monster_data:
-            new_value = input(f'the monster {monster_data['name']} as the "{key}" fields is empty, new value: ')
+            new_value = input(f'the threats {monster_data['name']} as the "{key}" fields is empty, new value: ')
             try:
                 new_value = int(new_value)
 
@@ -106,19 +106,19 @@ def update_monster_json(directory: str, file: str) -> None:
         with open(file_path, "w", encoding='utf-8') as file:
             dump(monster_data, file, indent=4)
 
-        print(f"The monster JSON at {file_path} was updated successfully!")
+        print(f"The threats JSON at {file_path} was updated successfully!")
         #print(monster_data)
     else:
-        print(f"The monster JSON at {file_path} is already good")
+        print(f"The threats JSON at {file_path} is already good")
 
 
 if __name__ == '__main__':
 
-    #create_monster('../monster')
+    #create_monster('../threats')
 
-    #for predator in listdir('../monster'):
+    #for predator in listdir('../threats'):
     #    print('working on', predator)
-    #    update_monster_json(path.join('..', 'monster'), predator)
+    #    update_monster_json(path.join('..', 'threats'), predator)
     root = tk.Tk()
     app = App(root)
     root.mainloop()
