@@ -10,12 +10,21 @@ import threading
 
 
 class Logger:
-    def __init__(self, log_directory, export_directory, database, debugging = False):
+    """
+    class use to manage log in a .log file and a sqlite database
+    this class support the exportation of sqlite data in a .csv file
+
+    """
+    def __init__(self, log_directory: str, export_directory: str, database: str, debugging = False) -> None:
+        """init the logger with all info needed
+        PRE: None
+        POST: None
+
+        """
         self.log_directory = log_directory
         self.export_directory = export_directory
         self.database = database
         self.debugging = debugging
-        self.is_ready = True
         self.current_table = None
 
         # Get the current date and time
@@ -27,31 +36,32 @@ class Logger:
         self.filename = str(self.formatted_datetime) + '.log'
         #self.filename = 'test'
 
-        try:
-            self.conn = sq.connect(self.database)
-            self.cur = self.conn.cursor()
-            if not debugging:
-                file = open(path.join(self.log_directory, self.filename), 'x')
-                file.write('Start of log\n')
-                file.close()
-                self.create_table()
-        except Exception as e:
-            print('error with logger: ', e)
-            self.is_ready = False
+        self.conn = sq.connect(self.database)
+        self.cur = self.conn.cursor()
+        if not debugging:
+            file = open(path.join(self.log_directory, self.filename), 'x')
+            file.write('Start of log\n')
+            file.close()
+            self.create_table()
 
 
-
-
-
-    def log(self, msg):
+    def log(self, msg: str) -> None:
+        """
+        method to log a msg into the current .log file
+        PRE: msg end with \n
+        POST: None
+        """
         with open(path.join(self.log_directory, self.filename), 'a') as file:
             file.write(msg)
 
-    def get_table(self):
-        table = self.cur.execute("SELECT name FROM sqlite_master WHERE type='table';")
-        return [table[0] for table in table.fetchall()]
 
-    def create_table(self):
+
+    def create_table(self) -> None:
+        """
+                method to create a table in the sqlite database for logging
+                PRE: the database connection must be open
+                POST: current_table is set
+                """
         self.cur.execute(f"""CREATE TABLE {'table_'}{str(self.formatted_datetime)} (
                                 qt_ant INT NOT NULL,
                                 max_ant INT NOT NULL,
@@ -65,19 +75,42 @@ class Logger:
         self.conn.commit()
         self.current_table = f"{'table_'}{str(self.formatted_datetime)}"
 
-    def log_db(self, info):
+
+    def get_table(self) -> list[str]:
+        """method to get all table in sqlite database
+        PRE: the database connexion must be open
+        POST: list of all table in the database
+        """
+        table = self.cur.execute("SELECT name FROM sqlite_master WHERE type='table';")
+        return [table[0] for table in table.fetchall()]
+
+
+    def log_db(self, info: tuple[str]) -> None:
+        """method to log a tuple of 7 element in the current_table
+        PRE: current_table must be set
+        POST: None
+        """
         self.cur.execute(f"""INSERT INTO {self.current_table} VALUES (
                                 ?, ?, ? ,? ,?, ?,?)""", info)
 
         self.conn.commit()
 
-    def delete_table(self, table):
+    def delete_table(self, table: str) -> None:
+        """method to delete a table form the current database connexion
+        PRE: the database connexion must be open
+        POST: None
+        """
         self.cur.execute(f"""DROP TABLE IF EXISTS {table}""")
 
         self.conn.commit()
 
-    def export_data(self, table):
-        """script find on gitHub : https://gist.github.com/shitalmule04/82d2091e2f43cb63029500b56ab7a8cc and modify"""
+    def export_data(self, table: str) -> None:
+        """method to export data from a table in .csv file
+        PRE: the database connexion must be open
+        POST: None
+        """
+        """script based on a script found on gitHub : https://gist.github.com/shitalmule04/82d2091e2f43cb63029500b56ab7a8cc"""
+
         cur = self.conn.cursor()
         cur.execute(f"""SELECT * from {table}""")
         with open(f"{self.export_directory}/{table[6:]}.csv", "w", newline='') as csv_file:
@@ -87,13 +120,17 @@ class Logger:
 
         messagebox.showinfo('Success', f'file have been save to {os.path.join(os.getcwd(), self.export_directory, table[6:])}.csv')
 
-    def get_data(self, table):
+    def get_data(self, table: str) -> list[tuple[str]]:
+        """method to get all the data of a table from current open connexion
+        PRE: the database connexion must be open
+        POST: the data of the table
+        """
         return self.cur.execute(f"""select * from {table}""").fetchall()
 
 
 
 class AppLogger:
-    def __init__(self, root: tk.Tk, logger: Logger):
+    def __init__(self, root: tk.Tk, logger: Logger) -> None:
         self.root = root
         self.logger = logger
 
@@ -129,7 +166,7 @@ class AppLogger:
 
 
 
-    def del_table(self):
+    def del_table(self) -> None:
         table = self.option[self.menu_choice.get()]
         self.logger.delete_table(table)
         if f'{table[6:]}.log' in os.listdir(os.path.join(os.getcwd(), self.logger.log_directory)):
@@ -139,17 +176,17 @@ class AppLogger:
         self.update_option_menu()
 
 
-    def export_table(self):
+    def export_table(self) -> None:
         table = self.option[self.menu_choice.get()]
         #tk.messagebox.showinfo('WIP', 'Not available')
         self.logger.export_data(table)
 
 
-    def show_graphe(self):
+    def show_graphe(self) -> None:
         table = self.option[self.menu_choice.get()]
         [print(data) for data in self.logger.get_data(table)]
 
-    def open_log(self):
+    def open_log(self) -> None:
         table = self.option[self.menu_choice.get()]
         #print(self.menu_choice.get())
         if not self.logger.debugging:
@@ -159,16 +196,16 @@ class AppLogger:
         #print(file_path)
         threading.Thread(target=lambda: os.system(f'notepad.exe {file_path}')).start()
 
-    def update_option_menu(self):
+    def update_option_menu(self) -> None:
         menu = self.menu["menu"]
         menu.delete(0, "end")
         for string in self.option:
             menu.add_command(label=string,
                              command=lambda value=string: self.menu_choice.set(value))
-        print(self.option)
+        #print(self.option)
         self.menu_choice.set(list(self.option.keys())[0] if self.option else self.disable_button())
 
-    def disable_button(self):
+    def disable_button(self) -> str:
         print('button disable')
         self.del_button['state'] = tk.DISABLED
         self.export_button['state'] = tk.DISABLED
@@ -177,7 +214,7 @@ class AppLogger:
         return self.no_log_text
 
 
-def to_human_format(tables):
+def to_human_format(tables: list[str]) -> dict[str, str]:
     table_dict = {}
     for table in tables:
         timestamp = datetime.strptime(table[6:], "%Y%m%d%H%M%S")
