@@ -2,6 +2,7 @@ import os
 from random import randint
 from time import sleep
 import tkinter as tk
+import sys
 
 
 from lib import threat, gui, logger
@@ -187,7 +188,7 @@ class Colony:
         text = f'a {menace.name} attack the colony\n'
 
         #print(f'a {menace.name} attack the colony')
-        isAlive = True
+        is_alive = True
         menace_life = menace.life
         menace_power = menace.power
 
@@ -199,7 +200,7 @@ class Colony:
                 if randint(0, 100) < menace_power / 3:
                     ants_to_remove.append(ant)
                 if menace_life <= 0:
-                    isAlive = False
+                    is_alive = False
                     break
 
         self.__ant = [ant for ant in self.__ant if ant not in ants_to_remove]
@@ -208,14 +209,14 @@ class Colony:
         text += f'the menace kill {len(ants_to_remove)} soldier\n'
         ants_to_remove = []
 
-        if isAlive:
+        if is_alive:
             for ant in self.__ant:
                 if ant.role == 'worker':
                     menace_life -= WORKER_DAMAGE
                     if randint(0, 100) < menace_power:
                         ants_to_remove.append(ant)
                     if menace_life <= 0:
-                        isAlive = False
+                        is_alive = False
                         break
 
         self.__ant = [ant for ant in self.__ant if ant not in ants_to_remove]
@@ -223,7 +224,7 @@ class Colony:
         #print('the menace kill ', len(ants_to_remove), 'worker')
         text += f'the menace kill {len(ants_to_remove)} worker\n'
 
-        if isAlive or len(self.__ant) == 0:
+        if is_alive or len(self.__ant) == 0:
             self.destruct_nest()
 
         return text
@@ -340,19 +341,19 @@ def run() -> None:
 
     logging = logger.Logger('log',  'export', os.path.join('log', 'log.db'))
 
-    if logging.is_ready:
-
-        root = tk.Tk()
-        root.geometry('1196x562')
-        app = gui.AntSimulationApp(colony, root, os.path.join('img', "resized"))  # Initialize the GUI application with the colony
 
 
-        start(colony, root, app, predators, logging)
+    root = tk.Tk()
+    root.geometry('1196x562')
+    app = gui.AntSimulationApp(colony, root, os.path.join('img', "resized"))  # Initialize the GUI application with the colony
 
-        root.mainloop()
 
-        logging.conn.close()
-        print('database connection close')
+    start(colony, root, app, predators, logging)
+
+    root.mainloop()
+
+    logging.conn.close()
+    print('database connection close')
 
 
 if __name__ == '__main__':
