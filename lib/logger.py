@@ -6,6 +6,7 @@ import sqlite3 as sq
 import tkinter as tk
 from tkinter import messagebox, ttk
 import threading
+import matplotlib.pyplot as plt
 
 
 
@@ -183,8 +184,40 @@ class AppLogger:
 
 
     def show_graphe(self) -> None:
+        """
         table = self.option[self.menu_choice.get()]
         [print(data) for data in self.logger.get_data(table)]
+        """
+        table = self.option[self.menu_choice.get()]
+        data = [record for record in self.logger.get_data(table)]
+
+        # Extraire les colonnes de données à partir des tuples
+        nb_ants = [record[0] for record in data]  # Exemple : nb_ant (première colonne)
+        food = [record[2] for record in data]  # Exemple : food (troisième colonne)
+        nb_worker = [record[4] for record in data]  # Exemple : nb_worker (cinquième colonne)
+        nb_soldier = [record[5] for record in data]  # Exemple : nb_soldier (sixième colonne)
+
+        # Créer l'axe des x pour le temps (chaque point représente une unité de temps)
+        time = list(range(1, len(data) + 1))
+
+        # Créer le graphique
+        plt.figure(figsize=(10, 6))
+
+        # Graphique en ligne pour chaque catégorie de y en fonction du temps
+        plt.plot(time, nb_ants, label='nb ants', color='blue')
+        plt.plot(time, food, label='food', color='green')
+        plt.plot(time, nb_worker, label='nb worker', color='red')
+        plt.plot(time, nb_soldier, label='nb soldier', color='purple')
+
+        # Ajouter des labels et une légende
+        plt.xlabel("Temps (unités)")
+        plt.ylabel("Valeurs")
+        plt.title("Évolution des paramètres au fil du temps")
+        plt.legend()
+        plt.grid(True)
+
+        # Afficher le graphique
+        plt.show()
 
     def open_log(self) -> None:
         table = self.option[self.menu_choice.get()]
