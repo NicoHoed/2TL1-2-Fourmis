@@ -191,32 +191,32 @@ class AppLogger:
         table = self.option[self.menu_choice.get()]
         data = [record for record in self.logger.get_data(table)]
 
-        # Extraire les colonnes de données à partir des tuples
-        nb_ants = [record[0] for record in data]  # Exemple : nb_ant (première colonne)
-        food = [record[2] for record in data]  # Exemple : food (troisième colonne)
-        nb_worker = [record[4] for record in data]  # Exemple : nb_worker (cinquième colonne)
-        nb_soldier = [record[5] for record in data]  # Exemple : nb_soldier (sixième colonne)
+        # Extract columns from tuples
+        nb_ants = [record[0] for record in data]
+        food = [record[2] for record in data]
+        nb_worker = [record[4] for record in data]
+        nb_soldier = [record[5] for record in data]
 
-        # Créer l'axe des x pour le temps (chaque point représente une unité de temps)
+        # Creation of the x-axis
         time = list(range(1, len(data) + 1))
 
-        # Créer le graphique
+        # Creation of the graph
         plt.figure(figsize=(10, 6))
 
-        # Graphique en ligne pour chaque catégorie de y en fonction du temps
+        # Line graph for each different categories
         plt.plot(time, nb_ants, label='nb ants', color='blue')
         plt.plot(time, food, label='food', color='green')
         plt.plot(time, nb_worker, label='nb worker', color='red')
         plt.plot(time, nb_soldier, label='nb soldier', color='purple')
 
-        # Ajouter des labels et une légende
-        plt.xlabel("Temps (unités)")
-        plt.ylabel("Valeurs")
-        plt.title("Évolution des paramètres au fil du temps")
+        # Add labels and a legend
+        plt.xlabel("TimeLine")
+        plt.ylabel("Quantity")
+        plt.title("Evolution of the Colony")
         plt.legend()
         plt.grid(True)
 
-        # Afficher le graphique
+        # Display graph
         plt.show()
 
     def open_log(self) -> None:
