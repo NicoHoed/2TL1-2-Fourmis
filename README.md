@@ -6,6 +6,6 @@
 
 ### This python program simulate a colony that grow, react to threats, looks for food and evolve.
 
-**_Hausman Pierre-Alexandre_**\
-**_Hoedenaeken Nicolas_**\
-**_Gay Edward_**
+**_Hausman Pierre-Alexandre_**\ linadu2
+**_Hoedenaeken Nicolas_**\ nicoHoed
+**_Gay Edward_** maxeouw
