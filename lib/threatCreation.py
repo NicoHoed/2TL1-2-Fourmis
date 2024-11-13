@@ -16,6 +16,9 @@ keys = ['name', 'life', 'min_nest_level', 'spawn_prob', 'power']
 class App:
     def __init__(self, root):
         self.root = root
+        self.root.title("threat creation")
+        self.root.geometry("250x150")
+        self.root.resizable(width=False, height=False)
 
         self.label_list = []
         self.entry_list = []
