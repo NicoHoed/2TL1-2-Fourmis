@@ -144,25 +144,27 @@ class AppLogger:
 
 
         self.del_button = ttk.Button(self.root, command=self.del_table, text='delete log')
-        self.del_button.grid(row = 0, column = 1, sticky='w')
+        self.del_button.grid(row = 1, column = 1, sticky='w')
 
         self.export_button = ttk.Button(self.root, command=self.export_table, text='export data')
-        self.export_button.grid(row=1, column=1, sticky='w')
+        self.export_button.grid(row=2, column=1, sticky='w')
 
         self.graphe_button = ttk.Button(self.root, command=self.show_graphe, text='show graphe')
-        self.graphe_button.grid(row=2, column=1, sticky='w')
+        self.graphe_button.grid(row=3, column=1, sticky='w')
 
         self.view_log_button = ttk.Button(self.root, command=self.open_log, text='view log')
-        self.view_log_button.grid(row=3, column=1, sticky='w')
+        self.view_log_button.grid(row=4, column=1, sticky='w')
 
 
+        self.label_menu = tk.Label(self.root, text='List of log: ')
+        self.label_menu.grid(row = 0, column = 0, sticky = 'w')
 
         self.option = to_human_format(self.logger.get_table())
         self.menu_choice = tk.StringVar()
         self.menu_choice.set(list(self.option.keys())[0] if self.option else self.disable_button())
 
         self.menu = ttk.OptionMenu(self.root, self.menu_choice, self.menu_choice.get(),  *self.option)
-        self.menu.grid(row = 0, column = 0)
+        self.menu.grid(row = 1, column = 0)
 
 
 
@@ -190,7 +192,6 @@ class AppLogger:
         """
         table = self.option[self.menu_choice.get()]
         data = [record for record in self.logger.get_data(table)]
-        print(data)
 
         # Extract columns from tuples
         nb_ants = [record[0] for record in data]
