@@ -17,6 +17,11 @@ class Ant:
     life_by_role = {'worker': 250, 'soldier': 500, 'queen': 10000}
 
     def __init__(self, role):
+        """
+        Constructor for initializing an ant instance
+        PRE: role is either worker, soldier or queen
+        POST: The ant has a lifespan according to its role
+        """
         self.position = [0, 0]
         self.role = role
         self.life = 0
@@ -34,6 +39,11 @@ class Ant:
 
 
     def die(self):
+        """
+        Checks if the ant should die
+        PRE: none
+        POST: returns true if the ant has reached or exceeded his lifespan
+        """
         self.life += 1
         # print(self.life, self.life_span)
         if self.life == self.life_span:
@@ -92,17 +102,32 @@ class Worker(Ant):
     """
 
     def __init__(self, colony):
+        """
+        Constructor for initializing a worker instance
+        PRE: Colony is an instance of Colony
+        POST: The worker is initialized with a reference to the colony and have food initialized at False
+        """
         super().__init__('worker')
         self.colony = colony
         self.have_food = False
 
     def find_food(self):
+        """
+        Simulates the worker finding food
+        PRE: None
+        POST:Sets have_food to True if food is found and stays False if not
+        """
         find_food = randint(0, 100) > 10
         self.have_food = find_food
         #print('worker find food')
         return find_food
 
     def drop_food(self):
+        """
+        Simulates the worker dropping food
+        PRE: None
+        POST: have_food is set to False if food is dropped
+        """
         self.have_food = False
 
 
