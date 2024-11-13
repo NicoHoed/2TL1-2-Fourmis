@@ -190,12 +190,13 @@ class AppLogger:
         """
         table = self.option[self.menu_choice.get()]
         data = [record for record in self.logger.get_data(table)]
+        print(data)
 
         # Extract columns from tuples
         nb_ants = [record[0] for record in data]
         food = [record[2] for record in data]
-        nb_worker = [record[4] for record in data]
-        nb_soldier = [record[5] for record in data]
+        nb_worker = [record[5] for record in data]
+        nb_soldier = [record[6] for record in data]
 
         # Creation of the x-axis
         time = list(range(1, len(data) + 1))
