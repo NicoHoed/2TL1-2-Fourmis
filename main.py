@@ -164,6 +164,15 @@ class Colony:
     """
 
     def __init__(self, ct_ant=1, food_stock=NEST_START_FOOD_STOCK, nest_capacity=NEST_START_CAPACITY):
+
+        """Constructor for initializing the Colony instance
+
+        PRE: ct_ant (int) is the initial count of ants (minimum 1),
+             food_stock and nest_capacity are integers >= 0
+        POST: The colony is initialized with a queen
+
+        """
+
         self.__ant = []
         self.__nest = Nest(nest_capacity, food_stock)
         self.__queen = Queen(self)
@@ -174,6 +183,15 @@ class Colony:
             self.ant.append(Worker(self))
 
     def manage_ressources(self) -> None:
+
+        """Manages resources by decrementing the food stock based on the ants type
+
+        PRE: The nest has a defined food stock
+        POST: The food stock is reduced based on the consumption of ants,
+        if food stock < 0, the nest is destroyed
+
+        """
+
         for ant in self.__ant:
             self.__nest.food_stock -= 1 if ant.role == 'worker' else 3  # for worker or soldier
         self.__nest.food_stock -= 5  # for queen
@@ -181,16 +199,34 @@ class Colony:
             self.destruct_nest()
 
     def manage_expansion_nest(self) -> None:
+
+        """Expands the nest if ant population exceeds capacity
+
+        PRE: The colony has a defined ant population and nest capacity
+        POST: If conditions are correct : the nest capacity is increased
+              otherwise : no change
+
+        """
+
         if len(self.__ant) > self.__nest.ant_capacity - 10 and randint(0, 100) <= 10:
             self.__nest.upgrade()
 
-    def react_to_menace(self, menace: threat.Threat) -> str:
-        text = f'a {menace.name} attack the colony\n'
+    def react_to_threat(self, threat: threat.Threat) -> str:
+
+        """Reacts to an external threat with ants that defend the nest
+
+        PRE: A threat is detected with : name, life, and power attributes
+        POST: Ants attempt to defend against the threat
+              if all ants are killed, the nest is destroyed
+
+        """
+
+        text = f'a {threat.name} attack the colony\n'
 
         #print(f'a {menace.name} attack the colony')
         is_alive = True
-        menace_life = menace.life
-        menace_power = menace.power
+        menace_life = threat.life
+        menace_power = threat.power
 
         ants_to_remove = []
 
@@ -232,7 +268,16 @@ class Colony:
 
 
     def destruct_nest(self) -> None:
-        print('YOU LOSE')
+
+        """
+        Destroys the nest when food or ant number are too low
+
+        PRE: Food stock or ant population is critically low, or the nest faces an threat
+        POST: The nest is set as inactive, representing the death of the colony
+
+        """
+
+        print('The colony has been killed !')
         self.__live = False
 
     @property
@@ -313,7 +358,7 @@ def start(colony: Colony, root: tk.Tk, app: gui.AntSimulationApp, predators: lis
         if counter % 10 == 1:
             for predator in predators:
                 if colony.nest.level >= predator.min_nest_level and randint(0, 100) > predator.spawn_prob:
-                    text = colony.react_to_menace(predator)
+                    text = colony.react_to_threat(predator)
                     logging.log(text)
                     app.console.write(text)
                     break
