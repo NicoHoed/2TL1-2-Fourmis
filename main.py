@@ -200,9 +200,10 @@ class Colony:
 
     def manage_expansion_nest(self) -> None:
 
-        """Expands the nest if ant population exceeds capacity
+        """Expands the nest if ant population is close to max capacity
 
         PRE: The colony has a defined ant population and nest capacity
+
         POST: If conditions are correct : the nest capacity is increased
               otherwise : no change
 
@@ -216,8 +217,10 @@ class Colony:
         """Reacts to an external threat with ants that defend the nest
 
         PRE: A threat is detected with : name, life, and power attributes
-        POST: Ants attempt to defend against the threat
-              if all ants are killed, the nest is destroyed
+        POST: Ants attempt to defend against the threat.
+              The threat fights the ants one by one until it reaches the queen.
+              A threat's attack can fail.
+              If the queen is killed, the nest is destroyed."
 
         """
 
