@@ -21,7 +21,7 @@ root.title("Launcher")
 
 # Load the background image
 script_dir = os.path.dirname(__file__)
-image_path = os.path.join(script_dir, "img", "github_Img.jpg")  # Chemin de l'image de fond
+image_path = os.path.join(script_dir, "img", "ants", "github_Img.jpg")  # Chemin de l'image de fond
 background_image = Image.open(image_path)
 background_photo = ImageTk.PhotoImage(background_image)
 

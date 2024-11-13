@@ -6,27 +6,19 @@ import sys
 
 
 class AntSimulationApp:
-    def __init__(self, colony, root, img_nest):
+    def __init__(self, colony, root, img_folder):
         self.colony = colony
 
         # Initialize the Tkinter window
         self.root = root
         self.root.title("Ant Simulation")
 
-        # Load images for different colony levels
-        # Adjust the path to be relative from the current script location
-        #self.images = {
-        #    1: PhotoImage(file=os.path.join(img_nest, '1.png')),
-        #    2: PhotoImage(file=os.path.join(img_nest, '2.png')),
-        #    3: PhotoImage(file=os.path.join(img_nest, '3.png')),
-        #    4: PhotoImage(file=os.path.join(img_nest, '4.png')),
-        #}
-        self.images = {}
-        image = os.listdir(img_nest)
-        for x in range(len(image)):
-            self.images[x+1] = PhotoImage(file=os.path.join(img_nest, f'{x + 1}.png'))
-            #print(os.path.join(img_nest, image[x]))
+        img_nest = os.path.join(img_folder, 'nest')
 
+        self.images = {}
+        images = os.listdir(img_nest)
+        for x in range(len(images)):
+            self.images[x + 1] = PhotoImage(file=os.path.join(img_nest, f'{x + 1}.png'))
 
         # Label to display the current colony image
         self.image_label = tk.Label(self.root)
