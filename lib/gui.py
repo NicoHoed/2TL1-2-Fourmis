@@ -12,6 +12,7 @@ class AntSimulationApp:
         # Initialize the Tkinter window
         self.root = root
         self.root.title("Ant Simulation")
+        self.root.resizable(width=False, height=False)
 
         img_nest = img_folder
 
