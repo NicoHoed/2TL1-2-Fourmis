@@ -305,7 +305,6 @@ class Colony:
 
         """
 
-        print('The colony has been killed !')
         self.__live = False
 
     @property
@@ -403,6 +402,7 @@ def start(colony: Colony, root: tk.Tk, app: gui.AntSimulationApp, predators: lis
 
     else:
         app.update_value((0, colony.nest.ant_capacity, colony.nest.food_stock,colony.nest.food_capacity, colony.nest.level, 0, 0))
+        app.console.write('colony has been killed')
 
 def run() -> None:
     predators = []
