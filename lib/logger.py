@@ -137,6 +137,7 @@ class AppLogger:
 
         self.root.title('Manage log')
         self.root.geometry('400x150')
+        self.root.resizable(width=False, height=False)
 
         self.root.grid_columnconfigure(1, weight=1)
 
@@ -257,10 +258,13 @@ def to_human_format(tables: list[str]) -> dict[str, str]:
 
     return table_dict
 
-
-if __name__ == '__main__':
+def run():
     root = tk.Tk()
     logging = Logger('../log', '../export', '../log/log.db', debugging=True)
     app = AppLogger(root, logging)
 
     root.mainloop()
+
+
+if __name__ == '__main__':
+    run()
