@@ -16,11 +16,11 @@ class Logger:
     this class support the exportation of sqlite data in a .csv file
 
     """
-    def __init__(self, log_directory: str, export_directory: str, database: str, debugging = False) -> None:
+    def __init__(self, log_directory: str, export_directory: str, database: str, debugging: bool = False) -> None:
         """init the logger with all info needed
-        PRE: None
-        POST: None
-
+        PRE: a log, export directory, a sqlite db
+        POST: the log, except and db are set, the file is create for logging, the db is connected and table is created to log.
+            an error is throw if db cannot be connected or file cannot be created
         """
         self.log_directory = log_directory
         self.export_directory = export_directory
@@ -50,7 +50,8 @@ class Logger:
         """
         method to log a msg into the current .log file
         PRE: msg end with \n
-        POST: None
+        POST: the msg is added int the log file.
+            an error is throw if the file cannot be write
         """
         with open(path.join(self.log_directory, self.filename), 'a') as file:
             file.write(msg)
@@ -61,7 +62,8 @@ class Logger:
         """
                 method to create a table in the sqlite database for logging
                 PRE: the database connection must be open
-                POST: current_table is set
+                POST: a table is created in the db and the current_table var is set for logging msg
+                    an error is throw if the db is not connected
                 """
         self.cur.execute(f"""CREATE TABLE {'table_'}{str(self.formatted_datetime)} (
                                 qt_ant INT NOT NULL,
@@ -77,19 +79,20 @@ class Logger:
         self.current_table = f"{'table_'}{str(self.formatted_datetime)}"
 
 
-    def get_table(self) -> list[str]:
-        """method to get all table in sqlite database
+    def get_tables(self) -> list[str]:
+        """method to get all tables in sqlite database
         PRE: the database connexion must be open
-        POST: list of all table in the database
+        POST: list of all tables in the database
+            an error is throw if the db is not connected
         """
         table = self.cur.execute("SELECT name FROM sqlite_master WHERE type='table';")
         return [table[0] for table in table.fetchall()]
 
-
-    def log_db(self, info: tuple[str]) -> None:
+    def log_db(self, info: tuple[str][7]) -> None:
         """method to log a tuple of 7 element in the current_table
-        PRE: current_table must be set
-        POST: None
+        PRE: current_table must != None
+        POST: the info is log into the db in a new line
+            an error is throw if db is not connected or the table does not exist
         """
         self.cur.execute(f"""INSERT INTO {self.current_table} VALUES (
                                 ?, ?, ? ,? ,?, ?,?)""", info)
@@ -98,8 +101,8 @@ class Logger:
 
     def delete_table(self, table: str) -> None:
         """method to delete a table form the current database connexion
-        PRE: the database connexion must be open
-        POST: None
+        PRE: the table must exist in the current database
+        POST: the table is deleted if exists
         """
         self.cur.execute(f"""DROP TABLE IF EXISTS {table}""")
 
@@ -107,8 +110,8 @@ class Logger:
 
     def export_data(self, table: str) -> None:
         """method to export data from a table in .csv file
-        PRE: the database connexion must be open
-        POST: None
+        PRE: the database connexion must be open, teh table must exist in the current database
+        POST: the table is export in csv in the export folder
         """
         """script based on a script found on gitHub : https://gist.github.com/shitalmule04/82d2091e2f43cb63029500b56ab7a8cc"""
 
@@ -123,8 +126,8 @@ class Logger:
 
     def get_data(self, table: str) -> list[tuple[str]]:
         """method to get all the data of a table from current open connexion
-        PRE: the database connexion must be open
-        POST: the data of the table
+        PRE: the database connexion must be open, the table exist in the database
+        POST: a tuple with the info of the table
         """
         return self.cur.execute(f"""select * from {table}""").fetchall()
 
@@ -160,7 +163,7 @@ class AppLogger:
         self.label_menu = tk.Label(self.root, text='List of log: ')
         self.label_menu.grid(row = 0, column = 0, sticky = 'w')
 
-        self.option = to_human_format(self.logger.get_table())
+        self.option = to_human_format(self.logger.get_tables())
         self.menu_choice = tk.StringVar()
         self.menu_choice.set(list(self.option.keys())[0] if self.option else self.disable_button())
 
@@ -176,7 +179,7 @@ class AppLogger:
         if f'{table[6:]}.log' in os.listdir(os.path.join(os.getcwd(), self.logger.log_directory)):
             file_path = os.path.join(os.getcwd(), self.logger.log_directory, f'{table[6:]}.log')
             os.remove(file_path)
-        self.option = to_human_format(self.logger.get_table())
+        self.option = to_human_format(self.logger.get_tables())
         self.update_option_menu()
 
 
