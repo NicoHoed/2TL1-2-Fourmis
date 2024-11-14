@@ -260,11 +260,15 @@ def to_human_format(tables: list[str]) -> dict[str, str]:
 
 def run():
     root = tk.Tk()
-    logging = Logger('../log', '../export', '../log/log.db', debugging=True)
+    logging = Logger('log', 'export', 'log/log.db', debugging=True)
     app = AppLogger(root, logging)
 
     root.mainloop()
 
 
 if __name__ == '__main__':
-    run()
+    root = tk.Tk()
+    logging = Logger('log', 'export', 'log/log.db', debugging=True)
+    app = AppLogger(root, logging)
+
+    root.mainloop()

@@ -1,19 +1,15 @@
-import multiprocessing
 import tkinter as tk
 from PIL import Image, ImageTk
 import subprocess
 import os
-import main
-import logging
+import sys
+
 
 def launch_main(root):
     # Launch the main.py file
-    #subprocess.Popen(["python3", "main.py"])
-
-
-    p = multiprocessing.Process(target=main.run)
-    p.start()
-    root.quit()
+    file = os.path.join(os.getcwd(), "main.py")
+    root.destroy()
+    subprocess.run([sys.executable, file])
 
 
 def launch_logger(root):
@@ -21,13 +17,11 @@ def launch_logger(root):
     #script_dir = os.path.dirname(__file__)
     #logger_path = os.path.join(script_dir, "lib", "logger.py")
     #log_dir = os.path.join(script_dir, "log")
+    root.destroy()
+    subprocess.run([sys.executable, os.path.join(os.getcwd(), 'lib', 'logger.py')])
 
-    #subprocess.Popen(["python3", logger_path], cwd=log_dir)
 
 
-    p = multiprocessing.Process(target=logging.run)
-    p.start()
-    root.quit()
 
 
 # Main window
@@ -51,7 +45,7 @@ button_main.pack(pady=10)
 
 # Button for the logger.py
 
-button_logger = tk.Button(root, text="Previous games", command=lambda a=root:launch_main(a))
+button_logger = tk.Button(root, text="Previous games", command=lambda a=root:launch_logger(a))
 button_logger.pack(pady=10)
 
 # Launch main loop
