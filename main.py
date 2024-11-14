@@ -9,7 +9,6 @@ from lib import threat, gui, logger
 from config import *
 
 
-
 class Ant:
     """
     a class for representing an Ant
@@ -405,6 +404,8 @@ def start(colony: Colony, root: tk.Tk, app: gui.AntSimulationApp, predators: lis
         app.console.write('colony has been killed')
 
 def run() -> None:
+    print(os.listdir())
+
     predators = []
     for x in os.listdir('threats'):
         predators.append(threat.Threat(x)) if x.endswith('.json') else None
