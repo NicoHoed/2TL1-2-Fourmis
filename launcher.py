@@ -5,6 +5,7 @@ import os
 import sys
 
 
+
 def launch_main(root):
     # Launch the main.py file
     file = os.path.join(os.getcwd(), "main.py")
