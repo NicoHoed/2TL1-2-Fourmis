@@ -418,7 +418,7 @@ def run() -> None:
 
     root = tk.Tk()
     root.geometry('1196x562')
-    app = gui.AntSimulationApp(colony, root, os.path.join('img')) # initialize GUI
+    app = gui.AntSimulationApp(colony, root, os.path.join('img', 'nest')) # initialize GUI
 
     start(colony, root, app, predators, logging)
 

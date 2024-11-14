@@ -13,7 +13,7 @@ class AntSimulationApp:
         self.root = root
         self.root.title("Ant Simulation")
 
-        img_nest = os.path.join(img_folder, 'nest')
+        img_nest = img_folder
 
         self.images = {}
         images = os.listdir(img_nest)
