@@ -20,7 +20,7 @@ class Logger:
         """init the logger with all info needed
         PRE: a log, export directory, a sqlite db
         POST: the log, except and db are set, the file is create for logging, the db is connected and table is created to log.
-            an error is throw if db cannot be connected or file cannot be created
+        RAISES: error is throw if db cannot be connected or file cannot be created
         """
         self.log_directory = log_directory
         self.export_directory = export_directory
@@ -51,7 +51,7 @@ class Logger:
         method to log a msg into the current .log file
         PRE: msg end with \n
         POST: the msg is added int the log file.
-            an error is throw if the file cannot be write
+        RAISES: error is throw if the file cannot be write
         """
         with open(path.join(self.log_directory, self.filename), 'a') as file:
             file.write(msg)
@@ -63,7 +63,7 @@ class Logger:
                 method to create a table in the sqlite database for logging
                 PRE: the database connection must be open
                 POST: a table is created in the db and the current_table var is set for logging msg
-                    an error is throw if the db is not connected
+                RAISES: error is throw if the db is not connected
                 """
         self.cur.execute(f"""CREATE TABLE {'table_'}{str(self.formatted_datetime)} (
                                 qt_ant INT NOT NULL,
@@ -83,16 +83,16 @@ class Logger:
         """method to get all tables in sqlite database
         PRE: the database connexion must be open
         POST: list of all tables in the database
-            an error is throw if the db is not connected
+        RAISES: error is throw if the db is not connected
         """
         table = self.cur.execute("SELECT name FROM sqlite_master WHERE type='table';")
         return [table[0] for table in table.fetchall()]
 
-    def log_db(self, info: tuple[str][7]) -> None:
+    def log_db(self, info: tuple[str]) -> None:
         """method to log a tuple of 7 element in the current_table
         PRE: current_table must != None
         POST: the info is log into the db in a new line
-            an error is throw if db is not connected or the table does not exist
+        RAISES: error is throw if db is not connected or the table does not exist
         """
         self.cur.execute(f"""INSERT INTO {self.current_table} VALUES (
                                 ?, ?, ? ,? ,?, ?,?)""", info)
@@ -103,6 +103,7 @@ class Logger:
         """method to delete a table form the current database connexion
         PRE: the table must exist in the current database
         POST: the table is deleted if exists
+        RAISES: error is throw is sqlite database is not connected
         """
         self.cur.execute(f"""DROP TABLE IF EXISTS {table}""")
 
@@ -112,6 +113,7 @@ class Logger:
         """method to export data from a table in .csv file
         PRE: the database connexion must be open, teh table must exist in the current database
         POST: the table is export in csv in the export folder
+        RAISES: error if the export file cannot be created or if slite database is not connected
         """
         """script based on a script found on gitHub : https://gist.github.com/shitalmule04/82d2091e2f43cb63029500b56ab7a8cc"""
 
@@ -128,6 +130,7 @@ class Logger:
         """method to get all the data of a table from current open connexion
         PRE: the database connexion must be open, the table exist in the database
         POST: a tuple with the info of the table
+        RAISES: error if the database is not connected
         """
         return self.cur.execute(f"""select * from {table}""").fetchall()
 
