@@ -136,7 +136,7 @@ class AppLogger:
         self.logger = logger
 
         self.root.title('Manage log')
-        self.root.geometry('300x150')
+        self.root.geometry('400x150')
 
         self.root.grid_columnconfigure(1, weight=1)
 
