@@ -187,15 +187,23 @@ class Colony:
     a class for representing a Colony
     """
 
-    def __init__(self, ct_ant=1, food_stock=NEST_START_FOOD_STOCK, nest_capacity=NEST_START_CAPACITY):
+    def __init__(self, ant_count=1, food_stock=NEST_START_FOOD_STOCK, nest_capacity=NEST_START_CAPACITY):
 
-        """Constructor for initializing the Colony instance
+        """Constructor for initializing the Colony instance with a queen.
 
-        PRE: ct_ant (int) is the initial count of ants (minimum 1),
-             food_stock and nest_capacity are integers >= 0
-        POST: The colony is initialized with a queen
+        PRE:
+            - ant_count (int): The initial count of ants, must be an integer >= 1.
+            - food_stock (int): Initial food stock, must be an integer >= 0.
+            - nest_capacity (int): Initial nest capacity, must be an integer >= 0.
 
+        POST:
+            - The colony is initialized with a queen.
+            - If ant_count = 1, the colony contains only the queen and no worker ants.
+            - If ant_count > 1, the colony contains (ant_count - 1) worker ants in addition to the queen.
+            - The food stock and nest capacity are set as specified.
+            - The colony is marked as alive.
         """
+
 
         self.__ant = []
         self.__nest = Nest(nest_capacity, food_stock)
@@ -203,18 +211,25 @@ class Colony:
 
         self.__live = True
 
-        for x in range(ct_ant - 1):
+        for x in range(ant_count - 1):
             self.ant.append(Worker(self))
 
     def manage_ressources(self) -> None:
 
-        """Manages resources by decrementing the food stock based on the ants type
+        """Manages resources by decrementing the food stock based on the consumption of the ants.
 
-        PRE: The nest has a defined food stock
-        POST: The food stock is reduced based on the consumption of ants,
-        if food stock < 0, the nest is destroyed
+        PRE:
+            - Food stock in the nest must be defined and non-negative.
+            - The colony must have at least one queen ant.
 
+        POST:
+            - The food stock is reduced by:
+                - 1 unit per worker ant.
+                - 3 units per soldier ant.
+                - 5 units for the queen.
+            - If the food stock becomes negative, the nest is destroyed.
         """
+
 
         for ant in self.__ant:
             self.__nest.food_stock -= 1 if ant.role == 'worker' else 3  # for worker or soldier
@@ -224,13 +239,16 @@ class Colony:
 
     def manage_expansion_nest(self) -> None:
 
-        """Expands the nest if ant population is close to max capacity
+        """Expands the nest if the ant population approaches the maximum capacity.
 
-        PRE: The colony has a defined ant population and nest capacity
+        PRE:
+            - The colony must have a valid nest with defined capacity.
+            - The colony must have at least one ant.
 
-        POST: If conditions are correct : the nest capacity is increased
-              otherwise : no change
-
+        POST:
+            - If the number of ants exceeds nest capacity - 10 and a random condition is met
+              (probability = 10%), the nest's capacity is increased by NEST_EXPANSION_RATE (config).
+            - If the conditions are not met, the nest capacity remains unchanged.
         """
 
         if len(self.__ant) > self.__nest.ant_capacity - 10 and randint(0, 100) <= 10:
@@ -238,14 +256,20 @@ class Colony:
 
     def react_to_threat(self, threat: threat.Threat) -> str:
 
-        """Reacts to an external threat with ants that defend the nest
+        """Reacts to an external threat by using ants to defend the nest.
 
-        PRE: A threat is detected with : name, life, and power attributes
-        POST: Ants attempt to defend against the threat.
-              The threat fights the ants one by one until it reaches the queen.
-              A threat's attack can fail.
-              If the queen is killed, the nest is destroyed."
+        PRE:
+            - threat (Threat): A valid object representing the threat, must have:
+                - name (str): Name of the threat.
+                - life (int): Positive integer representing the threat's health points.
+                - power (int): Non-negative integer representing the threat's attack strength.
 
+        POST:
+            - Soldier ants attack the threat first, reducing its life points.
+            - Worker ants attack if the threat survives, reducing its life points.
+            - Soldiers and workers are removed from the colony if killed.
+            - If the queen is killed, the nest is destroyed.
+            - A message summarizing the encounter is returned.
         """
 
         text = f'a {threat.name} attack the colony\n'
@@ -295,15 +319,20 @@ class Colony:
 
 
     def destruct_nest(self) -> None:
+        """Marks the colony's nest as inactive, representing the destruction of the colony.
 
+        PRE:
+            - The nest must exist and currently be active (self.__live = True).
+
+        POST:
+            - The nest is marked as inactive by setting self.__live to False.
+            - If the nest is already inactive, no changes are made.
+            - The colony is effectively considered destroyed.
         """
-        Destroys the nest when food or ant number are too low
 
-        PRE: Food stock or ant population is critically low, or the nest faces an threat
-        POST: The nest is set as inactive, representing the death of the colony
 
-        """
-
+        if not self.__live:
+            return  # The nest is already inactive
         self.__live = False
 
     @property
