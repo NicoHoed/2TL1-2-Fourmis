@@ -19,7 +19,7 @@ class Ant:
         """
         Constructor for initializing an ant instance
         PRE: role is either worker, soldier or queen
-        POST: The ant has a lifespan according to its role
+        POST: The ant has a lifespan according to its role: life_by_role = {'worker': 250, 'soldier': 500, 'queen': 10000} and a position initialized at [0,0]
         """
         self.position = [0, 0]
         self.role = role
@@ -40,8 +40,8 @@ class Ant:
     def die(self):
         """
         Checks if the ant should die
-        PRE: none
-        POST: returns true if the ant has reached or exceeded his lifespan
+        PRE: The ant should have a valid lifespan
+        POST: returns true if the ant has reached or exceeded his lifespan and if the ants life is beyond half its lifespan and a random condition is met.
         """
         self.life += 1
         # print(self.life, self.life_span)
@@ -103,8 +103,8 @@ class Worker(Ant):
     def __init__(self, colony):
         """
         Constructor for initializing a worker instance
-        PRE: Colony is an instance of Colony
-        POST: The worker is initialized with a reference to the colony and have food initialized at False
+        PRE: Colony is an instance of Colony and is not none
+        POST: The worker is initialized with a reference to the colony and have_food is initialized at False
         """
         super().__init__('worker')
         self.colony = colony
@@ -113,7 +113,7 @@ class Worker(Ant):
     def find_food(self):
         """
         Simulates the worker finding food
-        PRE: None
+        PRE: The worker must be part of the colony (colony is not None).
         POST:Sets have_food to True if food is found and stays False if not
         """
         find_food = randint(0, 100) > 10
@@ -124,8 +124,8 @@ class Worker(Ant):
     def drop_food(self):
         """
         Simulates the worker dropping food
-        PRE: None
-        POST: have_food is set to False if food is dropped
+        PRE: The worker must currently have food (have_food = True)
+        POST: have_food is set to False if worker does not have food
         """
         self.have_food = False
 
