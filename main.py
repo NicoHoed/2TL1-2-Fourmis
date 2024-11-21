@@ -200,8 +200,8 @@ class Colony:
             - The colony is initialized with a queen.
             - If ant_count = 1, the colony contains only the queen and no worker ants.
             - If ant_count > 1, the colony contains (ant_count - 1) worker ants in addition to the queen.
-            - The food stock and nest capacity are set as specified.
-            - The colony is marked as alive.
+            - The food stock and nest capacity are set as specified (config).
+            - The colony is marked as alive (live = True).
         """
 
 
@@ -242,11 +242,14 @@ class Colony:
         """Expands the nest if the ant population approaches the maximum capacity.
 
         PRE:
-            - The colony must have a valid nest with defined capacity.
+            - The colony must have a valid nest :
+                - `self.__nest` is not 'None'
+                - `self.nest.ant_capacity` is a positive integer (> 0).
+                - `self.__nest.food_stock` is a positive integer (>= 0)
             - The colony must have at least one ant.
 
         POST:
-            - If the number of ants exceeds nest capacity - 10 and a random condition is met
+            - If the number of ants exceeds `nest capacity - 10` and a random condition is met
               (probability = 10%), the nest's capacity is increased by NEST_EXPANSION_RATE (config).
             - If the conditions are not met, the nest capacity remains unchanged.
         """
@@ -259,16 +262,15 @@ class Colony:
         """Reacts to an external threat by using ants to defend the nest.
 
         PRE:
-            - threat (Threat): A valid object representing the threat, must have:
+            - threat (Threat): An object representing the threat, must have:
                 - name (str): Name of the threat.
                 - life (int): Positive integer representing the threat's health points.
                 - power (int): Non-negative integer representing the threat's attack strength.
 
         POST:
-            - Soldier ants attack the threat first, reducing its life points.
-            - Worker ants attack if the threat survives, reducing its life points.
-            - Soldiers and workers are removed from the colony if killed.
-            - If the queen is killed, the nest is destroyed.
+            - Soldier ants attack the threat, reducing its life points.
+            - Soldiers and workers killed are removed from the colony.
+            - If all the ants are killed, the nest is destroyed.
             - A message summarizing the encounter is returned.
         """
 
@@ -327,7 +329,7 @@ class Colony:
         POST:
             - The nest is marked as inactive by setting self.__live to False.
             - If the nest is already inactive, no changes are made.
-            - The colony is effectively considered destroyed.
+            - The colony is considered destroyed.
         """
 
 
