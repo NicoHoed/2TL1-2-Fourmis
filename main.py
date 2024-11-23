@@ -13,7 +13,6 @@ class Ant:
     """
     a class for representing an Ant
     """
-    life_by_role = {'worker': 250, 'soldier': 500, 'queen': 10000}
 
     def __init__(self, role):
         """
@@ -24,7 +23,7 @@ class Ant:
         self.position = [0, 0]
         self.role = role
         self.life = 0
-        self.life_span = self.life_by_role[role]
+        self.life_span = LIFE_BY_ROLE[role]
 
 
     def detect_pheromone(self):
@@ -116,7 +115,7 @@ class Worker(Ant):
         PRE: The worker must be part of the colony (colony is not None).
         POST:Sets have_food to True if food is found and stays False if not
         """
-        find_food = randint(0, 100) > 10
+        find_food = randint(0, 100) > PROBABILITY_TO_FIND_FOOD
         self.have_food = find_food
         #print('worker find food')
         return find_food
@@ -200,8 +199,8 @@ class Colony:
             - The colony is initialized with a queen.
             - If ant_count = 1, the colony contains only the queen and no worker ants.
             - If ant_count > 1, the colony contains (ant_count - 1) worker ants in addition to the queen.
-            - The food stock and nest capacity are set as specified (config).
-            - The colony is marked as alive (live = True).
+            - The food stock and nest capacity are set as specified.
+            - The colony is marked as alive.
         """
 
 
@@ -232,8 +231,7 @@ class Colony:
 
 
         for ant in self.__ant:
-            self.__nest.food_stock -= 1 if ant.role == 'worker' else 3  # for worker or soldier
-        self.__nest.food_stock -= 5  # for queen
+            self.__nest.food_stock -= QT_FOOD_EAT_BY_ROLE[ant.role]
         if self.__nest.food_stock < 0:
             self.destruct_nest()
 
@@ -242,19 +240,16 @@ class Colony:
         """Expands the nest if the ant population approaches the maximum capacity.
 
         PRE:
-            - The colony must have a valid nest :
-                - `self.__nest` is not 'None'
-                - `self.nest.ant_capacity` is a positive integer (> 0).
-                - `self.__nest.food_stock` is a positive integer (>= 0)
+            - The colony must have a valid nest with defined capacity.
             - The colony must have at least one ant.
 
         POST:
-            - If the number of ants exceeds `nest capacity - 10` and a random condition is met
+            - If the number of ants exceeds nest capacity - 10 and a random condition is met
               (probability = 10%), the nest's capacity is increased by NEST_EXPANSION_RATE (config).
             - If the conditions are not met, the nest capacity remains unchanged.
         """
 
-        if len(self.__ant) > self.__nest.ant_capacity - 10 and randint(0, 100) <= 10:
+        if len(self.__ant) > self.__nest.ant_capacity - 10 and randint(0, 100) <= PROBABILITY_TO_EXPAND_NEST_WHEN_NEST_ALMOST_FULL:
             self.__nest.upgrade()
 
     def react_to_threat(self, threat: threat.Threat) -> str:
@@ -262,15 +257,16 @@ class Colony:
         """Reacts to an external threat by using ants to defend the nest.
 
         PRE:
-            - threat (Threat): An object representing the threat, must have:
+            - threat (Threat): A valid object representing the threat, must have:
                 - name (str): Name of the threat.
                 - life (int): Positive integer representing the threat's health points.
                 - power (int): Non-negative integer representing the threat's attack strength.
 
         POST:
-            - Soldier ants attack the threat, reducing its life points.
-            - Soldiers and workers killed are removed from the colony.
-            - If all the ants are killed, the nest is destroyed.
+            - Soldier ants attack the threat first, reducing its life points.
+            - Worker ants attack if the threat survives, reducing its life points.
+            - Soldiers and workers are removed from the colony if killed.
+            - If the queen is killed, the nest is destroyed.
             - A message summarizing the encounter is returned.
         """
 
@@ -329,7 +325,7 @@ class Colony:
         POST:
             - The nest is marked as inactive by setting self.__live to False.
             - If the nest is already inactive, no changes are made.
-            - The colony is considered destroyed.
+            - The colony is effectively considered destroyed.
         """
 
 
