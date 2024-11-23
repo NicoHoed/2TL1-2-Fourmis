@@ -8,6 +8,18 @@ import sys
 from lib import threat, gui, logger
 from config import *
 
+def resource_path(relative_path: str) -> str:
+    """ Get the absolute path to a resource within the PyInstaller bundle. """
+    # Check if we're running in a PyInstaller bundle
+    if hasattr(sys, '_MEIPASS'):
+        # PyInstaller extracts bundled files to sys._MEIPASS
+        base_path = sys._MEIPASS
+    else:
+        # Otherwise, use the current directory
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
 
 class Ant:
     """
@@ -431,7 +443,6 @@ def start(colony: Colony, root: tk.Tk, app: gui.AntSimulationApp, predators: lis
         app.console.write('colony has been killed')
 
 def run() -> None:
-    print(sys.prefix)
 
     predators = []
     for x in os.listdir('threats'):
@@ -446,7 +457,7 @@ def run() -> None:
 
     root = tk.Tk()
     root.geometry('1196x562')
-    app = gui.AntSimulationApp(colony, root, os.path.join('img', 'nest')) # initialize GUI
+    app = gui.AntSimulationApp(colony, root, os.path.join(resource_path('img'), 'nest')) # initialize GUI
 
     start(colony, root, app, predators, logging)
 
