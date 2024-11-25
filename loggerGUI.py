@@ -1,10 +1,9 @@
 import threading
-import matplotlib.pyplot as plt
 import tkinter as tk
-from tkinter import ttk
+from tkinter import ttk, Toplevel
 import subprocess
-
-
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+from matplotlib.figure import Figure
 from lib.logger import *
 
 class AppLogger:
@@ -64,40 +63,39 @@ class AppLogger:
 
 
     def show_graphe(self) -> None:
-        """
-        table = self.option[self.menu_choice.get()]
-        [print(data) for data in self.logger.get_data(table)]
-        """
+
         table = self.option[self.menu_choice.get()]
         data = [record for record in self.logger.get_data(table)]
 
-        # Extract columns from tuples
         nb_ants = [record[0] for record in data]
         food = [record[2] for record in data]
         nb_worker = [record[5] for record in data]
         nb_soldier = [record[6] for record in data]
 
-        # Creation of the x-axis
         time = list(range(1, len(data) + 1))
 
-        # Creation of the graph
-        plt.figure(figsize=(10, 6))
+        fig = Figure(figsize=(10, 6), dpi=100)
+        ax = fig.add_subplot(111)
 
-        # Line graph for each different categories
-        plt.plot(time, nb_ants, label='nb ants', color='blue')
-        plt.plot(time, food, label='food', color='green')
-        plt.plot(time, nb_worker, label='nb worker', color='red')
-        plt.plot(time, nb_soldier, label='nb soldier', color='purple')
+        ax.plot(time, nb_ants, label='nb ants', color='blue')
+        ax.plot(time, food, label='food', color='green')
+        ax.plot(time, nb_worker, label='nb worker', color='red')
+        ax.plot(time, nb_soldier, label='nb soldier', color='purple')
 
-        # Add labels and a legend
-        plt.xlabel("TimeLine")
-        plt.ylabel("Quantity")
-        plt.title("Evolution of the Colony")
-        plt.legend()
-        plt.grid(True)
+        ax.set_xlabel("Timeline")
+        ax.set_ylabel("Quantity")
+        ax.set_title("Evolution of the Colony")
+        ax.legend()
+        ax.grid(True)
 
-        # Display graph
-        plt.show()
+        graph_window = Toplevel()
+        graph_window.title("Colony Evolution Graph")
+
+        canvas = FigureCanvasTkAgg(fig, master=graph_window)
+        canvas_widget = canvas.get_tk_widget()
+        canvas_widget.pack(fill=tk.BOTH, expand=True)
+
+        canvas.draw()
 
     def open_log(self) -> None:
         table = self.option[self.menu_choice.get()]
