@@ -26,7 +26,7 @@ class AppLogger:
         self.export_button = ttk.Button(self.root, command=self.export_table, text='export data')
         self.export_button.grid(row=2, column=1, sticky='w')
 
-        self.graphe_button = ttk.Button(self.root, command=self.show_graphe, text='show graphe')
+        self.graphe_button = ttk.Button(self.root, command=self.show_graphe, text='show graph')
         self.graphe_button.grid(row=3, column=1, sticky='w')
 
         self.view_log_button = ttk.Button(self.root, command=self.open_log, text='view log')
@@ -77,10 +77,10 @@ class AppLogger:
         fig = Figure(figsize=(10, 6), dpi=100)
         ax = fig.add_subplot(111)
 
-        ax.plot(time, nb_ants, label='nb ants', color='blue')
-        ax.plot(time, food, label='food', color='green')
-        ax.plot(time, nb_worker, label='nb worker', color='red')
-        ax.plot(time, nb_soldier, label='nb soldier', color='purple')
+        ax.plot(time, nb_ants, label='Ants', color='blue')
+        ax.plot(time, food, label='Food', color='green')
+        ax.plot(time, nb_worker, label='Workers', color='red')
+        ax.plot(time, nb_soldier, label='Soldiers', color='purple')
 
         ax.set_xlabel("Timeline")
         ax.set_ylabel("Quantity")
