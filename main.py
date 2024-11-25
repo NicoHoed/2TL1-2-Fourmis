@@ -9,12 +9,23 @@ import sys
 from lib import threat, gui, logger
 from config import *
 
+def resource_path(relative_path: str) -> str:
+    """ Get the absolute path to a resource within the PyInstaller bundle. """
+    # Check if we're running in a PyInstaller bundle
+    if hasattr(sys, '_MEIPASS'):
+        # PyInstaller extracts bundled files to sys._MEIPASS
+        base_path = sys._MEIPASS
+    else:
+        # Otherwise, use the current directory
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
 
 class Ant:
     """
     a class for representing an Ant
     """
-    life_by_role = {'worker': 250, 'soldier': 500, 'queen': 10000}
 
     def __init__(self, role):
         """
@@ -25,7 +36,7 @@ class Ant:
         self.position = [0, 0]
         self.role = role
         self.life = 0
-        self.life_span = self.life_by_role[role]
+        self.life_span = LIFE_BY_ROLE[role]
 
 
     def detect_pheromone(self):
@@ -117,7 +128,7 @@ class Worker(Ant):
         PRE: The worker must be part of the colony (colony is not None).
         POST:Sets have_food to True if food is found and stays False if not
         """
-        find_food = randint(0, 100) > 10
+        find_food = randint(0, 100) > PROBABILITY_TO_FIND_FOOD
         self.have_food = find_food
         #print('worker find food')
         return find_food
@@ -233,8 +244,7 @@ class Colony:
 
 
         for ant in self.__ant:
-            self.__nest.food_stock -= 1 if ant.role == 'worker' else 3  # for worker or soldier
-        self.__nest.food_stock -= 5  # for queen
+            self.__nest.food_stock -= QT_FOOD_EAT_BY_ROLE[ant.role]
         if self.__nest.food_stock < 0:
             self.destruct_nest()
 
@@ -252,7 +262,7 @@ class Colony:
             - If the conditions are not met, the nest capacity remains unchanged.
         """
 
-        if len(self.__ant) > self.__nest.ant_capacity - 10 and randint(0, 100) <= 10:
+        if len(self.__ant) > self.__nest.ant_capacity - 10 and randint(0, 100) <= PROBABILITY_TO_EXPAND_NEST_WHEN_NEST_ALMOST_FULL:
             self.__nest.upgrade()
 
     def react_to_threat(self, threat: threat.Threat) -> str:
@@ -434,7 +444,6 @@ def start(colony: Colony, root: tk.Tk, app: gui.AntSimulationApp, predators: lis
         app.console.write('colony has been killed')
 
 def run() -> None:
-    print(sys.prefix)
 
     predators = []
     for x in os.listdir('threats'):
@@ -453,7 +462,7 @@ def run() -> None:
 
     root = tk.Tk()
     root.geometry('1196x562')
-    app = gui.AntSimulationApp(colony, root, os.path.join('img', 'nest')) # initialize GUI
+    app = gui.AntSimulationApp(colony, root, os.path.join(resource_path('img'), 'nest')) # initialize GUI
 
     start(colony, root, app, predators, logging)
 

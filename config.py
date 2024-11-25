@@ -7,6 +7,10 @@ MAX_SOLDIER_FOR_WORKER = 50 # 0...100 the max soldier per worker in %
 WORKER_DAMAGE = 1
 SOLDIER_DAMAGE = 3
 PROBABILITY_TO_LAY_EGG = 25 # 0...100
+LIFE_BY_ROLE = {'worker': 250, 'soldier': 500, 'queen': 10000}
+PROBABILITY_TO_FIND_FOOD = 10
+QT_FOOD_EAT_BY_ROLE = {'worker': 1, 'soldier': 2, 'queen': 5}
+PROBABILITY_TO_EXPAND_NEST_WHEN_NEST_ALMOST_FULL = 10
 
 def algo_laying_egg(colony):
     nb_of_worker = len([ant.role for ant in colony.ant if ant.role == 'worker'])
