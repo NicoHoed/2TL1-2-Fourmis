@@ -2,6 +2,7 @@ import os
 from random import randint
 from time import sleep
 import tkinter as tk
+from tkinter import messagebox
 import sys
 
 
@@ -441,8 +442,12 @@ def run() -> None:
 
     [print(x) for x in predators]
     colony = Colony()
+    try:
+        logging = logger.Logger('log',  'export', os.path.join('log', 'log.db'))
+    except Exception as e:
+        messagebox.showerror('Logger error', e)
+        sys.exit()
 
-    logging = logger.Logger('log',  'export', os.path.join('log', 'log.db'))
 
 
 
