@@ -15,8 +15,9 @@ def launch_logger(root):
     #script_dir = os.path.dirname(__file__)
     #logger_path = os.path.join(script_dir, "lib", "logger.py")
     #log_dir = os.path.join(script_dir, "log")
+    file = os.path.join(os.getcwd(), "loggerGUI.py")
     root.destroy()
-    subprocess.run([sys.executable, os.path.join(os.getcwd(), 'lib', 'logger.py')])
+    subprocess.run([sys.executable, file])
 
 
 
