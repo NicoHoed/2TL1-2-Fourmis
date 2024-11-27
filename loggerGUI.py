@@ -98,7 +98,6 @@ class AppLogger:
         total_workers = self._total_increments(nb_worker)
         total_soldiers = self._total_increments(nb_soldier)
         total_food = self._total_increments(food)
-        total_time = len(time)
 
         graph_window = Toplevel()
         graph_window.title("Colony Evolution Graph")
@@ -117,7 +116,6 @@ class AppLogger:
         tk.Label(info_frame, text=f"Total Workers: {total_workers}").pack(anchor="w")
         tk.Label(info_frame, text=f"Total Soldiers: {total_soldiers}").pack(anchor="w")
         tk.Label(info_frame, text=f"Total Food: {total_food}").pack(anchor="w")
-        tk.Label(info_frame, text=f"Total Time: {total_time}").pack(anchor="w")
 
     def open_log(self) -> None:
         table = self.option[self.menu_choice.get()]
