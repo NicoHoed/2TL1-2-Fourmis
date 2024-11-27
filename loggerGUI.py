@@ -44,6 +44,12 @@ class AppLogger:
         self.menu.grid(row = 1, column = 0)
 
 
+    def _total_increments(self, data: list[int]) -> int:
+        total = 0
+        for i in range(1, len(data)):
+            if data[i] > data[i-1]:
+                total += data[i] - data[i-1]
+        return total
 
 
     def del_table(self) -> None:
@@ -88,6 +94,12 @@ class AppLogger:
         ax.legend()
         ax.grid(True)
 
+        total_ants = self._total_increments(nb_ants)
+        total_workers = self._total_increments(nb_worker)
+        total_soldiers = self._total_increments(nb_soldier)
+        total_food = self._total_increments(food)
+        total_time = len(time)
+
         graph_window = Toplevel()
         graph_window.title("Colony Evolution Graph")
 
@@ -96,6 +108,16 @@ class AppLogger:
         canvas_widget.pack(fill=tk.BOTH, expand=True)
 
         canvas.draw()
+
+        info_frame = tk.Frame(graph_window)
+        info_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+
+        tk.Label(info_frame, text="Colony Evolution Summary", font=("Arial", 14, "bold")).pack(pady=(10, 5))
+        tk.Label(info_frame, text=f"Total Ants: {total_ants}").pack(anchor="w")
+        tk.Label(info_frame, text=f"Total Workers: {total_workers}").pack(anchor="w")
+        tk.Label(info_frame, text=f"Total Soldiers: {total_soldiers}").pack(anchor="w")
+        tk.Label(info_frame, text=f"Total Food: {total_food}").pack(anchor="w")
+        tk.Label(info_frame, text=f"Total Time: {total_time}").pack(anchor="w")
 
     def open_log(self) -> None:
         table = self.option[self.menu_choice.get()]
