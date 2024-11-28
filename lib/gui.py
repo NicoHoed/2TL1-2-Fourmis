@@ -13,6 +13,7 @@ class AntSimulationApp:
         self.root = root
         self.root.title("Ant Simulation")
         self.root.resizable(width=False, height=False)
+        self.root.iconbitmap('img/icon/logo.ico')
 
         img_nest = img_folder
 
