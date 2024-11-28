@@ -1,4 +1,4 @@
-from . import threat, gui, logger, threatCreation
+from . import threat, gui, logger
 
 
-__all__ = ['threat', 'gui', 'logger', 'threatCreation']
+__all__ = ['threat', 'gui', 'logger']

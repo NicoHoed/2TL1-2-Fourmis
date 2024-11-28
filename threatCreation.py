@@ -23,7 +23,7 @@ def resource_path(relative_path: str) -> str:
         base_path = sys._MEIPASS
     else:
         # Otherwise, use the current directory
-        base_path = os.path.abspath("lib")
+        base_path = os.path.abspath(".")
 
     return os.path.join(base_path, relative_path)
 
@@ -34,6 +34,7 @@ class App:
         self.root.title("threat creation")
         self.root.geometry("250x150")
         self.root.resizable(width=False, height=False)
+        print(os.getcwd())
         self.root.iconbitmap(resource_path('img/icon/logo.ico'))
 
         self.label_list = []
@@ -56,9 +57,9 @@ class App:
 
     def done(self):
         value = [x.get() for x in self.var_entry]
-
+        print(value)
         if '' in value:
-            print(value)
+
             return
 
         dict_value = {}
@@ -66,7 +67,7 @@ class App:
             dict_value[keys[val]] = value[val]
 
 
-        with open(resource_path(f'threats/{value[0]}.json'), 'x', encoding='utf-8') as file:
+        with open(f'threats/{value[0]}.json', 'x', encoding='utf-8') as file:
             dump(dict_value, file, indent=4)
             root.quit()
 
