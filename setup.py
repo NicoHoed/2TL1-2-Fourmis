@@ -31,9 +31,10 @@ class GUI:
         """Open a dialog to select the installation directory."""
         directory = filedialog.askdirectory()
         if directory:
-            self.install_dir_var.set(directory)
+            self.install_dir_var.set(os.path.join(directory, 'colonyConnect'))
 
     def install(self):
+        create_dir(self.install_dir_var.get())
         create_dir(os.path.join(self.install_dir_var.get(),'export'))
         create_dir(os.path.join(self.install_dir_var.get(),'log'))
         create_dir(os.path.join(self.install_dir_var.get(),'threats'))
@@ -102,7 +103,7 @@ def resource_path(relative_path: str) -> str:
 
 
 def create_dir(directory):
-    print('create dir in ', os.listdir(os.path.join(directory, '..')))
+    print('create dir in ', os.path.join(directory, '..'))
     if not os.path.split(directory)[1] in os.listdir(os.path.join(directory, '..')):
         os.mkdir(directory)
 
