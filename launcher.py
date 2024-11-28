@@ -25,33 +25,36 @@ def launch_main(root):
 
 
 def launch_logger(root):
-    #script_dir = os.path.dirname(__file__)
-    #logger_path = os.path.join(script_dir, "lib", "logger.py")
-    #log_dir = os.path.join(script_dir, "log")
     file = os.path.join(os.getcwd(), "logger.exe")
     root.destroy()
     subprocess.run([file])
-
-
-
 
 
 root = tk.Tk()
 root.title("Launcher")
 root.iconbitmap(resource_path('img/icon/logo.ico'))
 
-
-#script_dir = os.path.dirname(__file__)
+# Charger et redimensionner l'image de fond
 image_path = os.path.join(resource_path("img"), "ants", "antColonyAi.jpg")
 background_image = Image.open(image_path)
+
+# Redimensionner l'image à 800x700 pixels
+new_width = 800
+new_height = 700
+background_image = background_image.resize((new_width, new_height), Image.Resampling.LANCZOS)
+
+# Convertir l'image redimensionnée en un objet PhotoImage
 background_photo = ImageTk.PhotoImage(background_image)
 
-canvas = tk.Canvas(root, width=background_photo.width(), height=background_photo.height())
+# Configurer le canevas à la nouvelle taille
+canvas = tk.Canvas(root, width=new_width, height=new_height)
 canvas.pack(fill="both", expand=True)
 canvas.create_image(0, 0, image=background_photo, anchor="nw")
 
+# Définir la police des boutons
 button_font = ("Arial", 14, "bold")
 
+# Bouton pour lancer la simulation principale
 button_main = tk.Button(
     root,
     text="Start Colony Simulation",
@@ -60,6 +63,8 @@ button_main = tk.Button(
     height=2,
     font=button_font
 )
+
+# Bouton pour ouvrir les anciens jeux
 button_logger = tk.Button(
     root,
     text="Previous Games",
@@ -69,9 +74,9 @@ button_logger = tk.Button(
     font=button_font
 )
 
-x_center = background_photo.width() // 2
-button_main.place(x=x_center - 100, y=background_photo.height() - 370)  # Adjusted position for larger size
-button_logger.place(x=x_center - 100, y=background_photo.height() - 280)  # Adjusted position for larger size
-
+# Placer les boutons au centre, ajustés pour la nouvelle taille de l'image
+x_center = new_width // 2
+button_main.place(x=x_center - 100, y=new_height - 200)  # Position ajustée
+button_logger.place(x=x_center - 100, y=new_height - 120)  # Position ajustée
 
 root.mainloop()
