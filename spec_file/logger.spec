@@ -5,7 +5,7 @@ a = Analysis(
     ['loggerGUI.py'],
     pathex=[],
     binaries=[],
-    datas=[],
+    datas=[('img', 'img')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},

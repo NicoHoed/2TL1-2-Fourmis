@@ -2,10 +2,10 @@
 
 
 a = Analysis(
-    ['launcher.py'],
+    ['threatCreation.py'],
     pathex=[],
     binaries=[],
-    datas=[('.\\img\\ants\\antColonyAi.jpg', 'img\\ants'),('./img', 'img')],
+    datas=[('img', 'img')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -22,7 +22,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='launcher',
+    name='ThreatCreation',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -35,5 +35,4 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['img/icon/logo.ico']
 )
