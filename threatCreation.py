@@ -57,10 +57,28 @@ class App:
 
     def done(self):
         value = [x.get() for x in self.var_entry]
-        print(value)
-        if '' in value:
 
-            return
+        name_field = {0: "name", 1: "life", 2: "min_nest_level", 3: "spawn_prob", 4: "power"}
+
+        if '' in value:
+            field = value.index('')
+            raise ValueError(f'the field {name_field[field]} is empty')
+
+        field = 0
+
+        try:
+            int(value[1])
+            field = 1
+            int(value[2])
+            field = 2
+            int(value[3])
+            field = 3
+            int(value[4])
+        except:
+            raise ValueError(f'the field {name_field[field]} is not a number')
+
+
+
 
         dict_value = {}
         for val in range(len(value)):
