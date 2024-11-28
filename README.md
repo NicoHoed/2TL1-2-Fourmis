@@ -9,3 +9,9 @@
 **_Hausman Pierre-Alexandre: linadu2_**\
 **_Hoedenaeken Nicolas: nicoHoed_**\
 **_Gay Edward: maxeouw_**
+
+---
+
+# How to use
+
+Once you have download the setup file, you should see a `setup.exe` file in your file explorer.
