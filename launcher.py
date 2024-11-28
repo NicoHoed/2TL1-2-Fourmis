@@ -38,6 +38,8 @@ def launch_logger(root):
 
 root = tk.Tk()
 root.title("Launcher")
+root.iconbitmap('img/icon/logo.ico')
+
 
 #script_dir = os.path.dirname(__file__)
 image_path = os.path.join(resource_path("img"), "ants", "antColonyAi.jpg")

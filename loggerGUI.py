@@ -14,6 +14,7 @@ class AppLogger:
         self.root.title('Manage log')
         self.root.geometry('400x150')
         self.root.resizable(width=False, height=False)
+        self.root.iconbitmap('img/icon/logo.ico')
 
         self.root.grid_columnconfigure(1, weight=1)
 
