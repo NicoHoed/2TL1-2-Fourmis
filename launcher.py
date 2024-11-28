@@ -38,7 +38,7 @@ def launch_logger(root):
 
 root = tk.Tk()
 root.title("Launcher")
-root.iconbitmap('img/icon/logo.ico')
+root.iconbitmap(resource_path('img/icon/logo.ico'))
 
 
 #script_dir = os.path.dirname(__file__)

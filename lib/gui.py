@@ -4,6 +4,17 @@ from tkinter import PhotoImage, scrolledtext, Frame, Label
 import sys
 
 
+def resource_path(relative_path: str) -> str:
+    """ Get the absolute path to a resource within the PyInstaller bundle. """
+    # Check if we're running in a PyInstaller bundle
+    if hasattr(sys, '_MEIPASS'):
+        # PyInstaller extracts bundled files to sys._MEIPASS
+        base_path = sys._MEIPASS
+    else:
+        # Otherwise, use the current directory
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 class AntSimulationApp:
     def __init__(self, colony, root, img_folder):
@@ -13,7 +24,7 @@ class AntSimulationApp:
         self.root = root
         self.root.title("Ant Simulation")
         self.root.resizable(width=False, height=False)
-        self.root.iconbitmap('img/icon/logo.ico')
+        self.root.iconbitmap(resource_path('img/icon/logo.ico'))
 
         img_nest = img_folder
 

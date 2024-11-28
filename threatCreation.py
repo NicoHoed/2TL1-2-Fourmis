@@ -1,7 +1,9 @@
-from json import dump, load
-from os import path, listdir
+from json import load
+from os import path
 import tkinter as tk
 from json import dump
+import os
+import sys
 
 keys = ['name', 'life', 'min_nest_level', 'spawn_prob', 'power']
 """
@@ -13,12 +15,26 @@ keys = ['name', 'life', 'min_nest_level', 'spawn_prob', 'power']
 """
 
 
+def resource_path(relative_path: str) -> str:
+    """ Get the absolute path to a resource within the PyInstaller bundle. """
+    # Check if we're running in a PyInstaller bundle
+    if hasattr(sys, '_MEIPASS'):
+        # PyInstaller extracts bundled files to sys._MEIPASS
+        base_path = sys._MEIPASS
+    else:
+        # Otherwise, use the current directory
+        base_path = os.path.abspath("lib")
+
+    return os.path.join(base_path, relative_path)
+
+
 class App:
     def __init__(self, root):
         self.root = root
         self.root.title("threat creation")
         self.root.geometry("250x150")
         self.root.resizable(width=False, height=False)
+        self.root.iconbitmap(resource_path('img/icon/logo.ico'))
 
         self.label_list = []
         self.entry_list = []
@@ -42,6 +58,7 @@ class App:
         value = [x.get() for x in self.var_entry]
 
         if '' in value:
+            print(value)
             return
 
         dict_value = {}
@@ -49,7 +66,7 @@ class App:
             dict_value[keys[val]] = value[val]
 
 
-        with open(f'../threats/{value[0]}.json', 'x', encoding='utf-8') as file:
+        with open(resource_path(f'threats/{value[0]}.json'), 'x', encoding='utf-8') as file:
             dump(dict_value, file, indent=4)
             root.quit()
 
