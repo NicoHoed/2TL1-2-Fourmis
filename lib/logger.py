@@ -18,6 +18,8 @@ class Logger:
         POST: the log, except and db are set, the file is create for logging, the db is connected and table is created to log.
         RAISES: sqlite3.Error is throw if db cannot be connected or IOError file cannot be created
         """
+        if not os.path.exists(export_directory) or not os.path.exists(log_directory):
+            raise FileNotFoundError
         self.log_directory = log_directory
         self.export_directory = export_directory
         self.database = database
@@ -45,7 +47,7 @@ class Logger:
     def log(self, msg: str) -> None:
         """
         method to log a msg into the current .log file
-        PRE: msg end with '\n'
+        PRE: None
         POST: the msg is added int the log file.
         RAISES: IOError is throw if the file cannot be write
         """
