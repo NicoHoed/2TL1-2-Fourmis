@@ -468,7 +468,7 @@ def run() -> None:
 
     root.mainloop()
 
-    logging.conn.close()
+    logging.close()
     print('database connection close')
 
 

@@ -132,5 +132,8 @@ class Logger:
         """
         return self.cur.execute(f"""select * from {table}""").fetchall()
 
+    def close(self) -> None:
+        self.conn.close()
+
 
 
