@@ -56,14 +56,14 @@ class Logger:
 
 
 
-    def create_table(self) -> None:
+    def create_table(self, table_name: str=None) -> None:
         """
                 method to create a table in the sqlite database for logging
                 PRE: the database connection must be open
                 POST: a table is created in the db and the current_table var is set for logging msg
                 RAISES: sqlite3.Error is throw if the db is not connected
                 """
-        self.cur.execute(f"""CREATE TABLE {'table_'}{str(self.formatted_datetime)} (
+        self.cur.execute(f"""CREATE TABLE {'table_'}{str(self.formatted_datetime) if not table_name else table_name} (
                                 qt_ant INT NOT NULL,
                                 max_ant INT NOT NULL,
                                 qt_food INT NOT NULL,
