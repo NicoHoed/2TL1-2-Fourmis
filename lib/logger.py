@@ -86,7 +86,7 @@ class Logger:
         table = self.cur.execute("SELECT name FROM sqlite_master WHERE type='table';")
         return [table[0] for table in table.fetchall()]
 
-    def log_db(self, info: tuple[str]) -> None:
+    def log_db(self, info: tuple) -> None:
         """method to log a tuple of 7 element in the current_table
         PRE: current_table must != None
         POST: the info is log into the db in a new line
