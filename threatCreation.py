@@ -1,6 +1,7 @@
 from json import load
 from os import path
 import tkinter as tk
+from tkinter import messagebox
 from json import dump
 import os
 import sys
@@ -130,13 +131,13 @@ def update_monster_json(directory: str, file: str) -> None:
             try:
                 new_value = int(new_value)
 
-            except:
-                pass
+            except Exception as e:
+                messagebox.showerror('error', str(e))
             if not isinstance(new_value, int):
                 try:
                     new_value = float(new_value)
-                except:
-                    pass
+                except Exception as e:
+                    messagebox.showerror('error', str(e))
             monster_data[key] = new_value
             needRewrite = True
 
