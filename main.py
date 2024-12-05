@@ -454,7 +454,7 @@ def run() -> None:
     try:
         logging = logger.Logger('log',  'export', os.path.join('log', 'log.db'))
     except Exception as e:
-        messagebox.showerror('Logger error', e)
+        messagebox.showerror('Logger error', str(e))
         sys.exit()
 
 
