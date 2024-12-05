@@ -30,13 +30,13 @@ class Ant:
     def __init__(self, role):
         """
         Constructor for initializing an ant instance
-        PRE: role is either worker, soldier or queen
-        POST: The ant has a lifespan according to its role: life_by_role = {'worker': 250, 'soldier': 500, 'queen': 10000} and a position initialized at [0,0]
+        PRE: role is a string that corresponds either to worker, soldier or queen.
+        POST: The ant has a lifespan according to its role: life_by_role = {'worker': 250, 'soldier': 500, 'queen': 10000} and a position initialized at [0,0].
         """
         self.position = [0, 0]
         self.role = role
-        self.life = 0
-        self.life_span = LIFE_BY_ROLE[role]
+        self.__life = 0
+        self.__life_span = LIFE_BY_ROLE[role]
 
 
     def detect_pheromone(self):
@@ -53,14 +53,14 @@ class Ant:
         """
         Checks if the ant should die
         PRE: The ant should have a valid lifespan
-        POST: returns true if the ant has reached or exceeded his lifespan and if the ants life is beyond half its lifespan and a random condition is met.
+        POST: The ant dies after exceeding its lifespan and from a certain point in its life (more than half its lifespan) the ant can randomly dies.
         """
-        self.life += 1
+        self.__life += 1
         # print(self.life, self.life_span)
-        if self.life == self.life_span:
+        if self.__life == self.__life_span:
             #print('die')
             return True
-        if self.life_span / 2 < self.life == randint(0, self.life_span):
+        if self.__life_span / 2 < self.__life == randint(0, self.__life_span):
             #print('die')
             return True
 
@@ -116,7 +116,7 @@ class Worker(Ant):
         """
         Constructor for initializing a worker instance
         PRE: Colony is an instance of Colony and is not none
-        POST: The worker is initialized with a reference to the colony and have_food is initialized at False
+        POST: The worker is initialized with a reference to the colony and starts without any food.
         """
         super().__init__('worker')
         self.colony = colony
@@ -126,7 +126,7 @@ class Worker(Ant):
         """
         Simulates the worker finding food
         PRE: The worker must be part of the colony (colony is not None).
-        POST:Sets have_food to True if food is found and stays False if not
+        POST:The worker finds food randomly based on a certain probability.
         """
         find_food = randint(0, 100) > PROBABILITY_TO_FIND_FOOD
         self.have_food = find_food
@@ -136,8 +136,8 @@ class Worker(Ant):
     def drop_food(self):
         """
         Simulates the worker dropping food
-        PRE: The worker must currently have food (have_food = True)
-        POST: have_food is set to False if worker does not have food
+        PRE: The worker must currently have food (have_food = True).
+        POST: Indicates if the worker does not have food.
         """
         self.have_food = False
 
@@ -468,7 +468,7 @@ def run() -> None:
 
     root.mainloop()
 
-    logging.conn.close()
+    logging.close()
     print('database connection close')
 
 

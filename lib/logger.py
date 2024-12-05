@@ -18,6 +18,8 @@ class Logger:
         POST: the log, except and db are set, the file is create for logging, the db is connected and table is created to log.
         RAISES: sqlite3.Error is throw if db cannot be connected or IOError file cannot be created
         """
+        if not os.path.exists(export_directory) or not os.path.exists(log_directory):
+            raise FileNotFoundError
         self.log_directory = log_directory
         self.export_directory = export_directory
         self.database = database
@@ -45,7 +47,7 @@ class Logger:
     def log(self, msg: str) -> None:
         """
         method to log a msg into the current .log file
-        PRE: msg end with '\n'
+        PRE: None
         POST: the msg is added int the log file.
         RAISES: IOError is throw if the file cannot be write
         """
@@ -54,14 +56,14 @@ class Logger:
 
 
 
-    def create_table(self) -> None:
+    def create_table(self, table_name: str=None) -> None:
         """
                 method to create a table in the sqlite database for logging
                 PRE: the database connection must be open
                 POST: a table is created in the db and the current_table var is set for logging msg
                 RAISES: sqlite3.Error is throw if the db is not connected
                 """
-        self.cur.execute(f"""CREATE TABLE {'table_'}{str(self.formatted_datetime)} (
+        self.cur.execute(f"""CREATE TABLE {'table_'}{str(self.formatted_datetime) if not table_name else table_name} (
                                 qt_ant INT NOT NULL,
                                 max_ant INT NOT NULL,
                                 qt_food INT NOT NULL,
@@ -84,7 +86,7 @@ class Logger:
         table = self.cur.execute("SELECT name FROM sqlite_master WHERE type='table';")
         return [table[0] for table in table.fetchall()]
 
-    def log_db(self, info: tuple[str]) -> None:
+    def log_db(self, info: tuple) -> None:
         """method to log a tuple of 7 element in the current_table
         PRE: current_table must != None
         POST: the info is log into the db in a new line
@@ -129,6 +131,9 @@ class Logger:
         RAISES: sqlite3.Error if the database is not connected
         """
         return self.cur.execute(f"""select * from {table}""").fetchall()
+
+    def close(self) -> None:
+        self.conn.close()
 
 
 

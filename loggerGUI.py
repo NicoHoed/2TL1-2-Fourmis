@@ -163,8 +163,12 @@ class AppLogger:
 def to_human_format(tables: list[str]) -> dict[str, str]:
     table_dict = {}
     for table in tables:
-        timestamp = datetime.strptime(table[6:], "%Y%m%d%H%M%S")
-        table_dict[timestamp.strftime("%B %d, %Y, %I:%M:%S %p")] = table
+        try:
+            timestamp = datetime.strptime(table[6:], "%Y%m%d%H%M%S")
+            table_dict[timestamp.strftime("%B %d, %Y, %I:%M:%S %p")] = table
+        except:
+            table_dict[table] = table
+
 
     return table_dict
 
